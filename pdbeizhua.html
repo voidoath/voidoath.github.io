@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>关于pandownload开发者被抓的一点看法 | krau'blog</title><meta name="description" content="众人苦百度久矣"><meta name="keywords" content="闲聊胡扯"><meta name="author" content="krau"><meta name="copyright" content="krau"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://avatar.dawnlab.me/qq/1636648138"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="关于pandownload开发者被抓的一点看法"><meta name="twitter:description" content="众人苦百度久矣"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417074358.png"><meta property="og:type" content="article"><meta property="og:title" content="关于pandownload开发者被抓的一点看法"><meta property="og:url" content="http://krau.top/pdbeizhua.html"><meta property="og:site_name" content="krau'blog"><meta property="og:description" content="众人苦百度久矣"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417074358.png"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = '1'
+var t = Cookies.get("theme")
+if (autoChangeMode == '1'){
+  const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+  const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+  const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+  const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined){
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport){
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      now = new Date();
+      hour = now.getHours();
+      isNight = hour < 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+  }
+  } else if (t == 'light') activateLightMode()
+  else activateDarkMode()
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://krau.top/pdbeizhua.html"><link rel="prev" title="推荐一个图床-ASnetIMG 并搭配PicGo实现一键上传复制直链" href="http://krau.top/asimgtuijian.html"><link rel="next" title="freda-一个多种自定义的电子书阅读器" href="http://krau.top/fredatuijian.html"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-163233436-1', 'auto');
+ga('send', 'pageview');
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://krau.top/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  highlightShrink: false,
+  isFontAwesomeV5: false
+  
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false
+}</script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="krau'blog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><canvas class="fireworks"></canvas><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://avatar.dawnlab.me/qq/1636648138" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">27</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">23</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">7</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="https://travellings.now.sh" target="_blank" rel="noopener"><i class="fa-fw"></i><span> Travellings</span></a></div></div></div></div><i class="fa fa-arrow-right on" id="toggle-sidebar" aria-hidden="true">     </i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><div class="post-bg" id="nav" style="background-image: url(https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417074358.png)"><div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">krau'blog</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="https://travellings.now.sh" target="_blank" rel="noopener"><i class="fa-fw"></i><span> Travellings</span></a></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div><div id="post-info"><div id="post-title"><div class="posttitle">关于pandownload开发者被抓的一点看法</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2020-04-17<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> 更新于 2020-04-17</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><div class="post-meta-wordcount"><i class="post-meta__icon fa fa-file-word-o" aria-hidden="true"></i><span>字数总计:</span><span class="word-count">960</span><span class="post-meta__separator">|</span><i class="post-meta__icon fa fa-clock-o" aria-hidden="true"></i><span>阅读时长: 2 分钟</span><div class="post-meta-pv-cv"><span class="post-meta__separator">|</span><i class="fa fa-eye post-meta__icon" aria-hidden="true"> </i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span><span class="post-meta__separator">|</span><i class="post-meta__icon fa fa-comment-o" aria-hidden="true"></i><span>评论数:</span><a href="/pdbeizhua.html#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/pdbeizhua.html" itemprop="commentCount"></span></a></div></div></div></div></div><main class="layout_post" id="content-inner"><article id="post"><div id="article-container"><p>2020年04月15日，小有名气的第三方百度网盘下载器<code>pandownload</code>开发者被抓，警方对事件的描述如下</p>
+<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417065029.png"></p>
+<p>由于本人并不懂法，所以尽量少扯一些和法律有关的话题。关于与此案件相关的法律知识可以看一下这位知乎答主的回答.<a href="https://www.zhihu.com/question/388027206/answer/1156166701" target="_blank" rel="noopener"><br>法的守夜人</a></p>
+<hr>
+<p>首先我认为百度维权确实没有错，然后再来瞎扯一些其他的：</p>
+<p>这个所谓‘刘某’为了保护自己的隐私而报案，我对这一点十分怀疑，但也不敢乱猜测，总之都懂。<br>但是，他是怎么知道自己的隐私被pandownload泄露了呢？<br>首先刘某肯定用了pandownload这个软件，但是，百度网盘官方事后在微博上发帖时，为何对pandownload只字不提？只说配合配合警方调查？</p>
+<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417070228.png"></p>
+<p>而且，本人也用过很长一段时间的pandownload，更有很多苦百度已久的人用过，为何其他人都没有隐私泄露的问题，偏偏是这个‘刘某’去直接报案？（当然也可能确实是有没被发现）</p>
+<p>还有，隐私问题难道只是pandownload的锅？那么为什么度盘文件频频被删，度盘搜索比比皆是？<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417073951.png"></p>
+<p>另外再看一下度盘官方微博那边</p>
+<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417071411.png"><br>（由于都是热评也没什么必要打码了，如果有什么不满请联系我更改）</p>
+<p>与以往臭名昭著的控评微博不同，这次微博中的评论几乎都占位一致，更有很多暴躁老哥破口大骂‘垃圾软件流氓企业’。</p>
+<blockquote>
+<p>“我求求你别在追查pandownload了行吗？我用了百度网盘三年，30块钱的会员，我开了三年。食堂钱开没了，钱包被我开垮了，现在好不容易有了免费盘。你们非说它侵犯隐私。那盘侵不侵犯隐私我们能不知道吗？”　　<br>“那制作者四年才受捐30万，制作者根本不挣钱。谁家能不下载个文件？你就能保证你这一辈子不下载吗？你把他抓走了，我们都得被限速。我不想限速，我想满速下载，行吗？”</p>
+</blockquote>
+<p>诚然，相比较其他网盘，百度网盘能提供很大的免费存储空间，并且具有相对很人性化的分享和转存功能。然而，事实上百度网盘只能存不能取，不开会员只能无奈地看着满盘资源。<em>（据说开了会员一样限速）</em></p>
+<hr>
+<p>百度的各种流氓行为众人皆知，自从谷歌退出中国，百度一家独大，便开始了它的垄断之路。百度公司的产品的用户体验越来越差，百度搜索引擎不如叫做‘营销号搜索’‘广告搜索’；百度贴吧出各种意想不到的收费服务，甚至拍卖贴吧吧主位置；百度网盘更是越来越黑心…</p>
+<p>毫不重视用户体验，毫不尊重用户内容，这样的公司又有什么理由值得用户去付费支持？</p>
+<p>倘若国内以后有这样一款网盘：它免费空间不大，但是不限速，没有离谱的广告，能分享和转存资源，并且不会乱删文件，且有很大的用户基数。那么我一定会为这样的网盘充值，但可能国内这样的网盘只是在梦里。</p>
+<p>除了pandownload，还有很多类似的度盘下载器，百度此举可能还要有打个警告的目的。但是，如果度盘不做出改善，相信以后还会有更多的此类软件。</p>
+<p>不说了，百度seo估计要针对我了，但我本来也没多大指望百度会收录</p>
+<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417100236.png"></p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">krau</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://krau.top/pdbeizhua.html">http://krau.top/pdbeizhua.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://krau.top" target="_blank">krau'blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%97%B2%E8%81%8A%E8%83%A1%E6%89%AF/">闲聊胡扯    </a></div><div class="post_share"><div class="social-share" data-image="https://img.asnet.ga/i/2020/04/17/iksrm3.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/asimgtuijian.html"><img class="prev_cover lazyload" data-src="https://img.asnet.ga/i/2020/04/17/iksrm3.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">推荐一个图床-ASnetIMG 并搭配PicGo实现一键上传复制直链</div></div></a></div><div class="next-post pull_right"><a href="/fredatuijian.html"><img class="next_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416204336.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">freda-一个多种自定义的电子书阅读器</div></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify: true,
+  verify: false,
+  appId: 'e8CW4tMr3arrzVFKGkbNkuLk-gzGzoHsz',
+  appKey: '0ITCLsxhthp1zUIqH07vn20W',
+  placeholder: '支持全量markdown语法',
+  avatar: 'monsterid',
+  meta: guest_info,
+  pageSize: '10',
+  lang: 'zh-cn',
+  recordIP: true,
+  serverURLs: ''
+});</script></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By krau</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="icp"><a href="https://icp.gov.moe/?keyword=20203939" target="_blank" rel="noopener"><img class="icp-icon" src="/photo/ico32.png"/><span>萌icp备20203939号</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/gh/voidoath/live2d-widget@latest/autoload.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/js/third-party/fireworks.js"></script><script id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="/js/search/local-search.js"></script></body></html>

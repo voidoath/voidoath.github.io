@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>简单明了理解alpha通道 | krau'blog</title><meta name="description" content="Alpha通道在计算机图形学中是一个常见术语，在Ps，Ae等动画创作类软件中常有身影，那么它究竟为何物？"><meta name="keywords" content="影视后期,平面设计"><meta name="author" content="krau"><meta name="copyright" content="krau"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://avatar.dawnlab.me/qq/1636648138"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="简单明了理解alpha通道"><meta name="twitter:description" content="Alpha通道在计算机图形学中是一个常见术语，在Ps，Ae等动画创作类软件中常有身影，那么它究竟为何物？"><meta name="twitter:image" content="https://s1.ax1x.com/2020/03/15/888BHe.jpg"><meta property="og:type" content="article"><meta property="og:title" content="简单明了理解alpha通道"><meta property="og:url" content="http://krau.top/jiandanmingliaolijiealphatongdao.html"><meta property="og:site_name" content="krau'blog"><meta property="og:description" content="Alpha通道在计算机图形学中是一个常见术语，在Ps，Ae等动画创作类软件中常有身影，那么它究竟为何物？"><meta property="og:image" content="https://s1.ax1x.com/2020/03/15/888BHe.jpg"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = '1'
+var t = Cookies.get("theme")
+if (autoChangeMode == '1'){
+  const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+  const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+  const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+  const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined){
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport){
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      now = new Date();
+      hour = now.getHours();
+      isNight = hour < 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+  }
+  } else if (t == 'light') activateLightMode()
+  else activateDarkMode()
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://krau.top/jiandanmingliaolijiealphatongdao.html"><link rel="prev" title="逻辑门电路在Minecraft中的应用" href="http://krau.top/luojimendianluzaiminecraftzhongdeyingyong.html"><link rel="next" title="本站已接入萌icp备案20203939号" href="http://krau.top/benzhanyijierumengicpbeian20203939hao.html"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-163233436-1', 'auto');
+ga('send', 'pageview');
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://krau.top/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  highlightShrink: false,
+  isFontAwesomeV5: false
+  
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false
+}</script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="krau'blog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><canvas class="fireworks"></canvas><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://avatar.dawnlab.me/qq/1636648138" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">27</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">23</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">7</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="https://travellings.now.sh" target="_blank" rel="noopener"><i class="fa-fw"></i><span> Travellings</span></a></div></div></div></div><i class="fa fa-arrow-right on" id="toggle-sidebar" aria-hidden="true">     </i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#概念"><span class="toc-text">概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#应用"><span class="toc-text">应用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#引用"><span class="toc-text">引用</span></a></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><div class="post-bg" id="nav" style="background-image: url(https://s1.ax1x.com/2020/03/15/888BHe.jpg)"><div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">krau'blog</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="https://travellings.now.sh" target="_blank" rel="noopener"><i class="fa-fw"></i><span> Travellings</span></a></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div><div id="post-info"><div id="post-title"><div class="posttitle">简单明了理解alpha通道</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2020-03-15<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> 更新于 2020-03-25</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E5%B0%8F%E6%8A%80%E6%9C%AF/">小技术</a></span><div class="post-meta-wordcount"><i class="post-meta__icon fa fa-file-word-o" aria-hidden="true"></i><span>字数总计:</span><span class="word-count">921</span><span class="post-meta__separator">|</span><i class="post-meta__icon fa fa-clock-o" aria-hidden="true"></i><span>阅读时长: 2 分钟</span><div class="post-meta-pv-cv"><span class="post-meta__separator">|</span><i class="fa fa-eye post-meta__icon" aria-hidden="true"> </i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span><span class="post-meta__separator">|</span><i class="post-meta__icon fa fa-comment-o" aria-hidden="true"></i><span>评论数:</span><a href="/jiandanmingliaolijiealphatongdao.html#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/jiandanmingliaolijiealphatongdao.html" itemprop="commentCount"></span></a></div></div></div></div></div><main class="layout_post" id="content-inner"><article id="post"><div id="article-container"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><strong>Alpha通道</strong>在计算机图形学中是一个常见术语，在Ps，Ae等动画创作类软件中常有身影，那么它究竟为何物？</p>
+<p>身为非专业人士不需要特别深入了解，但需要知道它的基本概念和应用</p>
+<h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><blockquote>
+<p><a href="https://www.cnblogs.com/suogasus/p/5311264.html" target="_blank" rel="noopener">来自东篱雪 - 博客园</a> ：Alpha通道是计算机图形学中的术语，指的是特别的通道，意思是“非彩色”通道，主要是用来保存选区和编辑选区。</p>
+</blockquote>
+<blockquote>
+<p><a href="https://zh.wikipedia.org/wiki/%E9%98%BF%E5%B0%94%E6%B3%95%E9%80%9A%E9%81%93" target="_blank" rel="noopener">来自维基百科</a> ： 阿尔法通道（α Channel或Alpha Channel）是指一张图片的透明和半透明度。</p>
+</blockquote>
+<p>图像一般有RGB三个彩色通道（red，green，blue），这种图像被称为RGB图像。而Alpha通道并不属于彩色通道，它是用来存储图像的透明/半透明信息的，包含有alpha通道的图像通常被称为RGB/A图像。</p>
+<p><strong>但需要注意的是，alpha通道只是最终的作用效果表现为透明度，它本质上和透明度没有关系。</strong></p>
+<p><strong>alpha通道本质上是存储了一个取值 0到1 的数字，0代表完全透明，1代表完全不透明，中间值就是半透明，以此可以存储图像的透明度信息，于是alpha通道最终表现为透明度</strong></p>
+<h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><blockquote>
+<ul>
+<li>大家熟知的3DMAX动画软件中提供了动画作品后期合成的工作环境（即VIDEO POST），利用VIDEO POST的图像合成功能可以实现一次处理许多不同层次的图像文件与动画场景合成的设定。其中使用最频繁的合成方式Alpha  composing就是靠Alpha通道来实现的。<br>3DMAX能根据文件的输出格式产生包含Alpha通道的32位文件格式（特别是32位的Targa图像文件）。当进行渲染时，任何不含物体的区域的Alpha值为0，实色的物体的Alpha值为255，而透明材质的Alpha值介于0～255间。利用3DMAX的这一特性可在该软件或其它软件中实现各种透明重叠的图像或动画效果。</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>Flash矢量动画中同样具有Alpha通道功能的运用。Alpha是Flash动画场景中图形符号（graphic）的一个主要属性，改变其值（0～100之间）便可改变对象符号的透明程度。如在各关键帧设定某图形符号以不同的Alpha值，则该图形符号就呈现出动态变化的透明效果。通过编写动作脚本（Action scripting），用户交互式地改Alpha值，更能使动画作品生动有趣。</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>在视频处理软件中，通常要将多个视频片段按照要求重叠在一起形成透明或半透明效果。Premiere电影编辑软件里提供了多达97个视频高叠轨道用以实现影像片段的合成。在高叠片段的video Option命令中有一个专门用于合成的透明设置选项Transparency，它提供了许多key Type基本（透明）类型。其中Alpha channel key就是利用影像或图片的Alpha通道在片段上选定区域形成透明效果。</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>我的新坑：在运用AE与PS中运用alpha通道叠加模式，做出badapple视频效果。</p>
+<p>效果预览：</p>
+<iframe src="//player.bilibili.com/player.html?aid=45232264&cid=79193066&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width:640px; height:460px"> </iframe>
+
+<p>这种风格的特效视频非常多，实际上方法基本就是一种，那就是alpha通道的巧妙运用。</p>
+<p><del>有空就写教程，敬请期待</del></p>
+</li>
+</ul>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><ol>
+<li><p><a href="https://www.cnblogs.com/suogasus/p/5311264.html" target="_blank" rel="noopener">来自东篱雪 - 博客园：一个也许很傻的问题,在图像处理中alpha到底是什么？</a></p>
+</li>
+<li><p><a href="https://zh.wikipedia.org/wiki/%E9%98%BF%E5%B0%94%E6%B3%95%E9%80%9A%E9%81%93" target="_blank" rel="noopener">来自维基百科：alpha通道</a></p>
+</li>
+</ol>
+<p><del>又氵一篇，真好</del></p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">krau</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://krau.top/jiandanmingliaolijiealphatongdao.html">http://krau.top/jiandanmingliaolijiealphatongdao.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://krau.top" target="_blank">krau'blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%BD%B1%E8%A7%86%E5%90%8E%E6%9C%9F/">影视后期    </a><a class="post-meta__tags" href="/tags/%E5%B9%B3%E9%9D%A2%E8%AE%BE%E8%AE%A1/">平面设计    </a></div><div class="post_share"><div class="social-share" data-image="https://img.asnet.ga/i/2020/04/17/iksrm3.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/luojimendianluzaiminecraftzhongdeyingyong.html"><img class="prev_cover lazyload" data-src="https://s1.ax1x.com/2020/03/20/86WMOP.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">逻辑门电路在Minecraft中的应用</div></div></a></div><div class="next-post pull_right"><a href="/benzhanyijierumengicpbeian20203939hao.html"><img class="next_cover lazyload" data-src="https://acg.xydwz.cn/mcapi/mcapi.php" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">本站已接入萌icp备案20203939号</div></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify: true,
+  verify: false,
+  appId: 'e8CW4tMr3arrzVFKGkbNkuLk-gzGzoHsz',
+  appKey: '0ITCLsxhthp1zUIqH07vn20W',
+  placeholder: '支持全量markdown语法',
+  avatar: 'monsterid',
+  meta: guest_info,
+  pageSize: '10',
+  lang: 'zh-cn',
+  recordIP: true,
+  serverURLs: ''
+});</script></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By krau</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="icp"><a href="https://icp.gov.moe/?keyword=20203939" target="_blank" rel="noopener"><img class="icp-icon" src="/photo/ico32.png"/><span>萌icp备20203939号</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/gh/voidoath/live2d-widget@latest/autoload.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/js/third-party/fireworks.js"></script><script id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="/js/search/local-search.js"></script></body></html>
