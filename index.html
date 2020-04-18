@@ -1,103 +1,1858 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>krau'blog - 寻觅有趣的灵魂</title><meta name="description" content="年轻，就要折腾"><meta name="author" content="krau"><meta name="copyright" content="krau"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://avatar.dawnlab.me/qq/1636648138"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="krau'blog"><meta name="twitter:description" content="年轻，就要折腾"><meta name="twitter:image" content="https://avatar.dawnlab.me/qq/1636648138"><meta property="og:type" content="website"><meta property="og:title" content="krau'blog"><meta property="og:url" content="http://krau.top/"><meta property="og:site_name" content="krau'blog"><meta property="og:description" content="年轻，就要折腾"><meta property="og:image" content="https://avatar.dawnlab.me/qq/1636648138"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = '1'
-var t = Cookies.get("theme")
-if (autoChangeMode == '1'){
-  const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
-  const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
-  const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
-  const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+<!DOCTYPE HTML>
+<html lang="zh-CN">
 
-  if (t === undefined){
-    if (isLightMode) activateLightMode()
-    else if (isDarkMode) activateDarkMode()
-    else if (isNotSpecified || hasNoSupport){
-      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
-      now = new Date();
-      hour = now.getHours();
-      isNight = hour < 6 || hour >= 18
-      isNight ? activateDarkMode() : activateLightMode()
-  }
-  } else if (t == 'light') activateLightMode()
-  else activateDarkMode()
 
-} else if (autoChangeMode == '2'){
-  now = new Date();
-  hour = now.getHours();
-  isNight = hour < 6 || hour >= 18
-  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
-  else if (t === 'light') activateLightMode()
-  else activateDarkMode() 
-} else {
-  if ( t == 'dark' ) activateDarkMode()
-  else if ( t == 'light') activateLightMode()
-}
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="krau&#39;blog">
+    <meta name="description" content="年轻，就要折腾">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 
-function activateDarkMode(){
-  document.documentElement.setAttribute('data-theme', 'dark')
-  if (document.querySelector('meta[name="theme-color"]') !== null){
-    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
-  }
-}
-function activateLightMode(){
-  document.documentElement.setAttribute('data-theme', 'light')
-  if (document.querySelector('meta[name="theme-color"]') !== null){
-  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
-  }
-}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://krau.top/"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-163233436-1', 'auto');
-ga('send', 'pageview');
-</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
-  root: '/',
-  algolia: undefined,
-  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
-  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://krau.top/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
-  copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
-  },
-  bookmark: {
-    title: 'Snackbar.bookmark.title',
-    message_prev: '按',
-    message_next: '键将本页加入书签'
-  },
-  runtime_unit: '天',
-  runtime: true,
-  copyright: undefined,
-  ClickShowText: undefined,
-  medium_zoom: false,
-  fancybox: true,
-  Snackbar: undefined,
-  baiduPush: false,
-  highlightCopy: true,
-  highlightLang: true,
-  highlightShrink: false,
-  isFontAwesomeV5: false
-  
-}</script><script>var GLOBAL_CONFIG_SITE = { 
-  isPost: false,
-  isHome: true
-}</script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="krau'blog" type="application/atom+xml">
+    <title>krau&#39;blog</title>
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.io/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.io/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.io/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.io/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.io/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.io/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.io/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.io/css/my.css">
+
+    <script src="https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.io/libs/jquery/jquery.min.js"></script>
+    
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="krau'blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><canvas class="fireworks"></canvas><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://avatar.dawnlab.me/qq/1636648138" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">27</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">23</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">7</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="https://travellings.now.sh" target="_blank" rel="noopener"><i class="fa-fw"></i><span> Travellings</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><div class="full_page" id="nav" style="background-image: url(https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/黑希.png)"><div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">krau'blog</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="https://travellings.now.sh" target="_blank" rel="noopener"><i class="fa-fw"></i><span> Travellings</span></a></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div><div id="site-info"><h1 id="site_title">krau'blog</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="mailto:cosinzero@outlook.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true">    </i></a><a class="social-icon" href="/atom.xml" target="_blank"><i class="fa fa-rss" aria-hidden="true">    </i></a><a class="social-icon" href="https://t.me/cosinzero" target="_blank"><i class="fa fa-telegram" aria-hidden="true">    </i></a><a class="social-icon" href="https://space.bilibili.com/296036767" target="_blank"><i class="fa fa-tv" aria-hidden="true">    </i></a></div></div><div id="scroll_down"><i class="fa fa-angle-down scroll-down-effects"></i></div></div><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/asimgtuijian.html" title="推荐一个图床-ASnetIMG 并搭配PicGo实现一键上传复制直链">     <img class="post_bg lazyload" data-src="https://img.asnet.ga/i/2020/04/17/iksrm3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="推荐一个图床-ASnetIMG 并搭配PicGo实现一键上传复制直链"></a></div><div class="recent-post-info"><a class="article-title" href="/asimgtuijian.html" title="推荐一个图床-ASnetIMG 并搭配PicGo实现一键上传复制直链">推荐一个图床-ASnetIMG 并搭配PicGo实现一键上传复制直链</a><div class="article-meta-wrap"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i>2020-04-17<span class="article-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i>2020-04-17</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/%E5%B0%8F%E6%8A%80%E6%9C%AF/">小技术</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/%E5%AE%89%E5%88%A9/">安利</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/%E5%9B%BE%E5%BA%8A/">图床</a></span></div><div class="content">极度舒适的图床上传方式</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/pdbeizhua.html" title="关于pandownload开发者被抓的一点看法">     <img class="post_bg lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417074358.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于pandownload开发者被抓的一点看法"></a></div><div class="recent-post-info"><a class="article-title" href="/pdbeizhua.html" title="关于pandownload开发者被抓的一点看法">关于pandownload开发者被抓的一点看法</a><div class="article-meta-wrap"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i>2020-04-17<span class="article-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i>2020-04-17</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/%E9%97%B2%E8%81%8A%E8%83%A1%E6%89%AF/">闲聊胡扯</a></span></div><div class="content">众人苦百度久矣</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/fredatuijian.html" title="freda-一个多种自定义的电子书阅读器">     <img class="post_bg lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416204336.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="freda-一个多种自定义的电子书阅读器"></a></div><div class="recent-post-info"><a class="article-title" href="/fredatuijian.html" title="freda-一个多种自定义的电子书阅读器">freda-一个多种自定义的电子书阅读器</a><div class="article-meta-wrap"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i>2020-04-16<span class="article-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i>2020-04-16</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/%E5%AE%89%E5%88%A9/">安利</a></span></div><div class="content">推荐一个阅读器，没有恰饭）</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/pythonxuexibijisizhimianxiangduixiang.html" title="python学习笔记四之面向对象基础（一）">     <img class="post_bg lazyload" data-src="https://pic4.zhimg.com/v2-9ffc4cbb1ee45f490856e2e338d50aec_1200x500.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="python学习笔记四之面向对象基础（一）"></a></div><div class="recent-post-info"><a class="article-title" href="/pythonxuexibijisizhimianxiangduixiang.html" title="python学习笔记四之面向对象基础（一）">python学习笔记四之面向对象基础（一）</a><div class="article-meta-wrap"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i>2020-04-12<span class="article-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i>2020-04-12</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/python/">python</a></span></div><div class="content">没有对象</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/ruhekexuedeshuiwenzhang.html" title="如何借助ai来科学地水文章">     <img class="post_bg lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200410211222.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何借助ai来科学地水文章"></a></div><div class="recent-post-info"><a class="article-title" href="/ruhekexuedeshuiwenzhang.html" title="如何借助ai来科学地水文章">如何借助ai来科学地水文章</a><div class="article-meta-wrap"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i>2020-04-10<span class="article-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i>2020-04-10</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/%E6%B0%B4%E6%96%87%E7%AB%A0/">水文章</a></span></div><div class="content">水 漫 金 山</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/guanyummdzhongdaochudaialphatongdaoshipindefangfa.html" title="MMD中导出带alpha通道视频的方法">     <img class="post_bg lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/alphammd.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MMD中导出带alpha通道视频的方法"></a></div><div class="recent-post-info"><a class="article-title" href="/guanyummdzhongdaochudaialphatongdaoshipindefangfa.html" title="MMD中导出带alpha通道视频的方法">MMD中导出带alpha通道视频的方法</a><div class="article-meta-wrap"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i>2020-04-07<span class="article-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i>2020-04-07</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/%E5%B0%8F%E6%8A%80%E6%9C%AF/">小技术</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/MMD/">MMD</a></span></div><div class="content">折腾半天都没想到是这回事</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/aexuexibijiyizhichangyongxiaoguo.html" title="ae学习笔记一之常用效果">     <img class="post_bg lazyload" data-src="https://api.ixiaowai.cn/api/api.php" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ae学习笔记一之常用效果"></a></div><div class="recent-post-info"><a class="article-title" href="/aexuexibijiyizhichangyongxiaoguo.html" title="ae学习笔记一之常用效果">ae学习笔记一之常用效果</a><div class="article-meta-wrap"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i>2020-04-04<span class="article-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i>2020-04-09</time></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/psxuexibijiyizhichangyongcaozuojikuaijiejian.html" title="ps学习笔记一之常用操作及快捷键">     <img class="post_bg lazyload" data-src="https://s1.ax1x.com/2020/04/04/GdoFjH.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ps学习笔记一之常用操作及快捷键"></a></div><div class="recent-post-info"><a class="article-title" href="/psxuexibijiyizhichangyongcaozuojikuaijiejian.html" title="ps学习笔记一之常用操作及快捷键">ps学习笔记一之常用操作及快捷键</a><div class="article-meta-wrap"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i>2020-04-04<span class="article-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i>2020-04-04</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/ps/">ps</a></span></div><div class="content">再不记笔记就忘完了</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/mcshengcunrijizhicongkaifudaozhatu.html" title="mc生存日记之从开服到炸图">     <img class="post_bg lazyload" data-src="https://s1.ax1x.com/2020/04/03/Gao56J.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mc生存日记之从开服到炸图"></a></div><div class="recent-post-info"><a class="article-title" href="/mcshengcunrijizhicongkaifudaozhatu.html" title="mc生存日记之从开服到炸图">mc生存日记之从开服到炸图</a><div class="article-meta-wrap"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i>2020-04-03<span class="article-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i>2020-04-04</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/Games/">Games</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Minecraft/">Minecraft</a></span></div><div class="content">mc生存日记之从开服到炸图</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/daliaogeonedriveliebiao.html" title="搭了个onedrive列表">     <img class="post_bg lazyload" data-src="https://img.asnet.top/i/2020/04/03/f3nvos.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="搭了个onedrive列表"></a></div><div class="recent-post-info"><a class="article-title" href="/daliaogeonedriveliebiao.html" title="搭了个onedrive列表">搭了个onedrive列表</a><div class="article-meta-wrap"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i>2020-04-03<span class="article-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i>2020-04-03</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/%E5%91%8A%E7%A4%BA%E7%89%8C/">告示牌</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/onedrive/">onedrive</a></span></div><div class="content">姑且当作非常low的资源站</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-fw fa-chevron-right" aria-hidden="true"></i></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://avatar.dawnlab.me/qq/1636648138" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">krau</div><div class="author-info__description">年轻，就要折腾</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">27</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">标签</div><div class="length_num">23</div></a></div><div class="card-info-data-item is-center">     <a href="/categories"><div class="headline">分类</div><div class="length_num">7</div></a></div></div><div class="card-info-bookmark is-center"><a class="bookmark button--primary button--animated" id="bookmark-it" href="javascript:;" title="加入书签" target="_self"><i class="fa fa-bookmark" aria-hidden="true"></i><span>加入书签</span></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:cosinzero@outlook.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a><a class="social-icon" href="/atom.xml" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a><a class="social-icon" href="https://t.me/cosinzero" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a><a class="social-icon" href="https://space.bilibili.com/296036767" target="_blank"><i class="fa fa-tv" aria-hidden="true"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fa fa-bullhorn card-announcement-animation" aria-hidden="true"></i><span>公告</span></div><div class="announcement_content">以下是本站域名：krau.top 和 krau.gitee.io 和 cos0.xyz 和 cosin0.ml</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fa fa-history" aria-hidden="true"></i><span>最新文章</span></div><div class="aside-recent-item"> <div class="aside-recent-post"><a href="/asimgtuijian.html"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="https://img.asnet.ga/i/2020/04/17/iksrm3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" title="推荐一个图床-ASnetIMG 并搭配PicGo实现一键上传复制直链" alt="推荐一个图床-ASnetIMG 并搭配PicGo实现一键上传复制直链"/></div><div class="aside-post-title"><div class="aside-post_title" href="/asimgtuijian.html" title="推荐一个图床-ASnetIMG 并搭配PicGo实现一键上传复制直链">推荐一个图床-ASnetIMG 并搭配PicGo实现一键上传复制直链</div><time class="aside-post_meta post-meta__date">2020-04-17</time></div></a></div><div class="aside-recent-post"><a href="/pdbeizhua.html"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417074358.png" onerror="this.onerror=null;this.src='/img/404.jpg'" title="关于pandownload开发者被抓的一点看法" alt="关于pandownload开发者被抓的一点看法"/></div><div class="aside-post-title"><div class="aside-post_title" href="/pdbeizhua.html" title="关于pandownload开发者被抓的一点看法">关于pandownload开发者被抓的一点看法</div><time class="aside-post_meta post-meta__date">2020-04-17</time></div></a></div><div class="aside-recent-post"><a href="/fredatuijian.html"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416204336.png" onerror="this.onerror=null;this.src='/img/404.jpg'" title="freda-一个多种自定义的电子书阅读器" alt="freda-一个多种自定义的电子书阅读器"/></div><div class="aside-post-title"><div class="aside-post_title" href="/fredatuijian.html" title="freda-一个多种自定义的电子书阅读器">freda-一个多种自定义的电子书阅读器</div><time class="aside-post_meta post-meta__date">2020-04-16</time></div></a></div><div class="aside-recent-post"><a href="/pythonxuexibijisizhimianxiangduixiang.html"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="https://pic4.zhimg.com/v2-9ffc4cbb1ee45f490856e2e338d50aec_1200x500.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="python学习笔记四之面向对象基础（一）" alt="python学习笔记四之面向对象基础（一）"/></div><div class="aside-post-title"><div class="aside-post_title" href="/pythonxuexibijisizhimianxiangduixiang.html" title="python学习笔记四之面向对象基础（一）">python学习笔记四之面向对象基础（一）</div><time class="aside-post_meta post-meta__date">2020-04-12</time></div></a></div><div class="aside-recent-post"><a href="/ruhekexuedeshuiwenzhang.html"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200410211222.png" onerror="this.onerror=null;this.src='/img/404.jpg'" title="如何借助ai来科学地水文章" alt="如何借助ai来科学地水文章"/></div><div class="aside-post-title"><div class="aside-post_title" href="/ruhekexuedeshuiwenzhang.html" title="如何借助ai来科学地水文章">如何借助ai来科学地水文章</div><time class="aside-post_meta post-meta__date">2020-04-10</time></div></a></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fa fa-folder-open" aria-hidden="true"></i><span>分类</span></div><ul class="aside-category-item">       <li class="aside-category-list"><a class="aside-category-list_link" href="/categories/Games/"><span class="aside-category-list_name">Games</span><span class="aside-category-list_length">2</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/test/"><span class="aside-category-list_name">test</span><span class="aside-category-list_length">1</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/%E5%91%8A%E7%A4%BA%E7%89%8C/"><span class="aside-category-list_name">告示牌</span><span class="aside-category-list_length">5</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="aside-category-list_name">学习笔记</span><span class="aside-category-list_length">5</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/%E5%B0%8F%E6%8A%80%E6%9C%AF/"><span class="aside-category-list_name">小技术</span><span class="aside-category-list_length">7</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/%E6%97%A5%E5%B8%B8/"><span class="aside-category-list_name">日常</span><span class="aside-category-list_length">5</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/%E9%AB%98%E4%B8%AD%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"><span class="aside-category-list_name">高中学习记录</span><span class="aside-category-list_length">1</span></a></li></ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fa fa-tags" aria-hidden="true"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/ACG/" style="font-size: 16px; color: #999">ACG</a> <a href="/tags/MMD/" style="font-size: 16px; color: #999">MMD</a> <a href="/tags/Minecraft/" style="font-size: 21.33px; color: #99a4b2">Minecraft</a> <a href="/tags/api/" style="font-size: 16px; color: #999">api</a> <a href="/tags/hello-world/" style="font-size: 16px; color: #999">hello world</a> <a href="/tags/hexo/" style="font-size: 16px; color: #999">hexo</a> <a href="/tags/onedrive/" style="font-size: 16px; color: #999">onedrive</a> <a href="/tags/ps/" style="font-size: 16px; color: #999">ps</a> <a href="/tags/python/" style="font-size: 24px; color: #99a9bf">python</a> <a href="/tags/test/" style="font-size: 16px; color: #999">test</a> <a href="/tags/%E4%BD%9C%E6%96%87/" style="font-size: 16px; color: #999">作文</a> <a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 16px; color: #999">图床</a> <a href="/tags/%E5%A4%87%E6%A1%88/" style="font-size: 16px; color: #999">备案</a> <a href="/tags/%E5%AE%89%E5%88%A9/" style="font-size: 18.67px; color: #999ea6">安利</a> <a href="/tags/%E5%B9%B3%E9%9D%A2%E8%AE%BE%E8%AE%A1/" style="font-size: 16px; color: #999">平面设计</a> <a href="/tags/%E5%BD%B1%E8%A7%86%E5%90%8E%E6%9C%9F/" style="font-size: 16px; color: #999">影视后期</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 18.67px; color: #999ea6">日常</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 16px; color: #999">日记</a> <a href="/tags/%E6%B0%B4%E6%96%87%E7%AB%A0/" style="font-size: 16px; color: #999">水文章</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 16px; color: #999">游戏</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 16px; color: #999">爬虫</a> <a href="/tags/%E8%AF%AD%E6%96%87/" style="font-size: 16px; color: #999">语文</a> <a href="/tags/%E9%97%B2%E8%81%8A%E8%83%A1%E6%89%AF/" style="font-size: 16px; color: #999">闲聊胡扯</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fa fa-archive" aria-hidden="true"></i><span>归档</span></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/"><span class="archive-list-date">2020年04月</span><span class="archive-list-count">10</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/"><span class="archive-list-date">2020年03月</span><span class="archive-list-count">17</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fa fa-line-chart" aria-hidden="true"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">27</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">已运行时间 :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count" start_date="2020/3/9 00:00:00">     </div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By krau</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="icp"><a href="https://icp.gov.moe/?keyword=20203939" target="_blank" rel="noopener"><img class="icp-icon" src="/photo/ico32.png"/><span>萌icp备20203939号</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
- <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/gh/voidoath/live2d-widget@latest/autoload.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/js/third-party/fireworks.js"></script><script id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="/js/search/local-search.js"></script><script src="https://cdn.jsdelivr.net/npm/typed.js"></script><script type="text/javascript" src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><script>let subtitleEffect = true
-jinrishici.load(function(result) {
-  if (subtitleEffect){
-    let sub = '年轻，就要折腾,Can you hear me？'.length == 0  ? new Array() : '年轻，就要折腾,Can you hear me？'.split(",");
-    let content = result.data.content;
-    let both = sub.unshift(content)
-    let typed = new Typed("#subtitle", {
-      strings: sub,
-      startDelay: 300,
-      typeSpeed: 150,
-      loop: true,
-      backSpeed: 50
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+<body>
+
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.io/favicon.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">krau'blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.io/favicon.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">krau'blog</div>
+        <div class="logo-desc">
+            
+            年轻，就要折腾
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<style>
+    .carousel-control {
+        width: 45px;
+        height: 45px;
+        line-height: 55px;
+        border-radius: 45px;
+        background: transparent;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    #prev-cover {
+        position: absolute;
+        top: 48%;
+        left: 8px;
+    }
+
+    #next-cover {
+        position: absolute;
+        top: 48%;
+        right: 8px;;
+    }
+
+    #prev-cover i {
+        margin-right: 3px;
+    }
+
+    #next-cover i {
+        margin-left: 3px;
+    }
+
+    .carousel-control:hover {
+        background-color: rgba(0, 0, 0, .4);
+    }
+
+    .carousel-control i {
+        color: #fff;
+        font-size: 2.4rem;
+    }
+</style>
+
+
+
+<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
+    
+        <div id="prev-cover" class="left waves-effect carousel-control">
+            <i class="icon fa fa-angle-left"></i>
+        </div>
+        <div id="next-cover" class="right waves-effect carousel-control">
+            <i class="icon fa fa-angle-right"></i>
+        </div>
+    
+
+    <div class="carousel-item white-text bg-cover about-cover">
+        <div class="container">
+            <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                寻觅有趣的灵魂
+                
+            </div>
+
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: ['年轻，就要折腾','Can you hear me？'],
+                        startDelay: 300,
+                        typeSpeed: 50,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // 每天切换 banner 图.  Switch banner image every day.
+    $('.bg-cover').css('background-image', 'url(https://api.ixiaowai.cn/api/api.php')
+    
+</script>
+
+
+
+            <div class="cover-btns">
+                <a href="#indexCard" class="waves-effect waves-light btn">
+                    <i class="fa fa-angle-double-down"></i>开始阅读
+                </a>
+
+                
+                    <a href="https://space.bilibili.com/296036767" class="waves-effect waves-light btn" target="_blank">
+                        <i class="fab fa-telegram-plane"></i>B站主页
+                    </a>
+                
+            </div>
+            <div class="cover-social-link">
+    <a href="https://github.com/voidoath" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:voidoath0@outlook.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1636648138" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1636648138" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+
+
+</div>
+        </div>
+    </div>
+
+    
+        
+
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://api.mz-moe.cn/img.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">End Poem</div>
+                            <div class="description center-align">
+                                
+                                    
+
+I see the player you mean.
+PLAYERNAME?
+Yes. Take care. It has reached a higher level now. It can read our thoughts.
+Th
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/endpoem.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://api.mz-moe.cn/img.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">推荐一个图床-ASnetIMG 并搭配PicGo实现一键上传复制直链</div>
+                            <div class="description center-align">
+                                
+                                    首先说一下这个图床ASNETIMG
+
+是一个不太有名气但体验还不错的图床，速度也还行，走的香港CN2节点限制：单张图片限制30M，每次最多上传30张图片。限制很宽，而且目前完全免费无广告，可以说是很良心了
+
+然后说一下PicGO这个工具
+
+
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/asimgtuijian.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://api.mz-moe.cn/img.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">freda-一个多种自定义的电子书阅读器</div>
+                            <div class="description center-align">
+                                
+                                    freda简评这是一个可本地和在线的电子书阅读器，支持各种常见的电子书/文档格式，几乎免费，除了首页底部有一条横幅广告需要付费去除外，还未发现任何需要付费的功能
+安装freda上架在Microsoft store，直接去搜索 freda 即
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/fredatuijian.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://api.ixiaowai.cn/api/api.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">mc生存日记之从开服到炸图</div>
+                            <div class="description center-align">
+                                
+                                    前因话说某个沙雕群的普通上午，突然这时
+
+于是乎
+
+
+接着（已经开打了2333）
+
+
+
+
+
+
+实况第一波被炸
+
+南村凋零欺我老无力
+各种肝出来的珍贵物品散落一地
+
+被炸了的后山
+
+我要打三个！
+
+
+
+
+
+不知道打了多少只后，基友们意识到需要
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/mcshengcunrijizhicongkaifudaozhatu.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://api.ixiaowai.cn/api/api.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">关于pandownload开发者被抓的一点看法</div>
+                            <div class="description center-align">
+                                
+                                    2020年04月15日，小有名气的第三方百度网盘下载器pandownload开发者被抓，警方对事件的描述如下
+
+由于本人并不懂法，所以尽量少扯一些和法律有关的话题。关于与此案件相关的法律知识可以看一下这位知乎答主的回答.法的守夜人
+
+首先我
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/pdbeizhua.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://api.ixiaowai.cn/api/api.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">ps学习笔记一之常用操作及快捷键</div>
+                            <div class="description center-align">
+                                
+                                    快捷键工具快捷键
+
+
+工具
+快捷键
+
+
+
+移动
+V
+
+
+矩形选择工具
+M
+
+
+套索工具
+L
+
+
+快速选择工具
+W
+
+
+裁剪/切片
+C
+
+
+吸管
+I
+
+
+污点修复画笔
+J
+
+
+画笔
+B
+
+
+仿制图章
+S
+
+
+橡皮擦
+E
+
+
+钢笔
+P
+
+
+文本
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/psxuexibijiyizhichangyongcaozuojikuaijiejian.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://acg.yanwz.cn/wallpaper/api.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">python学习笔记四之面向对象基础（一）</div>
+                            <div class="description center-align">
+                                
+                                    思想
+面向对象编程——Object Oriented Programming，简称OOP，是一种程序设计思想。OOP把对象作为程序的基本单元，一个对象包含了数据和操作数据的函数。
+
+
+举一个简单的例子，大家都会下五子棋，我们就以开发一个五子
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/pythonxuexibijisizhimianxiangduixiang.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://api.mz-moe.cn/img.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">使用Python批量下载文本中的逐行图片链接</div>
+                            <div class="description center-align">
+                                
+                                    简介说明非完全原创，参考了网上一些大佬的思路。如有雷同请来打我）有任何问题可以在下面留言，或使用qq，邮箱等方式联系我
+
+使用Python从一个包含大量多行链接的文本文件中，批量下载那些链接中的内容
+目前直接使用可能下载速度并不快，正在研究
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/shiyongpythonpiliangxiazaiwenbenzhongdezhuxingwenjianlianjie.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://api.mz-moe.cn/img.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">MMD中导出带alpha通道视频的方法</div>
+                            <div class="description center-align">
+                                
+                                    前言 闲来无事在摸MMD，然后看到了这个
+ 【PV背景配布/动作配布】九尾三妈式初音 - お気に召すまま
+
+感觉这个配布的挺不错，想摸一个。但是碰到点问题：60fps的背景是单独的视频，需要通过后期软件把人物和背景的视频叠加起来，这就要一个
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/guanyummdzhongdaochudaialphatongdaoshipindefangfa.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://acg.xydwz.cn/mcapi/mcapi.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">如何借助ai来科学地水文章</div>
+                            <div class="description center-align">
+                                
+                                    前言（先把标题里’Ai’和’科学’划掉
+最近看到某人在水文章，想了想，自己的博客也好百万毫秒没更新过了，于是本文 应 运 而 生
+狗屁不通的初级水很多人应该都见过这个东西项目：狗屁不通文章生成器在线演示：网页版
+效果如下图
+
+为了凑字，我复
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/ruhekexuedeshuiwenzhang.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://api.mz-moe.cn/img.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">小学生都会系列--使用python计算任意三角形面积</div>
+                            <div class="description center-align">
+                                
+                                    简介python利用海伦公式计算任意三角形面积
+代码#边长输入
+x = float(input('第一边长：'))
+y = float(input('第二边长: '))
+z = float(input('第三边长：'))
+#判断是否为三角形
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/xiaoxueshengduhuixilieshiyongpythonjisuanrenyisanjiaoxingmianji.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://api.mz-moe.cn/img.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">征文-抗击新冠病毒疫情</div>
+                            <div class="description center-align">
+                                
+                                    众志成城抗疫情，同甘共苦过难关2019农历年年末，正当人们繁忙地筹备年事，准备欢欢喜喜辞旧迎新的时候，一场突如其来的新型冠状病毒在湖北武汉爆发，来势汹涌，短短几天就感染万人，触目惊心的数字不断增长，确诊人数呈指数型上升…..本该是全国人民同
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/zhengwenkangjiyiqing.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">搭了个onedrive列表</div>
+                            <div class="description center-align">
+                                
+                                    如题
+网址：krau的神秘口袋项目地址：FODI话说这前端也太难看了（你行你上啊）后端是搞到了cf上
+从@Leao那里py来的5T onedrive空间
+目前里面什么都没有，后续也不会发任何浮力，请不要收藏它
+
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/daliaogeonedriveliebiao.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://acg.yanwz.cn/wallpaper/api.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">本站已接入萌icp备案20203939号</div>
+                            <div class="description center-align">
+                                
+                                    前两天见到某位兄台在搞这个
+于是也整了个
+
+在页脚已经可以看到了
+（似乎并没有什么卵用）
+
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/benzhanyijierumengicpbeian20203939hao.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://acg.xydwz.cn/mcapi/mcapi.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">涩图</div>
+                            <div class="description center-align">
+                                
+                                    各种杂七杂八的测试
+  
+
+骗你的这里并没有涩图
+API
+1
+2
+3
+4 https://acg.xydwz.cn/api/api.php 
+5
+6 setu
+7https://api.paugram.com/wallpaper
+
+
+图床
+
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/setu.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://acg.yanwz.cn/wallpaper/api.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">简单明了理解alpha通道</div>
+                            <div class="description center-align">
+                                
+                                    前言Alpha通道在计算机图形学中是一个常见术语，在Ps，Ae等动画创作类软件中常有身影，那么它究竟为何物？
+身为非专业人士不需要特别深入了解，但需要知道它的基本概念和应用
+概念
+来自东篱雪 - 博客园 ：Alpha通道是计算机图形学中的术
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/jiandanmingliaolijiealphatongdao.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://api.mz-moe.cn/img.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">记一次逃网课出去放风筝</div>
+                            <div class="description center-align">
+                                
+                                    在家发霉了这么久，每天钉钉钉钉。终于，我忍不住出去转悠了
+作为一个平时的死宅，几乎从不主动出门的说…..
+
+
+
+放风筝~天气正好，于是拿出 ~ 可能是地摊捡的芭比娃娃 ~ 风筝来放
+
+~ 一个猛男放个芭比娃娃也太奇怪了 ~没一会就收了（传统
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/jiyicitaowangkechuqufangfengzheng.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://s1.ax1x.com/2020/03/13/8KTXmF.md.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">这几天干了啥</div>
+                            <div class="description center-align">
+                                
+                                    考试系统测试时皮了一下
+因为只是考试系统测试，所以并没有被审问。
+~ 早知道更皮一点传张涩图什么的 ~
+不过明天可是真的要云考试了，理科六门全考。
+看了哪些番观《邻家索菲》有感
+看完这部番，你有什么感想？请写一篇观后感，字数不少于800字。
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/zhejitianganliaosha.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.iohttps://acg.xydwz.cn/mcapi/mcapi.php');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">逻辑门电路在Minecraft中的应用</div>
+                            <div class="description center-align">
+                                
+                                    逻辑门简述逻辑门是集成电路的基本组件，通过控制元件的高低电平的组合来进行二进制逻辑运算。其中高电平（有信号）代表 1 （true） ，低电平代表 0 （false）
+基本逻辑门三种基本逻辑门
+非门 ：一个输入，一个输出。输入1，输出0；输入
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/luojimendianluzaiminecraftzhongdeyingyong.html" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+</div>
+
+<script>
+    // TODO 此处的轮播尚需优化，PC/Mobile 在触摸切换时都感觉相当不灵活
+    $(function () {
+        let coverSlider = $('.carousel');
+
+        //用户触摸轮播自动 restartPlay 是否生效
+        let initUserPressedOrDraggedActive = false
+
+        //用户触摸轮播自动 restartPlay
+        function initUserPressedOrDragged(instance) {
+            setInterval(() => {
+                if (instance.pressed || instance.dragged) {
+                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
+                    restartPlay()
+                }
+            }, 1000)
+        }
+
+        coverSlider.carousel({
+            duration: Number('120'),
+            fullWidth: true,
+            indicators: 'true' === 'true',
+            onCycleTo() {
+                if (!initUserPressedOrDraggedActive) {
+                    // console.log('initUserPressedOrDraggedActive')
+                    initUserPressedOrDragged(this)
+                    initUserPressedOrDraggedActive = true
+                }
+            },
+        })
+
+        let carouselIntervalId;
+        
+        // Loop to call the next cover article picture.
+        let autoCarousel = function () {
+            carouselIntervalId = setInterval(function () {
+                coverSlider.carousel('next');
+            }, 10000);
+        };
+        autoCarousel();
+        
+
+        function restartPlay() {
+            
+            clearInterval(carouselIntervalId);
+            autoCarousel();
+            
+        };
+
+        
+        // prev and next cover post.
+        $('#prev-cover').click(function () {
+            coverSlider.carousel('prev');
+            restartPlay();
+        });
+        $('#next-cover').click(function () {
+            coverSlider.carousel('next');
+            restartPlay();
+        });
+        
     });
-  }else{
-    document.getElementById("subtitle").innerHTML = result.data.content        
-  }
-})
-</script></body></html>
+</script>
+
+
+
+<main class="content">
+
+    
+    <div id="indexCard" class="index-card">
+        <div class="container ">
+            <div class="card">
+                <div class="card-content">
+                    
+
+                    
+
+                    
+
+                    <div id="recommend-sections" class="recommend">
+                        
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+    <!-- 所有文章卡片 -->
+    <article id="articles" class="container articles">
+        <div class="row article-row">
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/asimgtuijian.html" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="https://acg.xydwz.cn/mcapi/mcapi.php" class="responsive-img" alt="推荐一个图床-ASnetIMG 并搭配PicGo实现一键上传复制直链">
+                            
+                            <span class="card-title">推荐一个图床-ASnetIMG 并搭配PicGo实现一键上传复制直链</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            首先说一下这个图床ASNETIMG
+
+是一个不太有名气但体验还不错的图床，速度也还行，走的香港CN2节点限制：单张图片限制30M，每次最多上传30张图片。限制很宽，而且目前完全免费无广告，可以说是很良心了
+
+然后说一下PicGO这个工具
+
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-17
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E5%B0%8F%E6%8A%80%E6%9C%AF/" class="post-category" target="_blank">
+                                    小技术
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E5%AE%89%E5%88%A9/" target="_blank">
+                            <span class="chip bg-color">安利</span>
+                        </a>
+                        
+                        <a href="/tags/%E5%9B%BE%E5%BA%8A/" target="_blank">
+                            <span class="chip bg-color">图床</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/pdbeizhua.html" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="https://acg.xydwz.cn/mcapi/mcapi.php" class="responsive-img" alt="关于pandownload开发者被抓的一点看法">
+                            
+                            <span class="card-title">关于pandownload开发者被抓的一点看法</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            2020年04月15日，小有名气的第三方百度网盘下载器pandownload开发者被抓，警方对事件的描述如下
+
+由于本人并不懂法，所以尽量少扯一些和法律有关的话题。关于与此案件相关的法律知识可以看一下这位知乎答主的回答.法的守夜人
+
+首先我
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-17
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%97%A5%E5%B8%B8/" class="post-category" target="_blank">
+                                    日常
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E9%97%B2%E8%81%8A%E8%83%A1%E6%89%AF/" target="_blank">
+                            <span class="chip bg-color">闲聊胡扯</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/fredatuijian.html" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="https://acg.xydwz.cn/mcapi/mcapi.php" class="responsive-img" alt="freda-一个多种自定义的电子书阅读器">
+                            
+                            <span class="card-title">freda-一个多种自定义的电子书阅读器</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            freda简评这是一个可本地和在线的电子书阅读器，支持各种常见的电子书/文档格式，几乎免费，除了首页底部有一条横幅广告需要付费去除外，还未发现任何需要付费的功能
+安装freda上架在Microsoft store，直接去搜索 freda 即
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-16
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%97%A5%E5%B8%B8/" class="post-category" target="_blank">
+                                    日常
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E5%AE%89%E5%88%A9/" target="_blank">
+                            <span class="chip bg-color">安利</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/pythonxuexibijisizhimianxiangduixiang.html" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="https://api.mz-moe.cn/img.php" class="responsive-img" alt="python学习笔记四之面向对象基础（一）">
+                            
+                            <span class="card-title">python学习笔记四之面向对象基础（一）</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            思想
+面向对象编程——Object Oriented Programming，简称OOP，是一种程序设计思想。OOP把对象作为程序的基本单元，一个对象包含了数据和操作数据的函数。
+
+
+举一个简单的例子，大家都会下五子棋，我们就以开发一个五子
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-12
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category" target="_blank">
+                                    学习笔记
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/python/" target="_blank">
+                            <span class="chip bg-color">python</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/ruhekexuedeshuiwenzhang.html" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="https://api.mz-moe.cn/img.php" class="responsive-img" alt="如何借助ai来科学地水文章">
+                            
+                            <span class="card-title">如何借助ai来科学地水文章</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            前言（先把标题里’Ai’和’科学’划掉
+最近看到某人在水文章，想了想，自己的博客也好百万毫秒没更新过了，于是本文 应 运 而 生
+狗屁不通的初级水很多人应该都见过这个东西项目：狗屁不通文章生成器在线演示：网页版
+效果如下图
+
+为了凑字，我复
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-10
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%97%A5%E5%B8%B8/" class="post-category" target="_blank">
+                                    日常
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%B0%B4%E6%96%87%E7%AB%A0/" target="_blank">
+                            <span class="chip bg-color">水文章</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/guanyummdzhongdaochudaialphatongdaoshipindefangfa.html" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="https://acg.xydwz.cn/mcapi/mcapi.php" class="responsive-img" alt="MMD中导出带alpha通道视频的方法">
+                            
+                            <span class="card-title">MMD中导出带alpha通道视频的方法</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            前言 闲来无事在摸MMD，然后看到了这个
+ 【PV背景配布/动作配布】九尾三妈式初音 - お気に召すまま
+
+感觉这个配布的挺不错，想摸一个。但是碰到点问题：60fps的背景是单独的视频，需要通过后期软件把人物和背景的视频叠加起来，这就要一个
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-07
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E5%B0%8F%E6%8A%80%E6%9C%AF/" class="post-category" target="_blank">
+                                    小技术
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/MMD/" target="_blank">
+                            <span class="chip bg-color">MMD</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/aexuexibijiyizhichangyongxiaoguo.html" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="https://acg.yanwz.cn/wallpaper/api.php" class="responsive-img" alt="ae学习笔记一之常用效果">
+                            
+                            <span class="card-title">ae学习笔记一之常用效果</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            说明目前这个东西超级杂，只是随便记一下以防忘记，有时间再系统地整理一下
+ctrl+alt+f适应合成大小M调出mask选项Ctrl+shift+c打组hub/saturation 色相/饱和度curve 曲线automask自动追踪colo
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-04
+                            </span>
+                            <span class="publish-author">
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/psxuexibijiyizhichangyongcaozuojikuaijiejian.html" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="https://acg.xydwz.cn/mcapi/mcapi.php" class="responsive-img" alt="ps学习笔记一之常用操作及快捷键">
+                            
+                            <span class="card-title">ps学习笔记一之常用操作及快捷键</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            快捷键工具快捷键
+
+
+工具
+快捷键
+
+
+
+移动
+V
+
+
+矩形选择工具
+M
+
+
+套索工具
+L
+
+
+快速选择工具
+W
+
+
+裁剪/切片
+C
+
+
+吸管
+I
+
+
+污点修复画笔
+J
+
+
+画笔
+B
+
+
+仿制图章
+S
+
+
+橡皮擦
+E
+
+
+钢笔
+P
+
+
+文本
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-04
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category" target="_blank">
+                                    学习笔记
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/ps/" target="_blank">
+                            <span class="chip bg-color">ps</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/mcshengcunrijizhicongkaifudaozhatu.html" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php" class="responsive-img" alt="mc生存日记之从开服到炸图">
+                            
+                            <span class="card-title">mc生存日记之从开服到炸图</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            前因话说某个沙雕群的普通上午，突然这时
+
+于是乎
+
+
+接着（已经开打了2333）
+
+
+
+
+
+
+实况第一波被炸
+
+南村凋零欺我老无力
+各种肝出来的珍贵物品散落一地
+
+被炸了的后山
+
+我要打三个！
+
+
+
+
+
+不知道打了多少只后，基友们意识到需要
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-03
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Games/" class="post-category" target="_blank">
+                                    Games
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Minecraft/" target="_blank">
+                            <span class="chip bg-color">Minecraft</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/daliaogeonedriveliebiao.html" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="https://acg.yanwz.cn/wallpaper/api.php" class="responsive-img" alt="搭了个onedrive列表">
+                            
+                            <span class="card-title">搭了个onedrive列表</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            如题
+网址：krau的神秘口袋项目地址：FODI话说这前端也太难看了（你行你上啊）后端是搞到了cf上
+从@Leao那里py来的5T onedrive空间
+目前里面什么都没有，后续也不会发任何浮力，请不要收藏它
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-03
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E5%91%8A%E7%A4%BA%E7%89%8C/" class="post-category" target="_blank">
+                                    告示牌
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/onedrive/" target="_blank">
+                            <span class="chip bg-color">onedrive</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
+
+</main>
+
+
+<div class="container paging">
+    <div class="row">
+        <div class="col s6 m4 l4">
+            
+            <a class="left btn-floating btn-large disabled">
+                <i class="fas fa-angle-left"></i>
+            </a>
+            
+        </div>
+        <div class="page-info col m4 l4 hide-on-small-only">
+            <div class="center-align b-text-gray">1 / 3</div>
+        </div>
+        <div class="col s6 m4 l4">
+            
+            <a href="/page/2/"
+               class="right btn-floating btn-large waves-effect waves-light bg-color">
+                <i class="fas fa-angle-right"></i>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="http://krau.top" target="_blank">krau</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">14.3k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "3";
+                    var startDate = "8";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已勉强运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已勉强运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+            <span id="icp"><img src="../photo/ico32.png" style="vertical-align: text-bottom;" />
+                <a href="https://icp.gov.moe/?keyword=20203939" target="_blank">萌ICP备20203939号</a>
+            </span>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/voidoath" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:voidoath0@outlook.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1636648138" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1636648138" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "9bbec723"
+    });
+  daovoice('update');
+  </script>
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.io/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("https://cdn.jsdelivr.net/gh/voidoath/voidoath.github.io/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <script type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "Σ(っ °Д °;)っ喔哟，崩溃啦！", clearTimeout(st)) : (document.title = "φ(゜▽゜*)♪咦，又好了！", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) })
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+    
+    <script src="/libs/others/clicklove.js"></script>
+    
+
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+</body>
+
+</html>
+
+<!--动态线条背景-->
+<script type="text/javascript"
+color="57 197 187" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
+
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+<script type="text/javascript" src="/js/fireworks.js"></script>
