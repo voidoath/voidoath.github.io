@@ -4,15 +4,15 @@
     <title>推荐一个图床-ASnetIMG 并搭配PicGo实现一键上传复制直链</title>
     <url>/asimgtuijian.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>首先说一下这个图床<br><a href="https://img.asnet.ga/" target="_blank" rel="noopener">ASNETIMG</a></p>
-<p><img src="https://img.asnet.ga/i/2020/04/17/islip6.png" alt=""></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://img.asnet.ga/i/2020/04/17/islip6.png"></p>
 <p>是一个不太有名气但体验还不错的图床，速度也还行，走的香港CN2节点<br>限制：单张图片限制30M，每次最多上传30张图片。<br>限制很宽，而且目前完全免费无广告，可以说是很良心了</p>
 <hr>
 <p>然后说一下<a href="https://github.com/Molunerfinn/PicGo" target="_blank" rel="noopener">PicGO</a>这个工具</p>
-<p><img src="https://img.asnet.ga/i/2020/04/17/iksrm3.png" alt=""></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://img.asnet.ga/i/2020/04/17/iksrm3.png"></p>
 <p>这是一个支持大多有名图床，一键上传并直接复制markdown格式链接的图床上传工具，算是比较有名，具体可以去<a href="https://picgo.github.io/PicGo-Doc/zh/guide/getting-started.html" target="_blank" rel="noopener">官方使用文档</a>看看，可以提供很方便快捷的功能</p>
 <p>PicGo原生是不支持ASNETIMG的，但是PicGo具有很多插件，也就可以提供更为自定义化的功能，去安装<a href="https://github.com/yuki-xin/picgo-plugin-web-uploader" target="_blank" rel="noopener">自定义web图床上传</a>这个插件然后按照以下图片配置，就可以实现一键上传至ASNETIMG并复制链接</p>
-<p>安装插件后，在图床设置中找到自定义web图床<br><img src="https://img.asnet.ga/i/2020/04/17/ip17n5.png" alt=""></p>
-<p>然后按照图片中的设置<br><img src="https://img.asnet.ga/i/2020/04/17/iq1v75.png" alt=""></p>
+<p>安装插件后，在图床设置中找到自定义web图床<br><img src="/" alt="" class="lazyload" data-src="https://img.asnet.ga/i/2020/04/17/ip17n5.png"></p>
+<p>然后按照图片中的设置<br><img src="/" alt="" class="lazyload" data-src="https://img.asnet.ga/i/2020/04/17/iq1v75.png"></p>
 <p>API地址： <a href="https://img.asnet.ga/file.php" target="_blank" rel="noopener">https://img.asnet.ga/file.php</a><br>POST参数名： <code>file</code><br>JSON路径： <code>url</code></p>
 <p>点击确定，设为默认图床，然后就配置完成啦。</p>
 <p>PicGo的默认上传快捷键是Ctrl+shift+P，截一张图保存到剪贴板，然后试试效果吧，这个图床的上传速度是非常快的，而且也不会出现像其他图床那样莫名其妙上传失败的情况</p>
@@ -29,16 +29,16 @@
     <title>关于pandownload开发者被抓的一点看法</title>
     <url>/pdbeizhua.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>2020年04月15日，小有名气的第三方百度网盘下载器<code>pandownload</code>开发者被抓，警方对事件的描述如下</p>
-<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417065029.png" alt=""></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417065029.png"></p>
 <p>由于本人并不懂法，所以尽量少扯一些和法律有关的话题。关于与此案件相关的法律知识可以看一下这位知乎答主的回答.<a href="https://www.zhihu.com/question/388027206/answer/1156166701" target="_blank" rel="noopener"><br>法的守夜人</a></p>
 <hr>
 <p>首先我认为百度维权确实没有错，然后再来瞎扯一些其他的：</p>
 <p>这个所谓‘刘某’为了保护自己的隐私而报案，我对这一点十分怀疑，但也不敢乱猜测，总之都懂。<br>但是，他是怎么知道自己的隐私被pandownload泄露了呢？<br>首先刘某肯定用了pandownload这个软件，但是，百度网盘官方事后在微博上发帖时，为何对pandownload只字不提？只说配合配合警方调查？</p>
-<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417070228.png" alt=""></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417070228.png"></p>
 <p>而且，本人也用过很长一段时间的pandownload，更有很多苦百度已久的人用过，为何其他人都没有隐私泄露的问题，偏偏是这个‘刘某’去直接报案？（当然也可能确实是有没被发现）</p>
-<p>还有，隐私问题难道只是pandownload的锅？那么为什么度盘文件频频被删，度盘搜索比比皆是？<br><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417073951.png" alt=""></p>
+<p>还有，隐私问题难道只是pandownload的锅？那么为什么度盘文件频频被删，度盘搜索比比皆是？<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417073951.png"></p>
 <p>另外再看一下度盘官方微博那边</p>
-<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417071411.png" alt=""><br>（由于都是热评也没什么必要打码了，如果有什么不满请联系我更改）</p>
+<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417071411.png"><br>（由于都是热评也没什么必要打码了，如果有什么不满请联系我更改）</p>
 <p>与以往臭名昭著的控评微博不同，这次微博中的评论几乎都占位一致，更有很多暴躁老哥破口大骂‘垃圾软件流氓企业’。</p>
 <blockquote>
 <p>“我求求你别在追查pandownload了行吗？我用了百度网盘三年，30块钱的会员，我开了三年。食堂钱开没了，钱包被我开垮了，现在好不容易有了免费盘。你们非说它侵犯隐私。那盘侵不侵犯隐私我们能不知道吗？”　　<br>“那制作者四年才受捐30万，制作者根本不挣钱。谁家能不下载个文件？你就能保证你这一辈子不下载吗？你把他抓走了，我们都得被限速。我不想限速，我想满速下载，行吗？”</p>
@@ -50,7 +50,7 @@
 <p>倘若国内以后有这样一款网盘：它免费空间不大，但是不限速，没有离谱的广告，能分享和转存资源，并且不会乱删文件，且有很大的用户基数。那么我一定会为这样的网盘充值，但可能国内这样的网盘只是在梦里。</p>
 <p>除了pandownload，还有很多类似的度盘下载器，百度此举可能还要有打个警告的目的。但是，如果度盘不做出改善，相信以后还会有更多的此类软件。</p>
 <p>不说了，百度seo估计要针对我了，但我本来也没多大指望百度会收录</p>
-<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417100236.png" alt=""></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417100236.png"></p>
 ]]></content>
       <categories>
         <category>日常</category>
@@ -64,14 +64,14 @@
     <url>/fredatuijian.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="freda"><a href="#freda" class="headerlink" title="freda"></a>freda</h1><h2 id="简评"><a href="#简评" class="headerlink" title="简评"></a>简评</h2><p>这是一个可本地和在线的电子书阅读器，支持各种常见的电子书/文档格式，几乎免费，除了首页底部有一条横幅广告需要付费去除外，还未发现任何需要付费的功能</p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>freda上架在Microsoft store，直接去搜索 freda 即可安装</p>
-<h2 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h2><h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><p>这是主界面，非常win10原生的风格<br><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416212839.png" alt=""><br>主页下方有横条广告，需要付费大约2刀去除。对于我来说，主页面的广告可以不在意，但如果是阅读过程中的广告会让我直接劝退</p>
+<h2 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h2><h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><p>这是主界面，非常win10原生的风格<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416212839.png"><br>主页下方有横条广告，需要付费大约2刀去除。对于我来说，主页面的广告可以不在意，但如果是阅读过程中的广告会让我直接劝退</p>
 <p>可以看到，freda可以从本地，或是feedbooks/calibre/onedrive/gutenberg/epub books/smashwords导入/备份/同步你的电子书，但是我几乎只把它当作本地阅读器使用了2333</p>
 <p>freda的高级功能是免费的，支持书签，注释和突出显示，还有文本到语音转换，很适合学生用。</p>
-<p>支持很多种格式<br><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416213435.png" alt=""></p>
-<p>可以使用标题或是tag等方式管理电子书<br><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416213701.png" alt=""></p>
-<p>具有非常强的自定义性，我很喜欢这一点<br><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416213933.png" alt=""></p>
-<p>多种主题样式可选择，可以按照自己喜好自定义出好看的程序外观<br><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416214030.png" alt=""></p>
-<p>文本字体，主题背景，页面纸张，文字颜色等等都是可以自定义的<br><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416220501.png" alt=""></p>
+<p>支持很多种格式<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416213435.png"></p>
+<p>可以使用标题或是tag等方式管理电子书<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416213701.png"></p>
+<p>具有非常强的自定义性，我很喜欢这一点<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416213933.png"></p>
+<p>多种主题样式可选择，可以按照自己喜好自定义出好看的程序外观<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416214030.png"></p>
+<p>文本字体，主题背景，页面纸张，文字颜色等等都是可以自定义的<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416220501.png"></p>
 <p><strong>总之，freda相比其他阅读器来说，给我的感觉就是，别人有的它也有，别人的没有的它还有；别人能改的它能改，别人不能改的它都能改</strong></p>
 <h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><ol>
 <li>不支持中文的程序页面</li>
@@ -154,8 +154,8 @@ man</code></pre><h1 id="小结-amp-参见"><a href="#小结-amp-参见" class="h
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>（先把标题里’Ai’和’科学’划掉</p>
 <p>最近看到某人在水文章，想了想，自己的博客也好百万毫秒没更新过了，于是本文 应 运 而 生</p>
 <h1 id="狗屁不通的初级水"><a href="#狗屁不通的初级水" class="headerlink" title="狗屁不通的初级水"></a>狗屁不通的初级水</h1><p>很多人应该都见过这个东西<br>项目：<a href="https://github.com/menzi11/BullshitGenerator" target="_blank" rel="noopener">狗屁不通文章生成器</a><br>在线演示：<a href="https://suulnnka.github.io/BullshitGenerator/index.html" target="_blank" rel="noopener">网页版</a></p>
-<p>效果如下图<br><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200410211222.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200410211829.png" alt=""></p>
+<p>效果如下图<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200410211222.png"></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200410211829.png"></p>
 <p><del>为了凑字，我复制一段</del></p>
 <blockquote>
 <p>一般来讲，我们都必须务必慎重的考虑考虑。 笛卡儿曾经提到过，阅读一切好书如同和过去最杰出的人谈话。这不禁令我深思。 日本谚语曾经提到过，不幸可能成为通向幸福的桥梁。我希望诸位也能好好地体会这句话。 水文章因何而发生？ 我们都知道，只要有意义，那么就必须慎重考虑。 莎士比亚说过一句富有哲理的话，人的一生是短的，但如果卑劣地过这一生，就太长了。这启发了我， 在这种困难的抉择下，本人思来想去，寝食难安。 水文章因何而发生？ 了解清楚水文章到底是一种怎么样的存在，是解决一切问题的关键。 生活中，若水文章出现了，我们就不得不考虑它出现了的事实。 就我个人来说，水文章对我的意义，不能不说非常重大。 水文章的发生，到底需要如何做到，不水文章的发生，又会如何产生。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。<br>　　从这个角度来看， 一般来说， 所谓水文章，关键是水文章需要如何写。 而这些并不是完全重要，更加重要的问题是， 那么， 一般来说， 每个人都不得不面对这些问题。 在面对这种问题时， 就我个人来说，水文章对我的意义，不能不说非常重大。 既然如何， 邓拓曾经提到过，越是没有本领的就越加自命不凡。这似乎解答了我的疑惑。 一般来讲，我们都必须务必慎重的考虑考虑。 带着这些问题，我们来审视一下水文章。 对我个人而言，水文章不仅仅是一个重大的事件，还可能会改变我的人生。 而这些并不是完全重要，更加重要的问题是， 问题的关键究竟为何？ 贝多芬在不经意间这样说过，卓越的人一大优点是：在不利与艰难的遭遇里百折不饶。这似乎解答了我的疑惑。 要想清楚，水文章，到底是一种怎么样的存在。 了解清楚水文章到底是一种怎么样的存在，是解决一切问题的关键。 我们都知道，只要有意义，那么就必须慎重考虑。 总结的来说， 莎士比亚曾经提到过，本来无望的事，大胆尝试，往往能成功。这不禁令我深思。 那么。</p>
@@ -173,7 +173,7 @@ man</code></pre><h1 id="小结-amp-参见"><a href="#小结-amp-参见" class="h
 <li><del>CPU和内存的占用很高很高很高</del></li>
 <li><del>体积很大</del></li>
 </ul>
-<p><img src="https://attach.52pojie.cn/forum/202004/03/144827f80q7dtt8w798u03.gif" alt=""></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://attach.52pojie.cn/forum/202004/03/144827f80q7dtt8w798u03.gif"></p>
 <p>虽然有很多其他类似的所谓‘ai创作’的工具，但事实上都不怎么靠谱，这个我下载体验了一下，效果在某些时候还是很强的。</p>
 <blockquote>
 <p>窗外的月色逐渐亮了起来，像是要拉开窗帘窥探月的诗人，将阴沉的天空擦亮。<br>一阵雨点打在窗上，地面上的叶子开始发黄、凋谢。一些花的草蝇在急雨中挣扎，在小巷中漫无目的地躲避着，它们不知道它们从什么时候开始一直淋雨，它们吐露了什么。但它们毕竟无法找到自己的一片安宁和休息。因为，有雨，它们自己打着伞，躲避雨，躲避闪避这无尽的雨。</p>
@@ -187,7 +187,7 @@ man</code></pre><h1 id="小结-amp-参见"><a href="#小结-amp-参见" class="h
 <p><del>oh，我的上帝，我向你保证，没有ai比这写的更优美了</del></p>
 <p>其实这个还是有点不通畅，尤其是第一句的衔接上，可能是要看你给它的开头对不对库的吧</p>
 <h1 id="营销号的无脑水"><a href="#营销号的无脑水" class="headerlink" title="营销号的无脑水"></a>营销号的无脑水</h1><p>如图所示</p>
-<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200410214952.png" alt=""></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200410214952.png"></p>
 <blockquote>
 <p>百度app被约谈是怎么回事呢？百度app相信大家都很熟悉，但是百度app被约谈是怎么回事呢？下面就让小编带大家一起了解吧。<br>百度app被约谈，其实就是百度app被约谈了，大家可能会感到很惊讶百度app怎么会被约谈呢？但事实就是这样，小编也感到非常惊讶。<br>那么这就是关于百度app被约谈的全部内容了，大家有什么想法呢？欢迎在评论区告诉小编一起讨论哦</p>
 </blockquote>
@@ -211,12 +211,12 @@ man</code></pre><h1 id="小结-amp-参见"><a href="#小结-amp-参见" class="h
 <p>下载之后<strong>保持乱码状态解压</strong></p>
 <p>然后在<code>RewriteAlpha</code>文件夹中，往MMD里加入这个<code>RewriteAlpha.x</code></p>
 <p>在MMD&gt;背景&gt;绘制附件中，把<code>RewriteAlpha.x</code>放到最后一位</p>
-<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200407205316.png" alt=""></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200407205316.png"></p>
 <p>然后打开MME面板，找到<code>alphamap</code>栏，把skybox和stage的渲染关闭（取消勾选），人物模型的渲染开启，并勾选上RewriteAlpha.x的渲染</p>
-<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200407205639.png" alt=""></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200407205639.png"></p>
 <p>这样就算完成了，导出的时候将会导出只有人物渲染，且背景是透明通道的视频，也可以先导出一张png看看效果。<del>别渲染了半天发现不是透明通道，问就是血泪史</del></p>
-<p><img src="https://img.asnet.top/i/2020/04/07/yrrxxj.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/alphammd.png" alt=""></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://img.asnet.top/i/2020/04/07/yrrxxj.png"></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/alphammd.png"></p>
 ]]></content>
       <categories>
         <category>小技术</category>
@@ -420,39 +420,39 @@ man</code></pre><h1 id="小结-amp-参见"><a href="#小结-amp-参见" class="h
     <title>mc生存日记之从开服到炸图</title>
     <url>/mcshengcunrijizhicongkaifudaozhatu.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h1><p>话说某个沙雕群的普通上午，突然这时</p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaTiAP.png" alt="GaTiAP.png"></p>
+<p><img src="/" alt="GaTiAP.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTiAP.png"></p>
 <p>于是乎</p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaTFtf.png" alt="GaTFtf.png"></p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaTkh8.png" alt="GaTkh8.png"></p>
+<p><img src="/" alt="GaTFtf.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTFtf.png"></p>
+<p><img src="/" alt="GaTkh8.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTkh8.png"></p>
 <p>接着（已经开打了2333）</p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaTE9S.png" alt="GaTE9S.png"></p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaTV1g.png" alt="GaTV1g.png"></p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaTeXj.png" alt="GaTeXj.png"></p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaTnns.png" alt="GaTnns.png"></p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaTuBn.png" alt="GaTuBn.png"></p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaTK7q.png" alt="GaTK7q.png"></p>
+<p><img src="/" alt="GaTE9S.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTE9S.png"></p>
+<p><img src="/" alt="GaTV1g.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTV1g.png"></p>
+<p><img src="/" alt="GaTeXj.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTeXj.png"></p>
+<p><img src="/" alt="GaTnns.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTnns.png"></p>
+<p><img src="/" alt="GaTuBn.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTuBn.png"></p>
+<p><img src="/" alt="GaTK7q.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTK7q.png"></p>
 <h1 id="实况"><a href="#实况" class="headerlink" title="实况"></a>实况</h1><p>第一波被炸</p>
-<p><img src="https://s1.ax1x.com/2020/04/03/Gaoqk6.png" alt="Gaoqk6.png"></p>
+<p><img src="/" alt="Gaoqk6.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/Gaoqk6.png"></p>
 <p><del>南村凋零欺我老无力</del></p>
 <p>各种肝出来的珍贵物品散落一地</p>
-<p><img src="https://s1.ax1x.com/2020/04/03/Gao701.png" alt="Gao701.png"></p>
+<p><img src="/" alt="Gao701.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/Gao701.png"></p>
 <p>被炸了的后山</p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaoHTx.png" alt="GaoHTx.png"></p>
+<p><img src="/" alt="GaoHTx.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaoHTx.png"></p>
 <p>我要打三个！</p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaoLtK.png" alt="GaoLtK.png"></p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaoOfO.png" alt="GaoOfO.png"></p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaojpD.png" alt="GaojpD.png"></p>
-<p><img src="https://s1.ax1x.com/2020/04/03/Gaox6H.jpg" alt="Gaox6H.jpg"></p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaozXd.png" alt="GaozXd.png"></p>
+<p><img src="/" alt="GaoLtK.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaoLtK.png"></p>
+<p><img src="/" alt="GaoOfO.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaoOfO.png"></p>
+<p><img src="/" alt="GaojpD.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaojpD.png"></p>
+<p><img src="/" alt="Gaox6H.jpg" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/Gaox6H.jpg"></p>
+<p><img src="/" alt="GaozXd.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaozXd.png"></p>
 <p>不知道打了多少只后，基友们意识到需要个信标</p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaTpnA.png" alt="GaTpnA.png"></p>
+<p><img src="/" alt="GaTpnA.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTpnA.png"></p>
 <p>然后接着互相伤害</p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaT90I.png" alt="GaT90I.png"></p>
+<p><img src="/" alt="GaT90I.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaT90I.png"></p>
 <p>我 要 打 五 个</p>
-<p><img src="https://s1.ax1x.com/2020/04/03/GaTC7t.png" alt="GaTC7t.png"></p>
+<p><img src="/" alt="GaTC7t.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTC7t.png"></p>
 <h1 id="To-Be-Continue"><a href="#To-Be-Continue" class="headerlink" title="To Be Continue"></a>To Be Continue</h1><p>To Be Continue</p>
 <p>对于这件事，我只想说</p>
-<p><a href="https://imgchr.com/i/GaoIX9" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/03/GaoIX9.png" alt="GaoIX9.png"></a></p>
+<p><a href="https://imgchr.com/i/GaoIX9" target="_blank" rel="noopener"><img src="/" alt="GaoIX9.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaoIX9.png"></a></p>
 <p>附上小视频</p>
 <iframe src="//player.bilibili.com/player.html?aid=667574836&bvid=BV1Ea4y1t7vy&cid=173564193&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"  style="width:640px; height:460px"> </iframe>
 
@@ -590,7 +590,7 @@ world'''</span><span class="token punctuation">)</span><span aria-hidden="true" 
 <p>hello,\n<br>world</p>
 </blockquote>
 <p>字符串可以索引或切片</p>
-<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/stringqiepiansuoyin.jpg" alt=""></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/stringqiepiansuoyin.jpg"></p>
 <pre class="line-numbers language-python"><code class="language-python">name <span class="token operator">=</span> <span class="token string">'My Name Is Miku'</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token punctuation">[</span><span class="token number">11</span><span class="token punctuation">:</span><span class="token number">15</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true"># 将会输出‘Mike’</span>
@@ -788,7 +788,7 @@ i <span class="token operator">=</span> <span class="token number">3</span>
 <span class="token keyword">else</span><span class="token punctuation">:</span>
     <span class="token keyword">pass</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="废话"><a href="#废话" class="headerlink" title="废话"></a>废话</h2><p>只是把高中数学课本必修三算法基础中的几道练习题用python写了出来而已<br><img src="https://pic.downk.cc/item/5e7b496b504f4bcb04fd914d.jpg" alt=""></p>
+<h2 id="废话"><a href="#废话" class="headerlink" title="废话"></a>废话</h2><p>只是把高中数学课本必修三算法基础中的几道练习题用python写了出来而已<br><img src="/" alt="" class="lazyload" data-src="https://pic.downk.cc/item/5e7b496b504f4bcb04fd914d.jpg"></p>
 ]]></content>
       <categories>
         <category>学习笔记</category>
@@ -970,7 +970,7 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
 <p><strong>红石中继器</strong> ：基于<a href="https://minecraft-zh.gamepedia.com/红石中继器" target="_blank" rel="noopener">红石中继器</a>的二极管制作是最简单方便的，只需将一个红石中继器垂直放置在红石电路即可。</p>
 <p>此二极管电路完成后有 1 个刻度的延时，并可调至最多延时4个刻度。</p>
 <p>下图示范了这种简单的架构。</p>
-<p><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/thumb/7/7a/Repeater_bridge.png/150px-Repeater_bridge.png?version=fc8715206f3b57b74667695c989662c0" alt="红石中继器"></p>
+<p><img src="/" alt="红石中继器" class="lazyload" data-src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/thumb/7/7a/Repeater_bridge.png/150px-Repeater_bridge.png?version=fc8715206f3b57b74667695c989662c0"></p>
 </blockquote>
 <blockquote>
 <p><strong>红石火把中继器</strong> ：红石火把中继器可以很有效地制作二极管（但它有两个刻度的延时作为沉重代价）</p>
@@ -980,13 +980,13 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
 <p>在靠近电路输入的“非门”，红石火把放置在固体方块的顶部；而靠近电路输出的“非门”，红石火把放置在固体方块的侧面。</p>
 <p>第二个红石火把因为受到第一个火把产生的电流影响而初始熄灭（注意这将会有一次短暂的脉冲）。</p>
 <p>若有需要，两个“非门”之间可以放置<a href="https://minecraft-zh.gamepedia.com/红石粉" target="_blank" rel="noopener">红石粉</a>延长电路（最多15格空间）。</p>
-<p><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/thumb/6/6a/RedstoneInverter.png/300px-RedstoneInverter.png?version=7051d0947e7cf0796341ddc9e86de267" alt=""></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/thumb/6/6a/RedstoneInverter.png/300px-RedstoneInverter.png?version=7051d0947e7cf0796341ddc9e86de267"></p>
 </blockquote>
-<h3 id="Minecraft中的红石逻辑门演示"><a href="#Minecraft中的红石逻辑门演示" class="headerlink" title="Minecraft中的红石逻辑门演示"></a>Minecraft中的红石逻辑门演示</h3><p><img src="https://s1.ax1x.com/2020/03/20/86oGkV.png" alt="非门"></p>
-<p><img src="https://s1.ax1x.com/2020/03/20/86olmn.png" alt="或门"></p>
-<p><img src="https://s1.ax1x.com/2020/03/20/86oJYT.png" alt="与门"></p>
-<p><img src="https://s1.ax1x.com/2020/03/20/86o3T0.png" alt="与非门"></p>
-<p><img src="https://s1.ax1x.com/2020/03/20/86oMOs.png" alt="或非门"></p>
+<h3 id="Minecraft中的红石逻辑门演示"><a href="#Minecraft中的红石逻辑门演示" class="headerlink" title="Minecraft中的红石逻辑门演示"></a>Minecraft中的红石逻辑门演示</h3><p><img src="/" alt="非门" class="lazyload" data-src="https://s1.ax1x.com/2020/03/20/86oGkV.png"></p>
+<p><img src="/" alt="或门" class="lazyload" data-src="https://s1.ax1x.com/2020/03/20/86olmn.png"></p>
+<p><img src="/" alt="与门" class="lazyload" data-src="https://s1.ax1x.com/2020/03/20/86oJYT.png"></p>
+<p><img src="/" alt="与非门" class="lazyload" data-src="https://s1.ax1x.com/2020/03/20/86o3T0.png"></p>
+<p><img src="/" alt="或非门" class="lazyload" data-src="https://s1.ax1x.com/2020/03/20/86oMOs.png"></p>
 <h3 id="红石逻辑门的应用"><a href="#红石逻辑门的应用" class="headerlink" title="红石逻辑门的应用"></a>红石逻辑门的应用</h3><p><em>暂空</em> </p>
 ]]></content>
       <categories>
@@ -1056,7 +1056,7 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
     <url>/benzhanyijierumengicpbeian20203939hao.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>前两天见到某位兄台在搞这个</p>
 <p>于是也整了个</p>
-<p><a href="https://imgchr.com/i/83U5ef" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/03/15/83U5ef.png" alt=""></a></p>
+<p><a href="https://imgchr.com/i/83U5ef" target="_blank" rel="noopener"><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/15/83U5ef.png"></a></p>
 <p>在页脚已经可以看到了</p>
 <p>（似乎并没有什么卵用）</p>
 ]]></content>
@@ -1070,26 +1070,26 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
   <entry>
     <title>这几天干了啥</title>
     <url>/zhejitianganliaosha.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="考试系统测试时皮了一下"><a href="#考试系统测试时皮了一下" class="headerlink" title="考试系统测试时皮了一下"></a>考试系统测试时皮了一下</h3><p><img src="https://s1.ax1x.com/2020/03/13/8KTKLF.jpg" alt="主观题全传表情包"></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="考试系统测试时皮了一下"><a href="#考试系统测试时皮了一下" class="headerlink" title="考试系统测试时皮了一下"></a>考试系统测试时皮了一下</h3><p><img src="/" alt="主观题全传表情包" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KTKLF.jpg"></p>
 <p>因为只是考试系统测试，所以并没有被审问。</p>
 <p><del>~ 早知道更皮一点传张涩图什么的 ~</del></p>
 <p>不过明天可是真的要云考试了，理科六门全考。</p>
-<h3 id="看了哪些番"><a href="#看了哪些番" class="headerlink" title="看了哪些番"></a>看了哪些番</h3><h4 id="观《邻家索菲》有感"><a href="#观《邻家索菲》有感" class="headerlink" title="观《邻家索菲》有感"></a>观《邻家索菲》有感</h4><p><img src="https://s1.ax1x.com/2020/03/13/8K7fc6.jpg" alt=""></p>
+<h3 id="看了哪些番"><a href="#看了哪些番" class="headerlink" title="看了哪些番"></a>看了哪些番</h3><h4 id="观《邻家索菲》有感"><a href="#观《邻家索菲》有感" class="headerlink" title="观《邻家索菲》有感"></a>观《邻家索菲》有感</h4><p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K7fc6.jpg"></p>
 <p>看完这部番，你有什么感想？<br>请写一篇观后感，字数不少于800字。</p>
 <p>doge</p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8KHIx0.jpg" alt=""></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8KHRaQ.jpg" alt=""></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8KHhPs.jpg" alt="百合大法好"></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8KH2Vg.jpg" alt=""></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8KHW5j.jpg" alt=""></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8KHTMV.jpg" alt=""></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8KH7rT.jpg" alt=""></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8KHLa4.jpg" alt="真就吸血啊"></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8KHHqU.jpg" alt=""></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KHIx0.jpg"></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KHRaQ.jpg"></p>
+<p><img src="/" alt="百合大法好" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KHhPs.jpg"></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KH2Vg.jpg"></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KHW5j.jpg"></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KHTMV.jpg"></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KH7rT.jpg"></p>
+<p><img src="/" alt="真就吸血啊" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KHLa4.jpg"></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KHHqU.jpg"></p>
 <p><del>~ 可爱的吸血鬼给我也整一个请来吸干我 ~</del></p>
-<h4 id="エロマンガ先生"><a href="#エロマンガ先生" class="headerlink" title="エロマンガ先生"></a>エロマンガ先生</h4><p><img src="https://s1.ax1x.com/2020/03/13/8KqoHU.png" alt=""></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8KqIBT.png" alt="害怕"></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8Kq5uV.png" alt="emmmmm"></p>
+<h4 id="エロマンガ先生"><a href="#エロマンガ先生" class="headerlink" title="エロマンガ先生"></a>エロマンガ先生</h4><p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KqoHU.png"></p>
+<p><img src="/" alt="害怕" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KqIBT.png"></p>
+<p><img src="/" alt="emmmmm" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8Kq5uV.png"></p>
 <h4 id="迷茫管家和懦弱的我"><a href="#迷茫管家和懦弱的我" class="headerlink" title="迷茫管家和懦弱的我"></a>迷茫管家和懦弱的我</h4><p>老番补一下？</p>
 <p>这部<del>~ 作画精美，剧情优秀，感情真挚 ~</del> 最重要的是时不时开车看着很刺激的番值得补一下</p>
 <p>淦，截图找不到了，改天补上</p>
@@ -1169,19 +1169,19 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
 <a id="more"></a>
 
 <hr>
-<h4 id="放风筝"><a href="#放风筝" class="headerlink" title="放风筝~"></a>放风筝~</h4><p>天气正好，于是拿出 <del>~ 可能是地摊捡的芭比娃娃 ~</del> 风筝来放<br><img src="https://s1.ax1x.com/2020/03/13/8K4x2T.jpg" alt="没费多大劲就飞起来啦"></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8K5pMF.jpg" alt="这蓝真天，这白真云"></p>
+<h4 id="放风筝"><a href="#放风筝" class="headerlink" title="放风筝~"></a>放风筝~</h4><p>天气正好，于是拿出 <del>~ 可能是地摊捡的芭比娃娃 ~</del> 风筝来放<br><img src="/" alt="没费多大劲就飞起来啦" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K4x2T.jpg"></p>
+<p><img src="/" alt="这蓝真天，这白真云" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K5pMF.jpg"></p>
 <p><del>~ 一个猛男放个芭比娃娃也太奇怪了 ~</del><br>没一会就收了（传统艺能缠了线）</p>
 <p>这里算是新建的一个人工湖，拍了几张照片</p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8K4O5q.jpg" alt="地方政府楼(智能的谷歌相册风格化效果)"></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8K59r4.jpg" alt=""></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8K5VG6.jpg" alt=""></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8K4vGV.jpg" alt=""></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8K5exO.jpg" alt=""></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8K5ZRK.jpg" alt=""></p>
+<p><img src="/" alt="地方政府楼(智能的谷歌相册风格化效果)" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K4O5q.jpg"></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K59r4.jpg"></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K5VG6.jpg"></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K4vGV.jpg"></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K5exO.jpg"></p>
+<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K5ZRK.jpg"></p>
 <hr>
-<h4 id="和某人面基"><a href="#和某人面基" class="headerlink" title="和某人面基"></a>和某人面基</h4><p><img src="https://s1.ax1x.com/2020/03/13/8K5iZ9.jpg" alt=""></p>
-<p><img src="https://s1.ax1x.com/2020/03/13/8K5nMD.png" alt="两不知名神秘男子"></p>
+<h4 id="和某人面基"><a href="#和某人面基" class="headerlink" title="和某人面基"></a>和某人面基</h4><p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K5iZ9.jpg"></p>
+<p><img src="/" alt="两不知名神秘男子" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K5nMD.png"></p>
 <hr>
 <h4 id="别问，问就是补作业补到半夜"><a href="#别问，问就是补作业补到半夜" class="headerlink" title="别问，问就是补作业补到半夜"></a>别问，问就是补作业补到半夜</h4>]]></content>
       <categories>
@@ -1223,21 +1223,21 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
 
 <p>骗你的这里并没有涩图</p>
 <h5 id="API"><a href="#API" class="headerlink" title="API"></a>API</h5><ul>
-<li>1<img src="http://www.dmoe.cc/random.php" alt="www.dmoe.cc/random.php"></li>
-<li>2<img src="https://api.yimian.xyz/img" alt="https://api.yimian.xyz/img"></li>
-<li>3<img src="https://api.yimian.xyz/img?type=moe&size=1920x1080" alt="https://api.yimian.xyz/img?type=moe&amp;size=1920x1080"></li>
-<li>4 <a href="https://acg.xydwz.cn/api/api.php" target="_blank" rel="noopener">https://acg.xydwz.cn/api/api.php</a> <img src="https://acg.xydwz.cn/api/api.php" alt=""></li>
-<li>5<img src="https://api.yimian.xyz/img?type=head" alt="https://api.yimian.xyz/img?type=head 随机头像"></li>
+<li>1<img src="/" alt="www.dmoe.cc/random.php" class="lazyload" data-src="http://www.dmoe.cc/random.php"></li>
+<li>2<img src="/" alt="https://api.yimian.xyz/img" class="lazyload" data-src="https://api.yimian.xyz/img"></li>
+<li>3<img src="/" alt="https://api.yimian.xyz/img?type=moe&amp;size=1920x1080" class="lazyload" data-src="https://api.yimian.xyz/img?type=moe&size=1920x1080"></li>
+<li>4 <a href="https://acg.xydwz.cn/api/api.php" target="_blank" rel="noopener">https://acg.xydwz.cn/api/api.php</a> <img src="/" alt="" class="lazyload" data-src="https://acg.xydwz.cn/api/api.php"></li>
+<li>5<img src="/" alt="https://api.yimian.xyz/img?type=head 随机头像" class="lazyload" data-src="https://api.yimian.xyz/img?type=head"></li>
 <li>6 <a href="https://api.lolicon.app/setu/" target="_blank" rel="noopener">setu</a></li>
 <li>7<a href="https://api.paugram.com/wallpaper" target="_blank" rel="noopener">https://api.paugram.com/wallpaper</a></li>
 <li></li>
 </ul>
 <h5 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h5><ul>
-<li><p>1<img src="https://pic.downk.cc/item/5e66e44e98271cb2b870fc77.png" alt="聚合图床"></p>
+<li><p>1<img src="/" alt="聚合图床" class="lazyload" data-src="https://pic.downk.cc/item/5e66e44e98271cb2b870fc77.png"></p>
 </li>
-<li><p>2<img src="https://s2.ax1x.com/2020/03/10/8Cr4Fe.jpg" alt="路过图床"></p>
+<li><p>2<img src="/" alt="路过图床" class="lazyload" data-src="https://s2.ax1x.com/2020/03/10/8Cr4Fe.jpg"></p>
 </li>
-<li><p>3<img src="https://img.asnet.top/i/2020/03/10/ew0eun.png" alt="ASNETIMG"></p>
+<li><p>3<img src="/" alt="ASNETIMG" class="lazyload" data-src="https://img.asnet.top/i/2020/03/10/ew0eun.png"></p>
 </li>
 </ul>
 <h5 id="markdown语法"><a href="#markdown语法" class="headerlink" title="markdown语法"></a>markdown语法</h5><blockquote>
@@ -1263,7 +1263,7 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
 <iframe src="url" width="[width]" height="[height]" frameborder="0" loading="lazy" allowfullscreen></iframe>
 
 
-<img src="/path/to/image" class="[class names]" title="[width] [height] " alt="title text">
+<img src="/" class="[class names] lazyload" title="[width] [height] " alt="title text">
 
 
 <a href="" title="" target="">text url [external] [title]</a>
@@ -1297,7 +1297,7 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
 <h2 id="小广告"><a href="#小广告" class="headerlink" title="小广告"></a>小广告</h2><ul>
 <li>欢迎来Q群里交流（玩耍），什么都可以的哦<br>1075445745</li>
 </ul>
-<p><img src="https://img.asnet.top/i/2020/03/09/ssa26x.png" alt="有趣的灵魂"></p>
+<p><img src="/" alt="有趣的灵魂" class="lazyload" data-src="https://img.asnet.top/i/2020/03/09/ssa26x.png"></p>
 ]]></content>
       <categories>
         <category>告示牌</category>
