@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://krau.top/"/>
-  <updated>2020-04-24T11:07:04.902Z</updated>
+  <updated>2020-05-16T09:44:25.874Z</updated>
   <id>http://krau.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>复活</title>
+    <link href="http://krau.top/fuhuo.html"/>
+    <id>http://krau.top/fuhuo.html</id>
+    <published>2020-05-16T09:36:54.000Z</published>
+    <updated>2020-05-16T09:44:25.874Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>从4.27被囚禁）到现在</p><p>同学见面都说在家没学<br>考试了两次才明白真正没学的只有自己</p><p>在校的三周里整天戴着口罩<br>听说美国感染人数破了百万</p><p>没有网络的三周<br>终于体会到与世隔绝的痛苦<br>才明白自己是个彻底的网瘾少女（？？</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>HELLO WORLD</title>
@@ -44,7 +66,7 @@
     <link href="http://krau.top/kaixuelinjin.html"/>
     <id>http://krau.top/kaixuelinjin.html</id>
     <published>2020-04-20T12:46:28.000Z</published>
-    <updated>2020-04-24T09:23:31.457Z</updated>
+    <updated>2020-05-16T09:36:31.755Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="开学时间：2020年4月27日"><a href="#开学时间：2020年4月27日" class="headerlink" title="开学时间：2020年4月27日"></a>开学时间：2020年4月27日</h1><ul><li>2020年1月17日，农历腊月二十四，  放寒假  原定开学日期：1月30日，农历正月初六</li><li>农历腊月底，疫情完全爆发，学校发布通知，开学时间延迟，具体等候通知</li><li>1月31日，通知假期延期至2月17日以后（具体时间另行通知），同时确认开展【停课不停学】网络学习</li><li>2月14日，通知假期延期至3月1日以后，具体时间另行通知</li><li>3月31日，教育部通知2020年高考延期一个月</li><li>3月31日，通知假期延期至4月13日以后（高三延期至4月7日），各级各校自行安排，错开高峰开学</li><li>4月10日，确定高三初三开学日期为4月20日（高三实际开学时间4月7日），其他年级开学日期为4月27日</li></ul><hr><p>由于博主是寄宿生，一个月休息一次，所以开学之后很难更博文了，望各位大佬见谅。<del>其实开学之后能活几天都是个问题</del></p><p><del>如果真的死了，这小破博客就是我活过的痕迹（悲</del></p>]]></content>
     
@@ -159,11 +181,11 @@
   </entry>
   
   <entry>
-    <title>python学习笔记四之面向对象基础（一）</title>
+    <title>python面向对象基础（一）</title>
     <link href="http://krau.top/pythonxuexibijisizhimianxiangduixiang.html"/>
     <id>http://krau.top/pythonxuexibijisizhimianxiangduixiang.html</id>
     <published>2020-04-12T09:42:07.000Z</published>
-    <updated>2020-04-12T12:15:02.980Z</updated>
+    <updated>2020-05-16T09:36:08.480Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="思想"><a href="#思想" class="headerlink" title="思想"></a>思想</h1><blockquote><p>面向对象编程——Object Oriented Programming，简称OOP，是一种程序设计思想。OOP把对象作为程序的基本单元，一个对象包含了数据和操作数据的函数。</p></blockquote><blockquote><p>举一个简单的例子，大家都会下五子棋，我们就以开发一个五子棋的游戏来讲解面向过程和面向对象最本质的区别，在早期以面向过程为主要开发方法时，我们是这样来设计这个游戏的：</p><p>1) 开始游戏<br>2) 黑方出子<br>3) 绘制画面<br>4) 判断胜负<br>5) 白方出子<br>6) 绘制画面<br>7) 判断胜负<br>8) 循环2、3、4、5、6、7步<br>9) 输出结果<br>最后将每一个步骤作为一个处理函数开发出来，每次运行都调用一遍函数(或者过程)。面向过程最关键的概念就是“过程”，所以程序运行都是一步接一步，从上往下。</p></blockquote><blockquote><p>而面向对象的设计则是从另外的思路来解决问题。整个五子棋可以分为：</p><p>1) 黑白双方：负责出子和悔棋<br>2) 棋盘系统：负责绘制画面<br>3) 规则系统：负责判定诸如犯规、输赢等<br>4) 输入输出系统：负责接收黑白子放的位置信息和输出游戏过程中的相关信息<br>这就是面向对象，更强调将程序模块化，我们甚至可以将该程序抽象出来使其适用于五子棋和围棋(它们除了规则不一样以外没有其它区别，那么我们只需要修改规则系统便可轻易支持围棋)。</p></blockquote><h1 id="类，实例和对象"><a href="#类，实例和对象" class="headerlink" title="类，实例和对象"></a>类，实例和对象</h1><h2 id="何谓’类’"><a href="#何谓’类’" class="headerlink" title="何谓’类’"></a>何谓’类’</h2><p>类(Class)，即一类东西<br>如’草’是一类东西，’鸟’也是一类东西<br>‘类’是抽象概念</p><h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>实例(Instance)，即某个’类’中的具体的某个，如’张三家的布谷鸟’属于一个实例，’李华花园里的含羞草’也属于一个实例</p><h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>‘一切皆是对象’，包括类，实例，变量，等等都可以视为对象</p><h1 id="python面向对象"><a href="#python面向对象" class="headerlink" title="python面向对象"></a>python面向对象</h1><p>例：<br>现有三人，分别是张三、小明、李华<br>则，“人”是类；张三，小明，李华是具体的对象</p><p>定义一个类，使用<code>class</code>函数：</p><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Human</span><span class="token punctuation">(</span>object<span class="token punctuation">)</span><span class="token punctuation">:</span>    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>name<span class="token punctuation">,</span>birth<span class="token punctuation">,</span>sex<span class="token punctuation">,</span>weight<span class="token punctuation">)</span><span class="token punctuation">:</span>        self<span class="token punctuation">.</span>name <span class="token operator">=</span> name        self<span class="token punctuation">.</span>birth <span class="token operator">=</span> birth        self<span class="token punctuation">.</span>sex <span class="token operator">=</span> sex        self<span class="token punctuation">.</span>weight <span class="token operator">=</span> weight    <span class="token comment" spellcheck="true">#↑定义类并绑定属性</span>    <span class="token keyword">def</span> <span class="token function">say</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>word<span class="token punctuation">)</span><span class="token punctuation">:</span>        <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'{self.name} is human and can speak:{word}'</span><span class="token punctuation">)</span>    <span class="token comment" spellcheck="true">#↑数据封装，称为‘类的方法’</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>解释&amp;注意：</p><ol><li><code>__init__</code>前后是双下划线</li><li><em>(object)表示继承object类</em></li><li>括号里第一位的<code>self</code>相当于固定写法，代表所创建的实例本身</li><li><code>self</code>后的<code>name</code>,<code>birth</code>,<code>sex</code>,<code>weight</code>是变量，需要传入值，相当于<code>Human</code>这个类的实例原本就所具有的，且必须有的属性</li><li>在<code>__init__</code>内部的<code>self.name = name</code>等，作用是把各种属性绑定到<code>self</code></li><li><code>def say(self)</code>的作用是为<code>Human</code>定义一个‘方法’，方法的内容即后面的代码。除了第一个参数是<code>self</code>之外，其他和定义一个函数一样，要调用一个方法，只需要在实例变量上直接调用，除了<code>self</code>不用传递，其他参数正常传入。</li></ol><p>现在，已经完成了<code>Human</code>类的定义，接下来要为类创建实例</p><pre class="line-numbers language-python"><code class="language-python">zhangsan <span class="token operator">=</span> Human<span class="token punctuation">(</span><span class="token string">'张三'</span><span class="token punctuation">,</span> <span class="token number">20990101</span><span class="token punctuation">,</span><span class="token string">'man'</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#这表示`zhangsan`是一个`Human`实例，`name`是‘张三’ `birth`是20990101， `sex` 是‘man’，`weight`为6</span>zhangsan<span class="token punctuation">.</span>say<span class="token punctuation">(</span><span class="token string">'hi!'</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#调用 类的方法，其中为`word`传入的参数为`hi!`</span><span class="token keyword">print</span><span class="token punctuation">(</span>zhangsan<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span>zhangsan<span class="token punctuation">.</span>sex<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>以上代码（包括定义类）的输出为：</p><pre><code>zhangsan is human and can speak:hi!zhangsanman</code></pre><h1 id="小结-amp-参见"><a href="#小结-amp-参见" class="headerlink" title="小结&amp;参见"></a>小结&amp;参见</h1><blockquote><p>类是创建实例的模板，而实例则是一个一个具体的对象，各个实例拥有的数据都互相独立，互不影响；<br>方法就是与实例绑定的函数，和普通函数不同，方法可以直接访问实例的数据；</p></blockquote><p>参见：<br><a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017495723838528" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/1016959663602400/1017495723838528</a><br><a href="https://zhuanlan.zhihu.com/p/31251011" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/31251011</a></p><p><del>没有对象怎么面向对象</del></p>]]></content>
     
@@ -319,11 +341,11 @@
   </entry>
   
   <entry>
-    <title>python学习笔记三之爬虫入门</title>
+    <title>python爬虫入门</title>
     <link href="http://krau.top/pythonxuexibijisanzhipachongrumen.html"/>
     <id>http://krau.top/pythonxuexibijisanzhipachongrumen.html</id>
     <published>2020-03-27T14:49:39.000Z</published>
-    <updated>2020-03-29T03:10:43.622Z</updated>
+    <updated>2020-05-16T09:35:59.472Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h1><ul><li>urllib</li><li>request</li><li>BeautifulSoup</li><li>os.path</li><li>with-as</li><li>open()</li></ul><h1 id="废话"><a href="#废话" class="headerlink" title="废话"></a>废话</h1><p>等我学会了就来补上</p><p><del>都快开学了那就别补了</del></p><p>话说为什么要学爬虫，契机是因为看到了这个<a href="https://api.lolicon.app/setu" target="_blank" rel="noopener">随机涩图</a></p><p>是的，你没有看错，随机涩图api</p><blockquote><p><del>涩图是第一生产力</del></p></blockquote><blockquote><p><del>涩图是一盏明灯，给你照亮人生的道路；涩图是一把钥匙，带你开启成功之门；…·</del></p></blockquote><p>怎么说也挠头了一天了，附上个乱七八糟小成品吧</p><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#下载头像并保存在/avatar/{时间戳}.jpg中</span><span class="token keyword">import</span> requests<span class="token keyword">import</span> os<span class="token keyword">import</span> timei <span class="token operator">=</span> <span class="token number">0</span>c <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>dirname<span class="token punctuation">(</span>__file__<span class="token punctuation">)</span>url <span class="token operator">=</span> <span class="token string">'https://api.yimian.xyz/img?type=head'</span><span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>    x <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span>    b <span class="token operator">=</span> int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>    a <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token string">'avatar'</span><span class="token punctuation">,</span><span class="token string">'{b}.jpg'</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>b<span class="token operator">=</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span>    <span class="token keyword">with</span> open<span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token string">'wb'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>        f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>x<span class="token punctuation">.</span>content<span class="token punctuation">)</span>    <span class="token keyword">print</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span><span class="token string">'.jpg'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#爬取leao.blog的文章封面图直链</span><span class="token keyword">import</span> requests<span class="token punctuation">,</span>os<span class="token punctuation">,</span>time<span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSouppagenum <span class="token operator">=</span> <span class="token number">0</span><span class="token keyword">while</span> pagenum<span class="token operator">&lt;</span><span class="token number">5</span><span class="token punctuation">:</span>    pagenum<span class="token operator">+=</span><span class="token number">1</span>    url <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token string">'https://leao.blog/page/'</span><span class="token punctuation">,</span><span class="token string">'{pagenum}'</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>pagenum<span class="token operator">=</span>pagenum<span class="token punctuation">)</span><span class="token punctuation">)</span>    req <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span>    soup <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>req<span class="token punctuation">.</span>text<span class="token punctuation">,</span><span class="token string">'lxml'</span><span class="token punctuation">)</span>    data <span class="token operator">=</span> soup<span class="token punctuation">.</span>select<span class="token punctuation">(</span><span class="token string">'#brand-waterfall > div > a > div > img'</span><span class="token punctuation">)</span>    n <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span>    <span class="token keyword">while</span> n<span class="token operator">&lt;</span><span class="token number">4</span><span class="token punctuation">:</span>        <span class="token keyword">try</span><span class="token punctuation">:</span>                n<span class="token operator">+=</span><span class="token number">1</span>            <span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">)</span>        <span class="token keyword">except</span><span class="token punctuation">:</span>            <span class="token keyword">pass</span>    <span class="token keyword">else</span><span class="token punctuation">:</span>        <span class="token keyword">pass</span><span class="token keyword">else</span><span class="token punctuation">:</span>    <span class="token keyword">pass</span><span class="token comment" spellcheck="true">#pass写这么全有必要吗</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>先溜了，可能要被某人杠</p>]]></content>
     
@@ -454,29 +476,6 @@
     
       <category term="告示牌" scheme="http://krau.top/categories/%E5%91%8A%E7%A4%BA%E7%89%8C/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>小学生都会系列--使用python计算任意三角形面积</title>
-    <link href="http://krau.top/xiaoxueshengduhuixilieshiyongpythonjisuanrenyisanjiaoxingmianji.html"/>
-    <id>http://krau.top/xiaoxueshengduhuixilieshiyongpythonjisuanrenyisanjiaoxingmianji.html</id>
-    <published>2020-03-20T13:07:00.000Z</published>
-    <updated>2020-04-12T09:46:52.785Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>python利用<a href="[https://baike.baidu.com/item/%E6%B5%B7%E4%BC%A6%E5%85%AC%E5%BC%8F](https://baike.baidu.com/item/海伦公式)">海伦公式</a>计算任意三角形面积</p><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#边长输入</span>x <span class="token operator">=</span> float<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">'第一边长：'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>y <span class="token operator">=</span> float<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">'第二边长: '</span><span class="token punctuation">)</span><span class="token punctuation">)</span>z <span class="token operator">=</span> float<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">'第三边长：'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#判断是否为三角形，即任意两边之和大于第三边</span><span class="token keyword">if</span> x<span class="token operator">+</span>y<span class="token operator">&lt;</span>z <span class="token operator">or</span> y<span class="token operator">+</span>z<span class="token operator">&lt;</span>x <span class="token operator">or</span> x<span class="token operator">+</span>z<span class="token operator">&lt;</span>y<span class="token punctuation">:</span>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'三边不能构成三角形：'</span><span class="token punctuation">)</span><span class="token keyword">else</span><span class="token punctuation">:</span>    m <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token operator">+</span>y<span class="token operator">+</span>z<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span>    s <span class="token operator">=</span> <span class="token punctuation">(</span>m<span class="token operator">*</span><span class="token punctuation">(</span>m<span class="token operator">-</span>x<span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span>m<span class="token operator">-</span>y<span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span>m<span class="token operator">-</span>z<span class="token punctuation">)</span><span class="token operator">**</span><span class="token number">0.5</span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'三角形面积为：%0.2f'</span> <span class="token operator">%</span> s<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#保留两位小数，输出计算结果</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>极其简单的一串代码。而且事实上，它不够严密，例如三角形边长应为正值数字，而代码中没有对此限定。</p>]]></content>
-    
-    <summary type="html">
-    
-      极其简单的一串代码
-    
-    </summary>
-    
-    
-      <category term="小技术" scheme="http://krau.top/categories/%E5%B0%8F%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="python" scheme="http://krau.top/tags/python/"/>
     
   </entry>
   
