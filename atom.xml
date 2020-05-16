@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://krau.top/"/>
-  <updated>2020-05-16T11:23:53.510Z</updated>
+  <updated>2020-05-16T23:03:47.872Z</updated>
   <id>http://krau.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>过度信任开源的惨案？Edxposed Manager canary版本中被推送恶意代码</title>
+    <link href="http://krau.top/edxpcanan.html"/>
+    <id>http://krau.top/edxpcanan.html</id>
+    <published>2020-05-16T22:31:45.000Z</published>
+    <updated>2020-05-16T23:03:47.872Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>2020.5.16，几个github账号向xposed模块管理器<code>Edxposed Manager</code>pr了恶意代码（<code>rm -rf /data/media</code>），在合并之前的代码会自动编译以供审核，而edxp把这类自动编译的文件（尚未经审核的）作为canary版本提供给用户，导致部分edxp用户刷入最新的canary版本后，数据被清空</p><p>edxp的开发者在酷安的解释及道歉如下</p><p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/edxp1.jpeg"></p><p>关于恶意代码</p><p><img src="/" alt="" class="lazyload" data-src="https://i.loli.net/2020/05/17/SjgxQ9tozwqvLnX.jpg"></p><p>知乎上</p><p><img src="/" alt="" class="lazyload" data-src="https://i.loli.net/2020/05/17/2kVILUhiegad8my.jpg"></p><hr><p>此前，同为xposed管理器的<code>太极</code>因为不开源而从Magisk下架<br>而如今，开源的edxp又历次风波<br>没有绝对的无风险，为了自己的数据安全，行事需慎重。如果此次受害者能认真看一下更新日志（clean your data folder）就能免遭数据清除</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="http://krau.top/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="xposed" scheme="http://krau.top/tags/xposed/"/>
+    
+  </entry>
   
   <entry>
     <title>复活</title>
@@ -460,30 +486,6 @@
     
     
       <category term="Minecraft" scheme="http://krau.top/tags/Minecraft/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客更新日志</title>
-    <link href="http://krau.top/bokegengxinrizhi.html"/>
-    <id>http://krau.top/bokegengxinrizhi.html</id>
-    <published>2020-03-23T08:06:34.000Z</published>
-    <updated>2020-03-24T23:07:53.603Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="新主题"><a href="#新主题" class="headerlink" title="新主题"></a>新主题</h3><p>原主题为 <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">matery</a></p><p>现使用 <a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">butterfly</a></p><p>为什么换了主题？</p><p>主要原因是看上了这个butterfly的随系统切换夜间模式功能，其次想换个口味，而且之前的matery由于折腾太多花里胡哨的特效了导致首次页面打开很卡。</p><h3 id="关于部署"><a href="#关于部署" class="headerlink" title="关于部署"></a>关于部署</h3><p>原先是使用了github+coding pages双部署，可是github访问慢，coding时常die，体验并不好，于是又部署到了gitee上…</p><p>gitee访问地址： <a href="https://cos0.gitee.io/" target="_blank" rel="noopener">https://cos0.gitee.io</a></p><p>另外，由于站内引用了部分非https协议的资源，访问时可能提示不安全，忽略即可，本站保证不会窃取来自您的任何信息</p><h3 id="其他废话"><a href="#其他废话" class="headerlink" title="其他废话"></a>其他废话</h3><p>过段时间本站可能要改头换面（改名字和域名），先提前交代一下</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-    
-      <category term="告示牌" scheme="http://krau.top/categories/%E5%91%8A%E7%A4%BA%E7%89%8C/"/>
-    
     
   </entry>
   
