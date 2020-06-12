@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>6月12碎碎念</title>
+    <url>/6yue12.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>四周无休不先告，一天天浮躁。三人夜钻网吧，唯有一人无聊。</p>
+<p>半夜睡不着觉，同床王者荣耀。侧身背过，却听杂雨吵闹。</p>
+<p>不知浅梦半醒，课上目旋头掉。一头需用二手撑，三场考试睡四觉。</p>
+<p>何月日始有高考？模拟千篇百遍，真题一年一套。不知多少学生，面对同题一道。</p>
+<p>困而不欲眠，当代青年写照。见面只道没睡好，不见晚上少些熬。</p>
+<p>网上多识得同好，同班无人知我笑，有趣的灵魂真难找</p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>5月17流水账</title>
     <url>/5yue17ji.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="上午"><a href="#上午" class="headerlink" title="上午"></a>上午</h1><p>5:10左右起床<br>九点吃早餐<br>看了几集番『辉夜大小姐想让我告白』和『公主连结』<br>逛mcbbc想找个服务器玩，未果<br>注册了个新p站账号（谷歌账号被封了，很长时间没登录，上一个号由于绑定的谷歌邮箱也找不回了（别问我谷歌账号怎么封的，<del>问就是儿童社情</del>（从pixiv爬完图忘了过滤r18就直接给上传谷歌相册了（还好我还有个小号（<br><em>摸鱼划水大半天</em></p>
@@ -60,10 +77,11 @@
 <p>此前，同为xposed管理器的<code>太极</code>因为不开源而从Magisk下架<br>而如今，开源的edxp又历次风波<br>没有绝对的无风险，为了自己的数据安全，行事需慎重。如果此次受害者能认真看一下更新日志（clean your data folder）就能免遭数据清除</p>
 ]]></content>
       <categories>
-        <category>杂谈</category>
+        <category>日常</category>
       </categories>
       <tags>
         <tag>xposed</tag>
+        <tag>杂谈</tag>
       </tags>
   </entry>
   <entry>
@@ -1384,8 +1402,8 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
         <category>日常</category>
       </categories>
       <tags>
-        <tag>日记</tag>
         <tag>ACG</tag>
+        <tag>日记</tag>
       </tags>
   </entry>
   <entry>
