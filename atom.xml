@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://krau.top/"/>
-  <updated>2020-06-12T14:29:51.903Z</updated>
+  <updated>2020-07-05T13:06:09.045Z</updated>
   <id>http://krau.top/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客更新日志2</title>
+    <link href="http://krau.top/bokegengxinrizhi2.html"/>
+    <id>http://krau.top/bokegengxinrizhi2.html</id>
+    <published>2020-07-05T13:01:42.000Z</published>
+    <updated>2020-07-05T13:06:09.045Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>又换皮了</p><a id="more"></a><ul><li>换了新主题~~原主题是<a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">butterfly</a>,原主题之前的原主题是<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">matery</a></li></ul><p>为什么又换皮了？？</p><p><del>喜新厌旧了</del></p><ul><li>微微修改了一些文章</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;又换皮了&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>6月12碎碎念</title>
@@ -471,29 +490,6 @@
       <category term="python" scheme="http://krau.top/tags/python/"/>
     
       <category term="爬虫" scheme="http://krau.top/tags/%E7%88%AC%E8%99%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python基础学习笔记二</title>
-    <link href="http://krau.top/pythonjichuxuexibijier.html"/>
-    <id>http://krau.top/pythonjichuxuexibijier.html</id>
-    <published>2020-03-26T13:48:04.000Z</published>
-    <updated>2020-05-16T11:15:58.681Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h1><ul><li>数据类型</li><li>变量</li><li>list和tuple</li></ul><h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><h2 id="整数"><a href="#整数" class="headerlink" title="整数"></a>整数</h2><blockquote><p>Python可以处理任意大小的整数，当然包括负整数，在程序中的表示方法和数学上的写法一模一样，例如：1，100，-8080，0</p></blockquote><h2 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h2><p>浮点数就是小数</p><p>称为浮点数是因为按照科学记数法表示时，一个浮点数的小数点位置是可变的</p><p>用科学计数法表示时，把10用e替代，比如2.33x10^33写成2.33e33；0.000233写成2.33e-4</p><h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><h3 id="简要概念"><a href="#简要概念" class="headerlink" title="简要概念"></a>简要概念</h3><p>字符串是以单引号’或双引号”括起来的任意文本</p><h3 id="小tips"><a href="#小tips" class="headerlink" title="小tips"></a>小tips</h3><p>如果字符串内部既包含<code>&#39;</code>又包含<code>&quot;</code>，需要用转义字符<code>\</code>来标识</p><p>例: </p><p><code>you\&#39;re \&quot;welcome\&quot;</code></p><p>输出的内容是</p><p><code>you&#39;re &quot;welcome&quot;</code></p><p>为了简化需要很多字符转义的情况，还可以用<code>r``</code>表示<code>``</code>内的字符串不转义</p><p>例：</p><blockquote><p>print(‘\\t\‘)</p></blockquote><p>\       \</p><blockquote><p>print(r’\\t\‘)</p></blockquote><p>\\t\</p><p>如果字符串内部有很多换行，用\n写在一行里不好阅读，为了简化，Python允许用’’’…’’’的格式表示多行内容</p><blockquote><p>print(‘’’line1<br>… line2<br>… line3’’’)<br>line1<br>line2<br>line3</p></blockquote><p>多行字符串 ‘’’…’’’ 还可以在前面加上r使用</p><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding: utf-8 -*-</span><span class="token keyword">print</span><span class="token punctuation">(</span>r<span class="token triple-quoted-string string">'''hello,\nworld'''</span><span class="token punctuation">)</span></code></pre><p>输出内容:</p><blockquote><p>hello,\n<br>world</p></blockquote><p>字符串可以索引或切片</p><p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/stringqiepiansuoyin.jpg" alt="" loading="lazy"></p><pre class=" language-python"><code class="language-python">name <span class="token operator">=</span> <span class="token string">'My Name Is Miku'</span><span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token punctuation">[</span><span class="token number">11</span><span class="token punctuation">:</span><span class="token number">15</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true"># 将会输出‘Mike’</span><span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true"># 将会输出‘M'</span></code></pre><h2 id="布尔值"><a href="#布尔值" class="headerlink" title="布尔值"></a>布尔值</h2><p>布尔值只有<code>True</code>和 <code>Flase</code></p><p>在python中，可以直接使用True，Flase表示布尔值（区分大小写）。也可以通过布尔运算计算出来</p><p>布尔值可以用<code>and</code>、<code>or</code>和<code>not</code>运算。</p><p><code>and</code>:与运算，同真为真，否则假<br><code>or</code>: 或运算，至少一个为真，结果便是真<br><code>not</code>:非运算，把True变成False，False变成True</p><h2 id="空值"><a href="#空值" class="headerlink" title="空值"></a><em>空值</em></h2><blockquote><p>空值是Python里一个特殊的值，用None表示。None不能理解为0，因为0是有意义的，而None是一个特殊的空值</p></blockquote><h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><p>在python中，不需要事先声明变量，使用时先使用赋值符号赋值即可</p><p><code>a = 1</code></p><p><strong>变量名规则：变量名必须是大小写英文、数字和_的组合，且不能用数字开头</strong></p><p>在python中，同一个变量可以反复赋值，而且可以是不同类型的变量</p><blockquote><p><em>这种变量本身类型不固定的语言称之为动态语言，与之对应的是静态语言。静态语言在定义变量时必须指定变量类型，如果赋值的时候类型不匹配，就会报错。</em></p></blockquote><p>需要提起的一点是，编程中的<code>=</code> 不是数学中的等号，它是赋值符号，把右边的值赋给左边</p><h1 id="list-和-tuple"><a href="#list-和-tuple" class="headerlink" title="list 和 tuple"></a>list 和 tuple</h1><h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><h3 id="简要概念-1"><a href="#简要概念-1" class="headerlink" title="简要概念"></a>简要概念</h3><p>list是python内置的一种数据类型：列表。它是一个有序的集合，可以随时添加，更改，删除其中的元素。其中元素的数据类型可以不同或相同<br>并且，list可嵌套<br><del>（禁止套娃）</del></p><p>例：</p><pre class=" language-python"><code class="language-python">alpha <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'wtf'</span><span class="token punctuation">,</span><span class="token string">'awsl'</span><span class="token punctuation">,</span><span class="token string">'gkd'</span><span class="token punctuation">]</span></code></pre><p>这时变量<code>alpha</code> 就是一个list</p><p>用len()函数可以获得list元素的个数:</p><pre class=" language-python"><code class="language-python">len<span class="token punctuation">(</span>alpha<span class="token punctuation">)</span></code></pre><p>输出： <code>3</code></p><p>用索引来访问list中指定位置的元素，索引从0开始</p><pre class=" language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span>alpha<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre><p>输出： <code>wtf</code></p><p>索引也可以倒着来，最后一个索引是-1</p><pre class=" language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span>alpha<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre><p>输出： <code>gkd</code></p><p>注意索引不要超出范围，也就是不要越界</p><h3 id="元素操作"><a href="#元素操作" class="headerlink" title="元素操作"></a>元素操作</h3><ul><li>追加元素：<br><code>alpha.append(&#39;ghs&#39;)</code><br>此时<br><code>alpha = [&#39;wtf&#39;,&#39;aswl&#39;,&#39;gkd&#39;,&#39;ghs&#39;]</code></li><li>插入元素♂：<br><code>alpha.insert(1,&#39;114514&#39;)</code><br>此时<br><code>alpha = [&#39;wtf&#39;,&#39;114514&#39;,&#39;aswl&#39;,&#39;gkd&#39;,&#39;ghs&#39;]</code></li><li>删除元素：<br><code>alpha.pop()</code> #删除了末尾的元素<br>此时<br><code>alpha = [&#39;wtf&#39;,&#39;114514&#39;,&#39;aswl&#39;,&#39;gkd&#39;]</code></li><li>替换元素：<br><code>alpha[0] = &#39;qaq&#39;</code> #直接赋值即可<br>此时<br><code>alpha = [&#39;qaq&#39;,&#39;114514&#39;,&#39;aswl&#39;,&#39;gkd&#39;]</code></li><li>访问元素：<br><code>print(alpha[1])</code><br>输出<br><code>114514</code></li></ul><p>嵌套元素的访问方法：<br>先设</p><pre class=" language-python"><code class="language-python">list1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'套娃一'</span><span class="token punctuation">,</span><span class="token string">'占个位置'</span><span class="token punctuation">]</span>list2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'套娃二'</span><span class="token punctuation">,</span>list1<span class="token punctuation">,</span><span class="token string">'蹲个坑'</span><span class="token punctuation">]</span></code></pre><p>若要从<code>list2</code>中取出’套娃一’，则</p><pre class=" language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span>list2<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> </code></pre><p>这种list被称为二维数组，还有三维四维五维…以此类推<br><del>明明就是套娃</del></p><h2 id="tuple"><a href="#tuple" class="headerlink" title="tuple"></a>tuple</h2><blockquote><p>另一种有序列表叫元组：tuple。tuple和list非常类似，但是tuple一旦初始化就不能修改</p></blockquote><pre class=" language-python"><code class="language-python">now <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'no'</span><span class="token punctuation">,</span><span class="token string">'omg'</span><span class="token punctuation">,</span><span class="token string">'nice'</span><span class="token punctuation">]</span>delta <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">'fxxk'</span><span class="token punctuation">,</span><span class="token string">'me'</span><span class="token punctuation">,</span>now<span class="token punctuation">)</span></code></pre><p>在上面的代码中，<code>now</code>是list，<code>delta</code>是tuple</p><p><strong>虽然tuple被称为‘不可修改’，但实际上指的是元素的指向不可修改，在上述代码中，如果你修改了<code>now</code>的元素，<code>delta</code>中的’<code>now</code>‘元素的内容也会随之改变，但变得不是tuple，而是<code>now</code>这个list</strong></p><p>由于tuple不可修改的特性，它比list更安全</p><h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><blockquote><p>Python支持多种数据类型，在计算机内部，可以把任何数据都看成一个“对象”，而变量就是在程序中用来指向这些数据对象的，对变量赋值就是把数据和变量给关联起来。</p></blockquote><blockquote><p>对变量赋值x = y是把变量x指向真正的对象，该对象是变量y所指向的。随后对变量y的赋值不影响变量x的指向。</p></blockquote><blockquote><p>注意：Python的整数没有大小限制，而某些语言的整数根据其存储长度是有大小限制的，例如Java对32位整数的范围限制在-2147483648-2147483647。</p></blockquote><blockquote><p>Python的浮点数也没有大小限制，但是超出一定范围就直接表示为inf（无限大）。</p></blockquote><blockquote><p>list和tuple是Python内置的有序集合，一个可变，一个不可变。根据需要来选择使用它们。</p></blockquote><h1 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h1><p><del>有些博文，写着写着就变成了复制粘贴</del></p><p> 部分内容引用自 <a href="https://www.liaoxuefeng.com/" target="_blank" rel="noopener">廖雪峰的官方网站</a></p><p>快开学了，不知道该乐还是悲</p>]]></content>
-    
-    <summary type="html">
-    
-      数据类型，变量，字符串，list和tuple
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="http://krau.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="python" scheme="http://krau.top/tags/python/"/>
     
   </entry>
   
