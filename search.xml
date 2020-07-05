@@ -39,18 +39,18 @@
 <p>为了探究这个问题，我和先自己一盘一盘的模拟了数局 <del>（人间迷惑行为</del> 然后又找到了谷歌娘一比高低，结果也算总结出了一点规律</p>
 <p><strong>以下 X 是先下者， O 是后者</strong></p>
 <h1 id="one"><a href="#one" class="headerlink" title="one"></a>one</h1><p>谷歌的井字棋游戏中有难度设定：‘简单’，‘中等’，‘非常难’。<br>先把难度设定为‘简单’，玩家作为先者（X方），下到中间格子，然后发现谷歌娘此时的出棋总是与中间格相邻的四个格子，而非四角上的格子</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://i.loli.net/2020/05/17/GUz1VkonijYbcIs.png"></p>
+<p><img src="https://i.loli.net/2020/05/17/GUz1VkonijYbcIs.png" alt="" loading="lazy"></p>
 <p>对于这种情况，X 方非常容易能找到让对方进退两难的出棋，也就是不管对方如何封堵，自己总能有一条路胜利，如下图所示</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://i.loli.net/2020/05/17/WSPoQwlYp8J5D2E.png"></p>
+<p><img src="https://i.loli.net/2020/05/17/WSPoQwlYp8J5D2E.png" alt="" loading="lazy"></p>
 <p>这样就算胜利了，因为对方不管是堵左上角还是右边都不行</p>
 <h1 id="two"><a href="#two" class="headerlink" title="two"></a>two</h1><p>接着，把难度设置为非常难（中等难度和简单难度的情况很相似，不再讨论）</p>
 <p>这时候，当X方下到中间后，与上一种情况相反，谷歌娘总是会下到四个角（尤其是左上角），而不下相邻的位置</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200517171841.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200517171841.png" alt="" loading="lazy"></p>
 <p>这时候似乎很难按照前一种情况取胜。<br>于是，我和谷歌娘开始混战起来，<del>决心大战三百回合之后</del></p>
 <p>但也不是盲目的乱下一气，为了得出规律，我把我的第二次出棋按照从左到右，从上到下的顺序都下了一遍，结果每次都是平局。之后我便发现，这种情况的棋局数是很有限的。</p>
 <p>真的很有限，按照一定有规律的顺序，人为都能给它穷举出来（没错我真的这样搞了）</p>
 <p>如下图虚线分割线左边，便是对应这种情况的全部棋局</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200517171101.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200517171101.jpg" alt="" loading="lazy"></p>
 <p>↑午休的时候迷迷糊糊画的为了催眠自己，辨识度可能很低</p>
 <p>全部可能的棋局数：22<br>平局数：20<br>O方胜出数：2<br>X方胜出数：0</p>
 <hr>
@@ -68,11 +68,11 @@
     <url>/edxpcanan.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>2020.5.16，几个github账号向xposed模块管理器<code>Edxposed Manager</code>pr了恶意代码（<code>rm -rf /data/media</code>），在合并之前的代码会自动编译以供审核，而edxp把这类自动编译的文件（尚未经审核的）作为canary版本提供给用户，导致部分edxp用户刷入最新的canary版本后，数据被清空</p>
 <p>edxp的开发者在酷安的解释及道歉如下</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/edxp1.jpeg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/edxp1.jpeg" alt="" loading="lazy"></p>
 <p>关于恶意代码</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://i.loli.net/2020/05/17/SjgxQ9tozwqvLnX.jpg"></p>
+<p><img src="https://i.loli.net/2020/05/17/SjgxQ9tozwqvLnX.jpg" alt="" loading="lazy"></p>
 <p>知乎上</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://i.loli.net/2020/05/17/2kVILUhiegad8my.jpg"></p>
+<p><img src="https://i.loli.net/2020/05/17/2kVILUhiegad8my.jpg" alt="" loading="lazy"></p>
 <hr>
 <p>此前，同为xposed管理器的<code>太极</code>因为不开源而从Magisk下架<br>而如今，开源的edxp又历次风波<br>没有绝对的无风险，为了自己的数据安全，行事需慎重。如果此次受害者能认真看一下更新日志（clean your data folder）就能免遭数据清除</p>
 ]]></content>
@@ -99,79 +99,79 @@
   <entry>
     <title>HELLO WORLD</title>
     <url>/helloworld0.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="one"><a href="#one" class="headerlink" title="one"></a>one</h1><p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424173731.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424173903.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424173932.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424173940.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424173949.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424173958.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174018.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174027.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174037.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174045.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174059.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174108.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174121.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174135.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174146.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174226.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174237.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174246.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174257.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174306.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://img.asnet.ga/i/2020/04/24/stx108.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://img.asnet.ga/i/2020/04/24/stzgps.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174353.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174403.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174416.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174423.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174431.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174448.jpg"></p>
-<h1 id="two"><a href="#two" class="headerlink" title="two"></a>two</h1><p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174537.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174547.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174556.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174606.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174612.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174622.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174700.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174631.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174640.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174649.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174715.jpg"></p>
-<h1 id="three"><a href="#three" class="headerlink" title="three"></a>three</h1><p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174734.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174745.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174758.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174805.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174814.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174823.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174836.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174846.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174853.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174902.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174914.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174923.jpg"></p>
-<h1 id="four"><a href="#four" class="headerlink" title="four"></a>four</h1><p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174943.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174955.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175004.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175013.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175023.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175032.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175045.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175052.jpg"></p>
-<h1 id="end"><a href="#end" class="headerlink" title="end"></a>end</h1><p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175151.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175205.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175300.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175309.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175330.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175338.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175347.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175354.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175401.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175412.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175422.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175433.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175443.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175452.jpg"></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="one"><a href="#one" class="headerlink" title="one"></a>one</h1><p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424173731.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424173903.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424173932.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424173940.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424173949.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424173958.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174018.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174027.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174037.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174045.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174059.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174108.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174121.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174135.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174146.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174226.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174237.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174246.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174257.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174306.jpg" alt="" loading="lazy"></p>
+<p><img src="https://img.asnet.ga/i/2020/04/24/stx108.jpg" alt="" loading="lazy"></p>
+<p><img src="https://img.asnet.ga/i/2020/04/24/stzgps.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174353.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174403.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174416.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174423.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174431.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174448.jpg" alt="" loading="lazy"></p>
+<h1 id="two"><a href="#two" class="headerlink" title="two"></a>two</h1><p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174537.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174547.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174556.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174606.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174612.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174622.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174700.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174631.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174640.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174649.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174715.jpg" alt="" loading="lazy"></p>
+<h1 id="three"><a href="#three" class="headerlink" title="three"></a>three</h1><p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174734.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174745.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174758.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174805.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174814.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174823.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174836.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174846.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174853.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174902.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174914.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174923.jpg" alt="" loading="lazy"></p>
+<h1 id="four"><a href="#four" class="headerlink" title="four"></a>four</h1><p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174943.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424174955.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175004.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175013.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175023.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175032.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175045.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175052.jpg" alt="" loading="lazy"></p>
+<h1 id="end"><a href="#end" class="headerlink" title="end"></a>end</h1><p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175151.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175205.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175300.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175309.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175330.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175338.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175347.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175354.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175401.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175412.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175422.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175433.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175443.jpg" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200424175452.jpg" alt="" loading="lazy"></p>
 <hr>
 <p>这是一部以科幻和恋爱为题材的动画电影。故事起因是2027年的京都一名高中生直实面前，突然出现来自十年后的自己，并希望和他一起改变未来，拯救三个月后的恋人一行瑠璃。整体作画三渲二，极具个性。剧情反转离奇，出其不意而又合情合理。标题『HELLO WORLD』一语双关，预示故事整体世界观是数据构建的世界，又有向世界问好之意，与结尾“这一定是一个全新的世界”相照应。在嵌套或平行的世界中寻觅虚拟与真实，看似酷似『源代码』或『盗梦空间』，实际上却有极大创新，尤其是两个不同时间轴上的男主的设定更升华了感情。</p>
 <blockquote>
@@ -287,15 +287,15 @@
     <title>推荐一个图床-ASnetIMG 并搭配PicGo实现一键上传复制直链</title>
     <url>/asimgtuijian.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>首先说一下这个图床<br><a href="https://img.asnet.ga/" target="_blank" rel="noopener">ASNETIMG</a></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://img.asnet.ga/i/2020/04/17/islip6.png"></p>
+<p><img src="https://img.asnet.ga/i/2020/04/17/islip6.png" alt="" loading="lazy"></p>
 <p>是一个不太有名气但体验还不错的图床，速度也还行，走的香港CN2节点<br>限制：单张图片限制30M，每次最多上传30张图片。<br>限制很宽，而且目前完全免费无广告，可以说是很良心了</p>
 <hr>
 <p>然后说一下<a href="https://github.com/Molunerfinn/PicGo" target="_blank" rel="noopener">PicGO</a>这个工具</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://img.asnet.ga/i/2020/04/17/iksrm3.png"></p>
+<p><img src="https://img.asnet.ga/i/2020/04/17/iksrm3.png" alt="" loading="lazy"></p>
 <p>这是一个支持大多有名图床，一键上传并直接复制markdown格式链接的图床上传工具，算是比较有名，具体可以去<a href="https://picgo.github.io/PicGo-Doc/zh/guide/getting-started.html" target="_blank" rel="noopener">官方使用文档</a>看看，可以提供很方便快捷的功能</p>
 <p>PicGo原生是不支持ASNETIMG的，但是PicGo具有很多插件，也就可以提供更为自定义化的功能，去安装<a href="https://github.com/yuki-xin/picgo-plugin-web-uploader" target="_blank" rel="noopener">自定义web图床上传</a>这个插件然后按照以下图片配置，就可以实现一键上传至ASNETIMG并复制链接</p>
-<p>安装插件后，在图床设置中找到自定义web图床<br><img src="/" alt="" class="lazyload" data-src="https://img.asnet.ga/i/2020/04/17/ip17n5.png"></p>
-<p>然后按照图片中的设置<br><img src="/" alt="" class="lazyload" data-src="https://img.asnet.ga/i/2020/04/17/iq1v75.png"></p>
+<p>安装插件后，在图床设置中找到自定义web图床<br><img src="https://img.asnet.ga/i/2020/04/17/ip17n5.png" alt="" loading="lazy"></p>
+<p>然后按照图片中的设置<br><img src="https://img.asnet.ga/i/2020/04/17/iq1v75.png" alt="" loading="lazy"></p>
 <p>API地址： <a href="https://img.asnet.ga/file.php" target="_blank" rel="noopener">https://img.asnet.ga/file.php</a><br>POST参数名： <code>file</code><br>JSON路径： <code>url</code></p>
 <p>点击确定，设为默认图床，然后就配置完成啦。</p>
 <p>PicGo的默认上传快捷键是Ctrl+shift+P，截一张图保存到剪贴板，然后试试效果吧，这个图床的上传速度是非常快的，而且也不会出现像其他图床那样莫名其妙上传失败的情况</p>
@@ -312,16 +312,16 @@
     <title>关于pandownload开发者被抓的一点看法</title>
     <url>/pdbeizhua.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>2020年04月15日，小有名气的第三方百度网盘下载器<code>pandownload</code>开发者被抓，警方对事件的描述如下</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417065029.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417065029.png" alt="" loading="lazy"></p>
 <p>由于本人并不懂法，所以尽量少扯一些和法律有关的话题。关于与此案件相关的法律知识可以看一下这位知乎答主的回答.<a href="https://www.zhihu.com/question/388027206/answer/1156166701" target="_blank" rel="noopener"><br>法的守夜人</a></p>
 <hr>
 <p>首先我认为百度维权确实没有错，然后再来瞎扯一些其他的：</p>
 <p>这个所谓‘刘某’为了保护自己的隐私而报案，我对这一点十分怀疑，但也不敢乱猜测，总之都懂。<br>但是，他是怎么知道自己的隐私被pandownload泄露了呢？<br>首先刘某肯定用了pandownload这个软件，但是，百度网盘官方事后在微博上发帖时，为何对pandownload只字不提？只说配合配合警方调查？</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417070228.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417070228.png" alt="" loading="lazy"></p>
 <p>而且，本人也用过很长一段时间的pandownload，更有很多苦百度已久的人用过，为何其他人都没有隐私泄露的问题，偏偏是这个‘刘某’去直接报案？（当然也可能确实是有没被发现）</p>
-<p>还有，隐私问题难道只是pandownload的锅？那么为什么度盘文件频频被删，度盘搜索比比皆是？<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417073951.png"></p>
+<p>还有，隐私问题难道只是pandownload的锅？那么为什么度盘文件频频被删，度盘搜索比比皆是？<br><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417073951.png" alt="" loading="lazy"></p>
 <p>另外再看一下度盘官方微博那边</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417071411.png"><br>（由于都是热评也没什么必要打码了，如果有什么不满请联系我更改）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417071411.png" alt="" loading="lazy"><br>（由于都是热评也没什么必要打码了，如果有什么不满请联系我更改）</p>
 <p>与以往臭名昭著的控评微博不同，这次微博中的评论几乎都占位一致，更有很多暴躁老哥破口大骂‘垃圾软件流氓企业’。</p>
 <blockquote>
 <p>“我求求你别在追查pandownload了行吗？我用了百度网盘三年，30块钱的会员，我开了三年。食堂钱开没了，钱包被我开垮了，现在好不容易有了免费盘。你们非说它侵犯隐私。那盘侵不侵犯隐私我们能不知道吗？”　　<br>“那制作者四年才受捐30万，制作者根本不挣钱。谁家能不下载个文件？你就能保证你这一辈子不下载吗？你把他抓走了，我们都得被限速。我不想限速，我想满速下载，行吗？”</p>
@@ -333,7 +333,7 @@
 <p>倘若国内以后有这样一款网盘：它免费空间不大，但是不限速，没有离谱的广告，能分享和转存资源，并且不会乱删文件，且有很大的用户基数。那么我一定会为这样的网盘充值，但可能国内这样的网盘只是在梦里。</p>
 <p>除了pandownload，还有很多类似的度盘下载器，百度此举可能还要有打个警告的目的。但是，如果度盘不做出改善，相信以后还会有更多的此类软件。</p>
 <p>不说了，百度seo估计要针对我了，但我本来也没多大指望百度会收录</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417100236.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200417100236.png" alt="" loading="lazy"></p>
 ]]></content>
       <categories>
         <category>日常</category>
@@ -347,14 +347,14 @@
     <url>/fredatuijian.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="freda"><a href="#freda" class="headerlink" title="freda"></a>freda</h1><h2 id="简评"><a href="#简评" class="headerlink" title="简评"></a>简评</h2><p>这是一个可本地和在线的电子书阅读器，支持各种常见的电子书/文档格式，几乎免费，除了首页底部有一条横幅广告需要付费去除外，还未发现任何需要付费的功能</p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>freda上架在Microsoft store，直接去搜索 freda 即可安装</p>
-<h2 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h2><h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><p>这是主界面，非常win10原生的风格<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416212839.png"><br>主页下方有横条广告，需要付费大约2刀去除。对于我来说，主页面的广告可以不在意，但如果是阅读过程中的广告会让我直接劝退</p>
+<h2 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h2><h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><p>这是主界面，非常win10原生的风格<br><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416212839.png" alt="" loading="lazy"><br>主页下方有横条广告，需要付费大约2刀去除。对于我来说，主页面的广告可以不在意，但如果是阅读过程中的广告会让我直接劝退</p>
 <p>可以看到，freda可以从本地，或是feedbooks/calibre/onedrive/gutenberg/epub books/smashwords导入/备份/同步你的电子书，但是我几乎只把它当作本地阅读器使用了2333</p>
 <p>freda的高级功能是免费的，支持书签，注释和突出显示，还有文本到语音转换，很适合学生用。</p>
-<p>支持很多种格式<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416213435.png"></p>
-<p>可以使用标题或是tag等方式管理电子书<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416213701.png"></p>
-<p>具有非常强的自定义性，我很喜欢这一点<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416213933.png"></p>
-<p>多种主题样式可选择，可以按照自己喜好自定义出好看的程序外观<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416214030.png"></p>
-<p>文本字体，主题背景，页面纸张，文字颜色等等都是可以自定义的<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416220501.png"></p>
+<p>支持很多种格式<br><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416213435.png" alt="" loading="lazy"></p>
+<p>可以使用标题或是tag等方式管理电子书<br><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416213701.png" alt="" loading="lazy"></p>
+<p>具有非常强的自定义性，我很喜欢这一点<br><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416213933.png" alt="" loading="lazy"></p>
+<p>多种主题样式可选择，可以按照自己喜好自定义出好看的程序外观<br><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416214030.png" alt="" loading="lazy"></p>
+<p>文本字体，主题背景，页面纸张，文字颜色等等都是可以自定义的<br><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200416220501.png" alt="" loading="lazy"></p>
 <p><strong>总之，freda相比其他阅读器来说，给我的感觉就是，别人有的它也有，别人的没有的它还有；别人能改的它能改，别人不能改的它都能改</strong></p>
 <h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><ol>
 <li>不支持中文的程序页面</li>
@@ -390,7 +390,7 @@
 <h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>‘一切皆是对象’，包括类，实例，变量，等等都可以视为对象</p>
 <h1 id="python面向对象"><a href="#python面向对象" class="headerlink" title="python面向对象"></a>python面向对象</h1><p>例：<br>现有三人，分别是张三、小明、李华<br>则，“人”是类；张三，小明，李华是具体的对象</p>
 <p>定义一个类，使用<code>class</code>函数：</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Human</span><span class="token punctuation">(</span>object<span class="token punctuation">)</span><span class="token punctuation">:</span>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Human</span><span class="token punctuation">(</span>object<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>name<span class="token punctuation">,</span>birth<span class="token punctuation">,</span>sex<span class="token punctuation">,</span>weight<span class="token punctuation">)</span><span class="token punctuation">:</span>
         self<span class="token punctuation">.</span>name <span class="token operator">=</span> name
         self<span class="token punctuation">.</span>birth <span class="token operator">=</span> birth
@@ -399,7 +399,7 @@
     <span class="token comment" spellcheck="true">#↑定义类并绑定属性</span>
     <span class="token keyword">def</span> <span class="token function">say</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>word<span class="token punctuation">)</span><span class="token punctuation">:</span>
         <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'{self.name} is human and can speak:{word}'</span><span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true">#↑数据封装，称为‘类的方法’</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token comment" spellcheck="true">#↑数据封装，称为‘类的方法’</span></code></pre>
 <p>解释&amp;注意：</p>
 <ol>
 <li><code>__init__</code>前后是双下划线</li>
@@ -410,11 +410,11 @@
 <li><code>def say(self)</code>的作用是为<code>Human</code>定义一个‘方法’，方法的内容即后面的代码。除了第一个参数是<code>self</code>之外，其他和定义一个函数一样，要调用一个方法，只需要在实例变量上直接调用，除了<code>self</code>不用传递，其他参数正常传入。</li>
 </ol>
 <p>现在，已经完成了<code>Human</code>类的定义，接下来要为类创建实例</p>
-<pre class="line-numbers language-python"><code class="language-python">zhangsan <span class="token operator">=</span> Human<span class="token punctuation">(</span><span class="token string">'张三'</span><span class="token punctuation">,</span> <span class="token number">20990101</span><span class="token punctuation">,</span><span class="token string">'man'</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span>
+<pre class=" language-python"><code class="language-python">zhangsan <span class="token operator">=</span> Human<span class="token punctuation">(</span><span class="token string">'张三'</span><span class="token punctuation">,</span> <span class="token number">20990101</span><span class="token punctuation">,</span><span class="token string">'man'</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true">#这表示`zhangsan`是一个`Human`实例，`name`是‘张三’ `birth`是20990101， `sex` 是‘man’，`weight`为6</span>
 zhangsan<span class="token punctuation">.</span>say<span class="token punctuation">(</span><span class="token string">'hi!'</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#调用 类的方法，其中为`word`传入的参数为`hi!`</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>zhangsan<span class="token punctuation">.</span>name<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>zhangsan<span class="token punctuation">.</span>sex<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">print</span><span class="token punctuation">(</span>zhangsan<span class="token punctuation">.</span>sex<span class="token punctuation">)</span></code></pre>
 <p>以上代码（包括定义类）的输出为：</p>
 <pre><code>zhangsan is human and can speak:hi!
 zhangsan
@@ -437,8 +437,8 @@ man</code></pre><h1 id="小结-amp-参见"><a href="#小结-amp-参见" class="h
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>（先把标题里’Ai’和’科学’划掉</p>
 <p>最近看到某人在水文章，想了想，自己的博客也好百万毫秒没更新过了，于是本文 应 运 而 生</p>
 <h1 id="狗屁不通的初级水"><a href="#狗屁不通的初级水" class="headerlink" title="狗屁不通的初级水"></a>狗屁不通的初级水</h1><p>很多人应该都见过这个东西<br>项目：<a href="https://github.com/menzi11/BullshitGenerator" target="_blank" rel="noopener">狗屁不通文章生成器</a><br>在线演示：<a href="https://suulnnka.github.io/BullshitGenerator/index.html" target="_blank" rel="noopener">网页版</a></p>
-<p>效果如下图<br><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200410211222.png"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200410211829.png"></p>
+<p>效果如下图<br><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200410211222.png" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200410211829.png" alt="" loading="lazy"></p>
 <p><del>为了凑字，我复制一段</del></p>
 <blockquote>
 <p>一般来讲，我们都必须务必慎重的考虑考虑。 笛卡儿曾经提到过，阅读一切好书如同和过去最杰出的人谈话。这不禁令我深思。 日本谚语曾经提到过，不幸可能成为通向幸福的桥梁。我希望诸位也能好好地体会这句话。 水文章因何而发生？ 我们都知道，只要有意义，那么就必须慎重考虑。 莎士比亚说过一句富有哲理的话，人的一生是短的，但如果卑劣地过这一生，就太长了。这启发了我， 在这种困难的抉择下，本人思来想去，寝食难安。 水文章因何而发生？ 了解清楚水文章到底是一种怎么样的存在，是解决一切问题的关键。 生活中，若水文章出现了，我们就不得不考虑它出现了的事实。 就我个人来说，水文章对我的意义，不能不说非常重大。 水文章的发生，到底需要如何做到，不水文章的发生，又会如何产生。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。<br>　　从这个角度来看， 一般来说， 所谓水文章，关键是水文章需要如何写。 而这些并不是完全重要，更加重要的问题是， 那么， 一般来说， 每个人都不得不面对这些问题。 在面对这种问题时， 就我个人来说，水文章对我的意义，不能不说非常重大。 既然如何， 邓拓曾经提到过，越是没有本领的就越加自命不凡。这似乎解答了我的疑惑。 一般来讲，我们都必须务必慎重的考虑考虑。 带着这些问题，我们来审视一下水文章。 对我个人而言，水文章不仅仅是一个重大的事件，还可能会改变我的人生。 而这些并不是完全重要，更加重要的问题是， 问题的关键究竟为何？ 贝多芬在不经意间这样说过，卓越的人一大优点是：在不利与艰难的遭遇里百折不饶。这似乎解答了我的疑惑。 要想清楚，水文章，到底是一种怎么样的存在。 了解清楚水文章到底是一种怎么样的存在，是解决一切问题的关键。 我们都知道，只要有意义，那么就必须慎重考虑。 总结的来说， 莎士比亚曾经提到过，本来无望的事，大胆尝试，往往能成功。这不禁令我深思。 那么。</p>
@@ -456,7 +456,7 @@ man</code></pre><h1 id="小结-amp-参见"><a href="#小结-amp-参见" class="h
 <li><del>CPU和内存的占用很高很高很高</del></li>
 <li><del>体积很大</del></li>
 </ul>
-<p><img src="/" alt="" class="lazyload" data-src="https://attach.52pojie.cn/forum/202004/03/144827f80q7dtt8w798u03.gif"></p>
+<p><img src="https://attach.52pojie.cn/forum/202004/03/144827f80q7dtt8w798u03.gif" alt="" loading="lazy"></p>
 <p>虽然有很多其他类似的所谓‘ai创作’的工具，但事实上都不怎么靠谱，这个我下载体验了一下，效果在某些时候还是很强的。</p>
 <blockquote>
 <p>窗外的月色逐渐亮了起来，像是要拉开窗帘窥探月的诗人，将阴沉的天空擦亮。<br>一阵雨点打在窗上，地面上的叶子开始发黄、凋谢。一些花的草蝇在急雨中挣扎，在小巷中漫无目的地躲避着，它们不知道它们从什么时候开始一直淋雨，它们吐露了什么。但它们毕竟无法找到自己的一片安宁和休息。因为，有雨，它们自己打着伞，躲避雨，躲避闪避这无尽的雨。</p>
@@ -470,7 +470,7 @@ man</code></pre><h1 id="小结-amp-参见"><a href="#小结-amp-参见" class="h
 <p><del>oh，我的上帝，我向你保证，没有ai比这写的更优美了</del></p>
 <p>其实这个还是有点不通畅，尤其是第一句的衔接上，可能是要看你给它的开头对不对库的吧</p>
 <h1 id="营销号的无脑水"><a href="#营销号的无脑水" class="headerlink" title="营销号的无脑水"></a>营销号的无脑水</h1><p>如图所示</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200410214952.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200410214952.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>百度app被约谈是怎么回事呢？百度app相信大家都很熟悉，但是百度app被约谈是怎么回事呢？下面就让小编带大家一起了解吧。<br>百度app被约谈，其实就是百度app被约谈了，大家可能会感到很惊讶百度app怎么会被约谈呢？但事实就是这样，小编也感到非常惊讶。<br>那么这就是关于百度app被约谈的全部内容了，大家有什么想法呢？欢迎在评论区告诉小编一起讨论哦</p>
 </blockquote>
@@ -494,12 +494,12 @@ man</code></pre><h1 id="小结-amp-参见"><a href="#小结-amp-参见" class="h
 <p>下载之后<strong>保持乱码状态解压</strong></p>
 <p>然后在<code>RewriteAlpha</code>文件夹中，往MMD里加入这个<code>RewriteAlpha.x</code></p>
 <p>在MMD&gt;背景&gt;绘制附件中，把<code>RewriteAlpha.x</code>放到最后一位</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200407205316.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200407205316.png" alt="" loading="lazy"></p>
 <p>然后打开MME面板，找到<code>alphamap</code>栏，把skybox和stage的渲染关闭（取消勾选），人物模型的渲染开启，并勾选上RewriteAlpha.x的渲染</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200407205639.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200407205639.png" alt="" loading="lazy"></p>
 <p>这样就算完成了，导出的时候将会导出只有人物渲染，且背景是透明通道的视频，也可以先导出一张png看看效果。<del>别渲染了半天发现不是透明通道，问就是血泪史</del></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://img.asnet.top/i/2020/04/07/yrrxxj.png"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/alphammd.png"></p>
+<p><img src="https://img.asnet.top/i/2020/04/07/yrrxxj.png" alt="" loading="lazy"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/alphammd.png" alt="" loading="lazy"></p>
 ]]></content>
       <categories>
         <category>小技术</category>
@@ -709,39 +709,39 @@ man</code></pre><h1 id="小结-amp-参见"><a href="#小结-amp-参见" class="h
     <title>mc生存日记之从开服到炸图</title>
     <url>/mcshengcunrijizhicongkaifudaozhatu.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h1><p>话说某个沙雕群的普通上午，突然这时</p>
-<p><img src="/" alt="GaTiAP.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTiAP.png"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaTiAP.png" alt="GaTiAP.png" loading="lazy"></p>
 <p>于是乎</p>
-<p><img src="/" alt="GaTFtf.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTFtf.png"></p>
-<p><img src="/" alt="GaTkh8.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTkh8.png"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaTFtf.png" alt="GaTFtf.png" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaTkh8.png" alt="GaTkh8.png" loading="lazy"></p>
 <p>接着（已经开打了2333）</p>
-<p><img src="/" alt="GaTE9S.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTE9S.png"></p>
-<p><img src="/" alt="GaTV1g.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTV1g.png"></p>
-<p><img src="/" alt="GaTeXj.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTeXj.png"></p>
-<p><img src="/" alt="GaTnns.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTnns.png"></p>
-<p><img src="/" alt="GaTuBn.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTuBn.png"></p>
-<p><img src="/" alt="GaTK7q.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTK7q.png"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaTE9S.png" alt="GaTE9S.png" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaTV1g.png" alt="GaTV1g.png" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaTeXj.png" alt="GaTeXj.png" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaTnns.png" alt="GaTnns.png" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaTuBn.png" alt="GaTuBn.png" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaTK7q.png" alt="GaTK7q.png" loading="lazy"></p>
 <h1 id="实况"><a href="#实况" class="headerlink" title="实况"></a>实况</h1><p>第一波被炸</p>
-<p><img src="/" alt="Gaoqk6.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/Gaoqk6.png"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/Gaoqk6.png" alt="Gaoqk6.png" loading="lazy"></p>
 <p><del>南村凋零欺我老无力</del></p>
 <p>各种肝出来的珍贵物品散落一地</p>
-<p><img src="/" alt="Gao701.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/Gao701.png"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/Gao701.png" alt="Gao701.png" loading="lazy"></p>
 <p>被炸了的后山</p>
-<p><img src="/" alt="GaoHTx.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaoHTx.png"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaoHTx.png" alt="GaoHTx.png" loading="lazy"></p>
 <p>我要打三个！</p>
-<p><img src="/" alt="GaoLtK.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaoLtK.png"></p>
-<p><img src="/" alt="GaoOfO.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaoOfO.png"></p>
-<p><img src="/" alt="GaojpD.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaojpD.png"></p>
-<p><img src="/" alt="Gaox6H.jpg" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/Gaox6H.jpg"></p>
-<p><img src="/" alt="GaozXd.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaozXd.png"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaoLtK.png" alt="GaoLtK.png" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaoOfO.png" alt="GaoOfO.png" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaojpD.png" alt="GaojpD.png" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/Gaox6H.jpg" alt="Gaox6H.jpg" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaozXd.png" alt="GaozXd.png" loading="lazy"></p>
 <p>不知道打了多少只后，基友们意识到需要个信标</p>
-<p><img src="/" alt="GaTpnA.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTpnA.png"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaTpnA.png" alt="GaTpnA.png" loading="lazy"></p>
 <p>然后接着互相伤害</p>
-<p><img src="/" alt="GaT90I.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaT90I.png"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaT90I.png" alt="GaT90I.png" loading="lazy"></p>
 <p>我 要 打 五 个</p>
-<p><img src="/" alt="GaTC7t.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaTC7t.png"></p>
+<p><img src="https://s1.ax1x.com/2020/04/03/GaTC7t.png" alt="GaTC7t.png" loading="lazy"></p>
 <h1 id="To-Be-Continue"><a href="#To-Be-Continue" class="headerlink" title="To Be Continue"></a>To Be Continue</h1><p>To Be Continue</p>
 <p>对于这件事，我只想说</p>
-<p><a href="https://imgchr.com/i/GaoIX9" target="_blank" rel="noopener"><img src="/" alt="GaoIX9.png" class="lazyload" data-src="https://s1.ax1x.com/2020/04/03/GaoIX9.png"></a></p>
+<p><a href="https://imgchr.com/i/GaoIX9" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/03/GaoIX9.png" alt="GaoIX9.png" loading="lazy"></a></p>
 <p>附上小视频</p>
 <iframe src="//player.bilibili.com/player.html?aid=667574836&bvid=BV1Ea4y1t7vy&cid=173564193&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"  style="width:640px; height:460px"> </iframe>
 
@@ -782,15 +782,8 @@ man</code></pre><h1 id="小结-amp-参见"><a href="#小结-amp-参见" class="h
 <h1 id="废话"><a href="#废话" class="headerlink" title="废话"></a>废话</h1><p>等我梳理的差不多了就来补上</p>
 <p><del>都快开学了那就别补了</del></p>
 <p>话说为什么要学爬虫，契机是因为看到了这个<a href="https://api.lolicon.app/setu" target="_blank" rel="noopener">随机涩图</a></p>
-<p>是的，你没有看错，随机涩图api</p>
-<blockquote>
-<p><del>涩图是第一生产力</del></p>
-</blockquote>
-<blockquote>
-<p><del>涩图是一盏明灯，给你照亮人生的道路；涩图是一把钥匙，带你开启成功之门；…·</del></p>
-</blockquote>
 <hr>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#下载头像并保存在/avatar/{时间戳}.jpg中</span>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#下载头像并保存在/avatar/{时间戳}.jpg中</span>
 <span class="token keyword">import</span> requests
 <span class="token keyword">import</span> os
 <span class="token keyword">import</span> time
@@ -803,8 +796,8 @@ url <span class="token operator">=</span> <span class="token string">'https://ap
     a <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token string">'avatar'</span><span class="token punctuation">,</span><span class="token string">'{b}.jpg'</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>b<span class="token operator">=</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span>
     <span class="token keyword">with</span> open<span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token string">'wb'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
         f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>x<span class="token punctuation">.</span>content<span class="token punctuation">)</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span><span class="token string">'.jpg'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#爬取leao.blog的文章封面图直链</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span><span class="token string">'.jpg'</span><span class="token punctuation">)</span></code></pre>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#爬取leao.blog的文章封面图直链</span>
 <span class="token keyword">import</span> requests<span class="token punctuation">,</span>os<span class="token punctuation">,</span>time
 <span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
 pagenum <span class="token operator">=</span> <span class="token number">0</span>
@@ -825,7 +818,7 @@ pagenum <span class="token operator">=</span> <span class="token number">0</span
         <span class="token keyword">pass</span>
 <span class="token keyword">else</span><span class="token punctuation">:</span>
     <span class="token keyword">pass</span>
-<span class="token comment" spellcheck="true">#pass写这么全有必要吗</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment" spellcheck="true">#pass写这么全有必要吗</span></code></pre>
 <p>先溜了，可能要被某人杠</p>
 ]]></content>
       <categories>
@@ -871,20 +864,20 @@ pagenum <span class="token operator">=</span> <span class="token number">0</span
 <p>print(‘’’line1<br>… line2<br>… line3’’’)<br>line1<br>line2<br>line3</p>
 </blockquote>
 <p>多行字符串 ‘’’…’’’ 还可以在前面加上r使用</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding: utf-8 -*-</span>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding: utf-8 -*-</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>r<span class="token triple-quoted-string string">'''hello,\n
-world'''</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+world'''</span><span class="token punctuation">)</span></code></pre>
 <p>输出内容:</p>
 <blockquote>
 <p>hello,\n<br>world</p>
 </blockquote>
 <p>字符串可以索引或切片</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/stringqiepiansuoyin.jpg"></p>
-<pre class="line-numbers language-python"><code class="language-python">name <span class="token operator">=</span> <span class="token string">'My Name Is Miku'</span>
+<p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/stringqiepiansuoyin.jpg" alt="" loading="lazy"></p>
+<pre class=" language-python"><code class="language-python">name <span class="token operator">=</span> <span class="token string">'My Name Is Miku'</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token punctuation">[</span><span class="token number">11</span><span class="token punctuation">:</span><span class="token number">15</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true"># 将会输出‘Mike’</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true"># 将会输出‘M'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment" spellcheck="true"># 将会输出‘M'</span></code></pre>
 <h2 id="布尔值"><a href="#布尔值" class="headerlink" title="布尔值"></a>布尔值</h2><p>布尔值只有<code>True</code>和 <code>Flase</code></p>
 <p>在python中，可以直接使用True，Flase表示布尔值（区分大小写）。也可以通过布尔运算计算出来</p>
 <p>布尔值可以用<code>and</code>、<code>or</code>和<code>not</code>运算。</p>
@@ -902,16 +895,16 @@ world'''</span><span class="token punctuation">)</span><span aria-hidden="true" 
 <p>需要提起的一点是，编程中的<code>=</code> 不是数学中的等号，它是赋值符号，把右边的值赋给左边</p>
 <h1 id="list-和-tuple"><a href="#list-和-tuple" class="headerlink" title="list 和 tuple"></a>list 和 tuple</h1><h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><h3 id="简要概念-1"><a href="#简要概念-1" class="headerlink" title="简要概念"></a>简要概念</h3><p>list是python内置的一种数据类型：列表。它是一个有序的集合，可以随时添加，更改，删除其中的元素。其中元素的数据类型可以不同或相同<br>并且，list可嵌套<br><del>（禁止套娃）</del></p>
 <p>例：</p>
-<pre class="line-numbers language-python"><code class="language-python">alpha <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'wtf'</span><span class="token punctuation">,</span><span class="token string">'awsl'</span><span class="token punctuation">,</span><span class="token string">'gkd'</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class=" language-python"><code class="language-python">alpha <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'wtf'</span><span class="token punctuation">,</span><span class="token string">'awsl'</span><span class="token punctuation">,</span><span class="token string">'gkd'</span><span class="token punctuation">]</span></code></pre>
 <p>这时变量<code>alpha</code> 就是一个list</p>
 <p>用len()函数可以获得list元素的个数:</p>
-<pre class="line-numbers language-python"><code class="language-python">len<span class="token punctuation">(</span>alpha<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class=" language-python"><code class="language-python">len<span class="token punctuation">(</span>alpha<span class="token punctuation">)</span></code></pre>
 <p>输出： <code>3</code></p>
 <p>用索引来访问list中指定位置的元素，索引从0开始</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span>alpha<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span>alpha<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre>
 <p>输出： <code>wtf</code></p>
 <p>索引也可以倒着来，最后一个索引是-1</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span>alpha<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span>alpha<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre>
 <p>输出： <code>gkd</code></p>
 <p>注意索引不要超出范围，也就是不要越界</p>
 <h3 id="元素操作"><a href="#元素操作" class="headerlink" title="元素操作"></a>元素操作</h3><ul>
@@ -922,16 +915,16 @@ world'''</span><span class="token punctuation">)</span><span aria-hidden="true" 
 <li>访问元素：<br><code>print(alpha[1])</code><br>输出<br><code>114514</code></li>
 </ul>
 <p>嵌套元素的访问方法：<br>先设</p>
-<pre class="line-numbers language-python"><code class="language-python">list1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'套娃一'</span><span class="token punctuation">,</span><span class="token string">'占个位置'</span><span class="token punctuation">]</span>
-list2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'套娃二'</span><span class="token punctuation">,</span>list1<span class="token punctuation">,</span><span class="token string">'蹲个坑'</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class=" language-python"><code class="language-python">list1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'套娃一'</span><span class="token punctuation">,</span><span class="token string">'占个位置'</span><span class="token punctuation">]</span>
+list2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'套娃二'</span><span class="token punctuation">,</span>list1<span class="token punctuation">,</span><span class="token string">'蹲个坑'</span><span class="token punctuation">]</span></code></pre>
 <p>若要从<code>list2</code>中取出’套娃一’，则</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span>list2<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span>list2<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> </code></pre>
 <p>这种list被称为二维数组，还有三维四维五维…以此类推<br><del>明明就是套娃</del></p>
 <h2 id="tuple"><a href="#tuple" class="headerlink" title="tuple"></a>tuple</h2><blockquote>
 <p>另一种有序列表叫元组：tuple。tuple和list非常类似，但是tuple一旦初始化就不能修改</p>
 </blockquote>
-<pre class="line-numbers language-python"><code class="language-python">now <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'no'</span><span class="token punctuation">,</span><span class="token string">'omg'</span><span class="token punctuation">,</span><span class="token string">'nice'</span><span class="token punctuation">]</span>
-delta <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">'fxxk'</span><span class="token punctuation">,</span><span class="token string">'me'</span><span class="token punctuation">,</span>now<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class=" language-python"><code class="language-python">now <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'no'</span><span class="token punctuation">,</span><span class="token string">'omg'</span><span class="token punctuation">,</span><span class="token string">'nice'</span><span class="token punctuation">]</span>
+delta <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">'fxxk'</span><span class="token punctuation">,</span><span class="token string">'me'</span><span class="token punctuation">,</span>now<span class="token punctuation">)</span></code></pre>
 <p>在上面的代码中，<code>now</code>是list，<code>delta</code>是tuple</p>
 <p><strong>虽然tuple被称为‘不可修改’，但实际上指的是元素的指向不可修改，在上述代码中，如果你修改了<code>now</code>的元素，<code>delta</code>中的’<code>now</code>‘元素的内容也会随之改变，但变得不是tuple，而是<code>now</code>这个list</strong></p>
 <p>由于tuple不可修改的特性，它比list更安全</p>
@@ -974,32 +967,32 @@ delta <span class="token operator">=</span> <span class="token punctuation">(</s
 <li>pow(x,y)</li>
 </ul>
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>1</p>
-<pre class="line-numbers language-python"><code class="language-python">a <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<pre class=" language-python"><code class="language-python">a <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 b <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 c <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 p <span class="token operator">=</span> pow<span class="token punctuation">(</span><span class="token punctuation">(</span>c<span class="token operator">**</span><span class="token number">2</span><span class="token operator">-</span><span class="token number">3</span><span class="token operator">*</span>b<span class="token operator">+</span>a<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>
 q <span class="token operator">=</span> <span class="token number">5</span><span class="token operator">*</span>a<span class="token operator">*</span>c
 t<span class="token operator">=</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token operator">*</span>q
-<span class="token keyword">print</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">print</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span></code></pre>
 <p>2</p>
-<pre class="line-numbers language-python"><code class="language-python">s <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<pre class=" language-python"><code class="language-python">s <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 i <span class="token operator">=</span> <span class="token number">1</span>
 s <span class="token operator">=</span> <span class="token number">2</span><span class="token operator">*</span>s<span class="token number">-1</span>
 <span class="token keyword">while</span> i<span class="token operator">>=</span><span class="token number">3</span><span class="token punctuation">:</span>
     i<span class="token operator">+=</span><span class="token number">1</span>
 <span class="token keyword">else</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span></code></pre>
 <p>3</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> math
+<pre class=" language-python"><code class="language-python"><span class="token keyword">import</span> math
 
 x <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">if</span> x<span class="token operator">></span><span class="token number">0</span><span class="token punctuation">:</span>
     y <span class="token operator">=</span> math<span class="token punctuation">.</span>log<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
 <span class="token keyword">else</span><span class="token punctuation">:</span>
     y <span class="token operator">=</span> math<span class="token punctuation">.</span>exp<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>y<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">print</span><span class="token punctuation">(</span>y<span class="token punctuation">)</span></code></pre>
 <p>4</p>
-<pre class="line-numbers language-python"><code class="language-python">m <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<pre class=" language-python"><code class="language-python">m <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 n <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 i <span class="token operator">=</span> <span class="token number">1</span>
 m <span class="token operator">=</span> m<span class="token operator">+</span><span class="token number">2</span><span class="token operator">*</span>i
@@ -1009,43 +1002,43 @@ n <span class="token operator">=</span> n<span class="token number">-2</span><sp
     m <span class="token operator">=</span> m<span class="token operator">+</span><span class="token number">2</span><span class="token operator">*</span>i
     n <span class="token operator">=</span> n<span class="token number">-2</span><span class="token operator">*</span>i
 <span class="token keyword">else</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span></code></pre>
 <p>5</p>
-<pre class="line-numbers language-python"><code class="language-python">s <span class="token operator">=</span> <span class="token number">0</span> <span class="token operator">-</span> <span class="token number">10</span>
+<pre class=" language-python"><code class="language-python">s <span class="token operator">=</span> <span class="token number">0</span> <span class="token operator">-</span> <span class="token number">10</span>
 i <span class="token operator">=</span> <span class="token number">1</span>
 <span class="token keyword">while</span> i<span class="token operator">></span><span class="token number">5</span><span class="token punctuation">:</span>
     s<span class="token operator">=</span>s<span class="token operator">+</span>i
     i<span class="token operator">=</span>i<span class="token operator">+</span><span class="token number">1</span>
 <span class="token keyword">else</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span></code></pre>
 <p>6</p>
-<pre class="line-numbers language-python"><code class="language-python">a <span class="token operator">=</span> <span class="token number">0</span> <span class="token operator">-</span> <span class="token number">5</span>
+<pre class=" language-python"><code class="language-python">a <span class="token operator">=</span> <span class="token number">0</span> <span class="token operator">-</span> <span class="token number">5</span>
 b <span class="token operator">=</span> <span class="token number">3</span>
 a <span class="token operator">=</span> a <span class="token operator">*</span> b
 b <span class="token operator">=</span> a <span class="token operator">-</span> b
-<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token operator">-</span>b<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token operator">-</span>b<span class="token punctuation">)</span></code></pre>
 <p>7</p>
-<pre class="line-numbers language-python"><code class="language-python">a <span class="token operator">=</span> <span class="token number">5</span>
+<pre class=" language-python"><code class="language-python">a <span class="token operator">=</span> <span class="token number">5</span>
 b <span class="token operator">=</span> <span class="token number">7</span>
 c <span class="token operator">=</span> <span class="token number">4</span>
 s <span class="token operator">=</span> a <span class="token operator">+</span> b <span class="token operator">+</span> c
-<span class="token keyword">print</span><span class="token punctuation">(</span>s <span class="token operator">/</span> <span class="token number">3</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">print</span><span class="token punctuation">(</span>s <span class="token operator">/</span> <span class="token number">3</span><span class="token punctuation">)</span></code></pre>
 <p>8</p>
-<pre class="line-numbers language-python"><code class="language-python">a <span class="token operator">=</span> <span class="token number">3</span>
+<pre class=" language-python"><code class="language-python">a <span class="token operator">=</span> <span class="token number">3</span>
 b <span class="token operator">=</span> <span class="token number">5</span>
 x <span class="token operator">=</span> a
 a <span class="token operator">=</span> b
 b <span class="token operator">=</span> x
-<span class="token keyword">print</span><span class="token punctuation">(</span>a <span class="token operator">-</span> b<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a <span class="token operator">-</span> b<span class="token punctuation">)</span></code></pre>
 <p>9</p>
-<pre class="line-numbers language-python"><code class="language-python">x <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">'x= '</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<pre class=" language-python"><code class="language-python">x <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">'x= '</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">if</span> x <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">-</span> <span class="token number">3</span><span class="token punctuation">:</span>
     y <span class="token operator">=</span> x <span class="token operator">+</span> <span class="token number">1</span>
 <span class="token keyword">else</span><span class="token punctuation">:</span>
     y <span class="token operator">=</span> <span class="token number">0</span> <span class="token operator">-</span> x <span class="token operator">-</span> <span class="token number">5</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>y<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">print</span><span class="token punctuation">(</span>y<span class="token punctuation">)</span></code></pre>
 <p>10</p>
-<pre class="line-numbers language-python"><code class="language-python">n <span class="token operator">=</span> <span class="token number">1</span>
+<pre class=" language-python"><code class="language-python">n <span class="token operator">=</span> <span class="token number">1</span>
 m <span class="token operator">=</span> <span class="token number">0</span>
 s <span class="token operator">=</span> <span class="token number">0</span>
 m <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">*</span> n <span class="token operator">-</span> <span class="token number">1</span>
@@ -1055,9 +1048,9 @@ s <span class="token operator">=</span> <span class="token number">2</span> <spa
     m <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">*</span> n <span class="token operator">-</span> <span class="token number">1</span>
     s <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">*</span> s <span class="token operator">+</span> m
 <span class="token keyword">else</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span></code></pre>
 <p>11</p>
-<pre class="line-numbers language-python"><code class="language-python">T <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<pre class=" language-python"><code class="language-python">T <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 t <span class="token operator">=</span> <span class="token number">1</span>
 N <span class="token operator">=</span> <span class="token number">1000</span>
 S <span class="token operator">=</span> <span class="token number">0</span>
@@ -1066,9 +1059,9 @@ S <span class="token operator">=</span> <span class="token number">0</span>
     N <span class="token operator">=</span> <span class="token number">0</span> <span class="token operator">-</span> <span class="token number">0.1</span> <span class="token operator">*</span> N
     t <span class="token operator">=</span> t <span class="token operator">+</span> <span class="token number">1</span>
 <span class="token keyword">else</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>S<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>S<span class="token punctuation">)</span></code></pre>
 <p>12</p>
-<pre class="line-numbers language-python"><code class="language-python">s <span class="token operator">=</span> <span class="token number">1</span>
+<pre class=" language-python"><code class="language-python">s <span class="token operator">=</span> <span class="token number">1</span>
 a<span class="token operator">=</span>int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 i <span class="token operator">=</span> <span class="token number">3</span>
 <span class="token keyword">while</span> i <span class="token operator">&lt;</span> a<span class="token punctuation">:</span>
@@ -1076,8 +1069,8 @@ i <span class="token operator">=</span> <span class="token number">3</span>
     i <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">2</span>
 <span class="token keyword">else</span><span class="token punctuation">:</span>
     <span class="token keyword">pass</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="废话"><a href="#废话" class="headerlink" title="废话"></a>废话</h2><p>只是把高中数学课本必修三算法基础中的几道练习题用python写了出来而已<br><img src="/" alt="" class="lazyload" data-src="https://pic.downk.cc/item/5e7b496b504f4bcb04fd914d.jpg"></p>
+<span class="token keyword">print</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span></code></pre>
+<h2 id="废话"><a href="#废话" class="headerlink" title="废话"></a>废话</h2><p>只是把高中数学课本必修三算法基础中的几道练习题用python写了出来而已<br><img src="https://pic.downk.cc/item/5e7b496b504f4bcb04fd914d.jpg" alt="" loading="lazy"></p>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -1210,7 +1203,7 @@ i <span class="token operator">=</span> <span class="token number">3</span>
     <title>小学生都会系列--使用python计算任意三角形面积</title>
     <url>/xiaoxueshengduhuixilieshiyongpythonjisuanrenyisanjiaoxingmianji.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>python利用<a href="[https://baike.baidu.com/item/%E6%B5%B7%E4%BC%A6%E5%85%AC%E5%BC%8F](https://baike.baidu.com/item/海伦公式)">海伦公式</a>计算任意三角形面积</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#边长输入</span>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#边长输入</span>
 x <span class="token operator">=</span> float<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">'第一边长：'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 y <span class="token operator">=</span> float<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">'第二边长: '</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 z <span class="token operator">=</span> float<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">'第三边长：'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
@@ -1220,7 +1213,7 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
 <span class="token keyword">else</span><span class="token punctuation">:</span>
     m <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token operator">+</span>y<span class="token operator">+</span>z<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span>
     s <span class="token operator">=</span> <span class="token punctuation">(</span>m<span class="token operator">*</span><span class="token punctuation">(</span>m<span class="token operator">-</span>x<span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span>m<span class="token operator">-</span>y<span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span>m<span class="token operator">-</span>z<span class="token punctuation">)</span><span class="token operator">**</span><span class="token number">0.5</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'三角形面积为：%0.2f'</span> <span class="token operator">%</span> s<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#保留两位小数，输出计算结果</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'三角形面积为：%0.2f'</span> <span class="token operator">%</span> s<span class="token punctuation">)</span><span class="token comment" spellcheck="true">#保留两位小数，输出计算结果</span></code></pre>
 <p>极其简单的一串代码。而且事实上，它不够严密，例如三角形边长应为正值数字，而代码中没有对此限定。</p>
 ]]></content>
       <categories>
@@ -1259,7 +1252,7 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
 <p><strong>红石中继器</strong> ：基于<a href="https://minecraft-zh.gamepedia.com/红石中继器" target="_blank" rel="noopener">红石中继器</a>的二极管制作是最简单方便的，只需将一个红石中继器垂直放置在红石电路即可。</p>
 <p>此二极管电路完成后有 1 个刻度的延时，并可调至最多延时4个刻度。</p>
 <p>下图示范了这种简单的架构。</p>
-<p><img src="/" alt="红石中继器" class="lazyload" data-src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/thumb/7/7a/Repeater_bridge.png/150px-Repeater_bridge.png?version=fc8715206f3b57b74667695c989662c0"></p>
+<p><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/thumb/7/7a/Repeater_bridge.png/150px-Repeater_bridge.png?version=fc8715206f3b57b74667695c989662c0" alt="红石中继器" loading="lazy"></p>
 </blockquote>
 <blockquote>
 <p><strong>红石火把中继器</strong> ：红石火把中继器可以很有效地制作二极管（但它有两个刻度的延时作为沉重代价）</p>
@@ -1269,13 +1262,13 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
 <p>在靠近电路输入的“非门”，红石火把放置在固体方块的顶部；而靠近电路输出的“非门”，红石火把放置在固体方块的侧面。</p>
 <p>第二个红石火把因为受到第一个火把产生的电流影响而初始熄灭（注意这将会有一次短暂的脉冲）。</p>
 <p>若有需要，两个“非门”之间可以放置<a href="https://minecraft-zh.gamepedia.com/红石粉" target="_blank" rel="noopener">红石粉</a>延长电路（最多15格空间）。</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/thumb/6/6a/RedstoneInverter.png/300px-RedstoneInverter.png?version=7051d0947e7cf0796341ddc9e86de267"></p>
+<p><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/thumb/6/6a/RedstoneInverter.png/300px-RedstoneInverter.png?version=7051d0947e7cf0796341ddc9e86de267" alt="" loading="lazy"></p>
 </blockquote>
-<h3 id="Minecraft中的红石逻辑门演示"><a href="#Minecraft中的红石逻辑门演示" class="headerlink" title="Minecraft中的红石逻辑门演示"></a>Minecraft中的红石逻辑门演示</h3><p><img src="/" alt="非门" class="lazyload" data-src="https://s1.ax1x.com/2020/03/20/86oGkV.png"></p>
-<p><img src="/" alt="或门" class="lazyload" data-src="https://s1.ax1x.com/2020/03/20/86olmn.png"></p>
-<p><img src="/" alt="与门" class="lazyload" data-src="https://s1.ax1x.com/2020/03/20/86oJYT.png"></p>
-<p><img src="/" alt="与非门" class="lazyload" data-src="https://s1.ax1x.com/2020/03/20/86o3T0.png"></p>
-<p><img src="/" alt="或非门" class="lazyload" data-src="https://s1.ax1x.com/2020/03/20/86oMOs.png"></p>
+<h3 id="Minecraft中的红石逻辑门演示"><a href="#Minecraft中的红石逻辑门演示" class="headerlink" title="Minecraft中的红石逻辑门演示"></a>Minecraft中的红石逻辑门演示</h3><p><img src="https://s1.ax1x.com/2020/03/20/86oGkV.png" alt="非门" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/20/86olmn.png" alt="或门" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/20/86oJYT.png" alt="与门" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/20/86o3T0.png" alt="与非门" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/20/86oMOs.png" alt="或非门" loading="lazy"></p>
 <h3 id="红石逻辑门的应用"><a href="#红石逻辑门的应用" class="headerlink" title="红石逻辑门的应用"></a>红石逻辑门的应用</h3><p><em>暂空</em> </p>
 ]]></content>
       <categories>
@@ -1345,7 +1338,7 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
     <url>/benzhanyijierumengicpbeian20203939hao.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>前两天见到某位兄台在搞这个</p>
 <p>于是也整了个</p>
-<p><a href="https://imgchr.com/i/83U5ef" target="_blank" rel="noopener"><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/15/83U5ef.png"></a></p>
+<p><a href="https://imgchr.com/i/83U5ef" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/03/15/83U5ef.png" alt="" loading="lazy"></a></p>
 <p>在页脚已经可以看到了</p>
 <p>（似乎并没有什么卵用）</p>
 ]]></content>
@@ -1359,26 +1352,26 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
   <entry>
     <title>这几天干了啥</title>
     <url>/zhejitianganliaosha.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="考试系统测试时皮了一下"><a href="#考试系统测试时皮了一下" class="headerlink" title="考试系统测试时皮了一下"></a>考试系统测试时皮了一下</h3><p><img src="/" alt="主观题全传表情包" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KTKLF.jpg"></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="考试系统测试时皮了一下"><a href="#考试系统测试时皮了一下" class="headerlink" title="考试系统测试时皮了一下"></a>考试系统测试时皮了一下</h3><p><img src="https://s1.ax1x.com/2020/03/13/8KTKLF.jpg" alt="主观题全传表情包" loading="lazy"></p>
 <p>因为只是考试系统测试，所以并没有被审问。</p>
 <p><del>~ 早知道更皮一点传张涩图什么的 ~</del></p>
 <p>不过明天可是真的要云考试了，理科六门全考。</p>
-<h3 id="看了哪些番"><a href="#看了哪些番" class="headerlink" title="看了哪些番"></a>看了哪些番</h3><h4 id="观《邻家索菲》有感"><a href="#观《邻家索菲》有感" class="headerlink" title="观《邻家索菲》有感"></a>观《邻家索菲》有感</h4><p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K7fc6.jpg"></p>
+<h3 id="看了哪些番"><a href="#看了哪些番" class="headerlink" title="看了哪些番"></a>看了哪些番</h3><h4 id="观《邻家索菲》有感"><a href="#观《邻家索菲》有感" class="headerlink" title="观《邻家索菲》有感"></a>观《邻家索菲》有感</h4><p><img src="https://s1.ax1x.com/2020/03/13/8K7fc6.jpg" alt="" loading="lazy"></p>
 <p>看完这部番，你有什么感想？<br>请写一篇观后感，字数不少于800字。</p>
 <p>doge</p>
-<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KHIx0.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KHRaQ.jpg"></p>
-<p><img src="/" alt="百合大法好" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KHhPs.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KH2Vg.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KHW5j.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KHTMV.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KH7rT.jpg"></p>
-<p><img src="/" alt="真就吸血啊" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KHLa4.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KHHqU.jpg"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8KHIx0.jpg" alt="" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8KHRaQ.jpg" alt="" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8KHhPs.jpg" alt="百合大法好" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8KH2Vg.jpg" alt="" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8KHW5j.jpg" alt="" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8KHTMV.jpg" alt="" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8KH7rT.jpg" alt="" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8KHLa4.jpg" alt="真就吸血啊" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8KHHqU.jpg" alt="" loading="lazy"></p>
 <p><del>~ 可爱的吸血鬼给我也整一个请来吸干我 ~</del></p>
-<h4 id="エロマンガ先生"><a href="#エロマンガ先生" class="headerlink" title="エロマンガ先生"></a>エロマンガ先生</h4><p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KqoHU.png"></p>
-<p><img src="/" alt="害怕" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8KqIBT.png"></p>
-<p><img src="/" alt="emmmmm" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8Kq5uV.png"></p>
+<h4 id="エロマンガ先生"><a href="#エロマンガ先生" class="headerlink" title="エロマンガ先生"></a>エロマンガ先生</h4><p><img src="https://s1.ax1x.com/2020/03/13/8KqoHU.png" alt="" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8KqIBT.png" alt="害怕" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8Kq5uV.png" alt="emmmmm" loading="lazy"></p>
 <h4 id="迷茫管家和懦弱的我"><a href="#迷茫管家和懦弱的我" class="headerlink" title="迷茫管家和懦弱的我"></a>迷茫管家和懦弱的我</h4><p>老番补一下？</p>
 <p>这部<del>~ 作画精美，剧情优秀，感情真挚 ~</del> 最重要的是时不时开车看着很刺激的番值得补一下</p>
 <p>淦，截图找不到了，改天补上</p>
@@ -1409,11 +1402,9 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
   <entry>
     <title>使用Python批量下载文本中的逐行图片链接</title>
     <url>/shiyongpythonpiliangxiazaiwenbenzhongdezhuxingwenjianlianjie.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h4 id="简介说明"><a href="#简介说明" class="headerlink" title="简介说明"></a>简介说明</h4><p>非完全原创，参考了网上一些大佬的思路。如有雷同请来打我）<br>有任何问题可以在下面留言，或使用qq，邮箱等方式联系我</p>
-<hr>
-<p>使用Python从一个包含大量多行链接的文本文件中，批量下载那些链接中的内容</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h4 id="简介说明"><a href="#简介说明" class="headerlink" title="简介说明"></a>简介说明</h4><h2 id="非完全原创"><a href="#非完全原创" class="headerlink" title="非完全原创"></a>非完全原创</h2><p>使用Python从一个包含大量多行链接的文本文件中，批量下载那些链接中的内容</p>
 <p>目前直接使用可能下载速度并不快，正在研究如何多线程下载</p>
-<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#从一个文本文件中读取链接并下载</span>
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#从一个文本文件中读取链接并下载</span>
 <span class="token keyword">from</span> urllib<span class="token punctuation">.</span>request <span class="token keyword">import</span> urlretrieve
 <span class="token keyword">import</span> os
 
@@ -1435,7 +1426,7 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
                 <span class="token keyword">except</span><span class="token punctuation">:</span>
                      <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'%s %i/%i'</span> <span class="token operator">%</span> <span class="token punctuation">(</span>category<span class="token punctuation">,</span> i<span class="token punctuation">,</span> n_urls<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'no image'</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#未能获取后输出no image提示</span>
 <span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
-    download<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    download<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <hr>
 <p>代码分享 X<br>测试花里胡哨的高亮插件 X<br>单纯就是来氵的 √ doge</p>
 <blockquote>
@@ -1457,19 +1448,19 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
 <a id="more"></a>
 
 <hr>
-<h4 id="放风筝"><a href="#放风筝" class="headerlink" title="放风筝~"></a>放风筝~</h4><p>天气正好，于是拿出 <del>~ 可能是地摊捡的芭比娃娃 ~</del> 风筝来放<br><img src="/" alt="没费多大劲就飞起来啦" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K4x2T.jpg"></p>
-<p><img src="/" alt="这蓝真天，这白真云" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K5pMF.jpg"></p>
+<h4 id="放风筝"><a href="#放风筝" class="headerlink" title="放风筝~"></a>放风筝~</h4><p>天气正好，于是拿出 <del>~ 可能是地摊捡的芭比娃娃 ~</del> 风筝来放<br><img src="https://s1.ax1x.com/2020/03/13/8K4x2T.jpg" alt="没费多大劲就飞起来啦" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8K5pMF.jpg" alt="这蓝真天，这白真云" loading="lazy"></p>
 <p><del>~ 一个猛男放个芭比娃娃也太奇怪了 ~</del><br>没一会就收了（传统艺能缠了线）</p>
 <p>这里算是新建的一个人工湖，拍了几张照片</p>
-<p><img src="/" alt="地方政府楼(智能的谷歌相册风格化效果)" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K4O5q.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K59r4.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K5VG6.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K4vGV.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K5exO.jpg"></p>
-<p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K5ZRK.jpg"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8K4O5q.jpg" alt="地方政府楼(智能的谷歌相册风格化效果)" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8K59r4.jpg" alt="" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8K5VG6.jpg" alt="" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8K4vGV.jpg" alt="" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8K5exO.jpg" alt="" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8K5ZRK.jpg" alt="" loading="lazy"></p>
 <hr>
-<h4 id="和某人面基"><a href="#和某人面基" class="headerlink" title="和某人面基"></a>和某人面基</h4><p><img src="/" alt="" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K5iZ9.jpg"></p>
-<p><img src="/" alt="两不知名神秘男子" class="lazyload" data-src="https://s1.ax1x.com/2020/03/13/8K5nMD.png"></p>
+<h4 id="和某人面基"><a href="#和某人面基" class="headerlink" title="和某人面基"></a>和某人面基</h4><p><img src="https://s1.ax1x.com/2020/03/13/8K5iZ9.jpg" alt="" loading="lazy"></p>
+<p><img src="https://s1.ax1x.com/2020/03/13/8K5nMD.png" alt="两不知名神秘男子" loading="lazy"></p>
 <hr>
 <h4 id="别问，问就是补作业补到半夜"><a href="#别问，问就是补作业补到半夜" class="headerlink" title="别问，问就是补作业补到半夜"></a>别问，问就是补作业补到半夜</h4>]]></content>
       <categories>
@@ -1477,25 +1468,6 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
       </categories>
       <tags>
         <tag>日常</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>征文-抗击新冠病毒疫情</title>
-    <url>/zhengwenkangjiyiqing.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="众志成城抗疫情，同甘共苦过难关"><a href="#众志成城抗疫情，同甘共苦过难关" class="headerlink" title="众志成城抗疫情，同甘共苦过难关"></a>众志成城抗疫情，同甘共苦过难关</h1><p>2019农历年年末，正当人们繁忙地筹备年事，准备欢欢喜喜辞旧迎新的时候，一场突如其来的新型冠状病毒在湖北武汉爆发，来势汹涌，短短几天就感染万人，触目惊心的数字不断增长，确诊人数呈指数型上升…..本该是全国人民同庆的热闹日子，却因为疫情而冷冷清清。</p>
-<p>先是在武汉肆虐，接着又向全国各地伸出魔掌。令人窒息的新型冠状病毒情报纷至沓来，全国几十省市的警钟相继敲响，这是一场生与死的考验。</p>
-<p>不知是天灾还是人祸，也不知这场灾难到底因何而起。有人说是因为滥吃野味，又有人说是美国的诡计……但不管怎样，面对如此危急的形势，党中央政府斩钉截铁，做好了与病毒抗争到底的准备，实施了一系列有效的措施，竭力遏制疫情的蔓延。疫情爆发不到一周时间，武汉封城，学校停学，工厂停工，交通停运。全国上下十几亿人积极服从党的指挥，待在家里，为疫情的遏制做出自己的贡献。</p>
-<p>难道这只是平淡无奇的应急措施？不！全世界上百个国家，无论是资本主义还是共产主义，无论是发达国家还是发展中国家，无论是欧洲还是亚洲，从古至今，没有任何一国能在如此短的时间内做出如此重大而明智的举措！把一个昔日上千万人的繁华的大都市封城，调动全国各省市的抗疫情资源紧急支援病灾区，全国十几亿人待在家里服从指挥，这些都是在人类历史上绝无仅有的，震惊世界的壮举！所谓奇迹，正是我们眼前所见的中国！</p>
-<p>众志成城，抗击疫情。在几乎每个人都不敢外出待在家中的时候，却有一些疫情中的逆行者，他们就是白衣天使。已有八十四岁高龄的白衣战士钟南山，在十七年前与非典病魔做了做了殊死之争后，在新冠肺炎爆发的今天，他又第一时间毅然前往危险的抗疫一线！在奔赴疫区的疾驰的列车上，这位八十四岁的老人累得闭上了双眼休息片刻。三亚护士海元芳，经历长时间的疫情防控一线工作后，无力支撑，就地休息。大口地吸氧，希望的是尽快恢复体力继续工作。武汉协和医院58岁的急诊科主任张劲农由于长期值守发热门诊，高频接触危重患者，自己都感染了新冠病毒。从医生变患者，但他仍一刻不休，甚至结合自身的病情来总结治疗方法…..他们，就是当代的英雄！</p>
-<p>一方有难，八方支援。“山川异域，风月同天。”“岂曰无衣，与子同裳。”这是处在日本的中国公司为祖国捐赠物资的时候的简短留言。中国互联网大头的腾讯一手捐款3个亿，捐款金额居中国游戏公司之冠，还成立特殊时期的医疗团队帮助第一时间公布疫情。著名艺人韩红成立的基金会，筹集价值数千万的物资亲自送到灾区，此时韩红基金会自成立以来的累计向外捐款金额已达十亿。</p>
-<p>在被媒体频频报道的爱心援助中，更不乏的是那些来自社会各界各个阶层的普通人。香港社会各界人民向内地捐款累计已逾10亿元人民币，支援抗击新冠肺炎疫情。“只有15000块钱，钱不够，向女儿借5000块钱”，这是一位高龄抗战老兵捐款时的留言。经历过汶川地震的一名四川青年，匿名向病区捐赠二十五万只口罩，“只想力所能及地帮助医护人员”，他说。山东滨川一五年级男孩，拿出自己攒了几年的压缩钱，买了九十九个口罩送给一线的民警……疫情下的十四亿普通人，无不心系着武汉，心系着祖国。此时的中华民族正像鲁迅先生说过的那样，“愿中国人，能做事的做事，能发声的发声。有一分热，发一分光。就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。”</p>
-<p>习总书记说，“武汉是英雄的城市，湖北人民、武汉人民是英雄的人民，历史上从来没有被艰难险阻压垮过，只要同志们同心协力、英勇奋斗、共克时艰，我们一定能取得疫情防控斗争的全面胜利。”是的，目前全国的日增确诊人数正在下降，治愈率正在上升。只要我们众志成城，齐心协力，就一定能胜利度过这次难关。待到黑夜结束，黎明绽放时候，便能去见远方的亲人，去会一会久别的朋友，去拥抱异地的恋人，去迎接一线凯旋归来的英雄……我们不怕黑夜，因为我们知道，太阳在明天还会照常升起！</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>作文</tag>
       </tags>
   </entry>
   <entry>
@@ -1518,29 +1490,29 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
 
 <p>骗你的这里并没有涩图</p>
 <h5 id="API"><a href="#API" class="headerlink" title="API"></a>API</h5><ul>
-<li>1<img src="/" alt="www.dmoe.cc/random.php" class="lazyload" data-src="http://www.dmoe.cc/random.php"></li>
-<li>2<img src="/" alt="https://api.yimian.xyz/img" class="lazyload" data-src="https://api.yimian.xyz/img"></li>
-<li>3<img src="/" alt="https://api.yimian.xyz/img?type=moe&amp;size=1920x1080" class="lazyload" data-src="https://api.yimian.xyz/img?type=moe&size=1920x1080"></li>
-<li>4 <a href="https://acg.xydwz.cn/api/api.php" target="_blank" rel="noopener">https://acg.xydwz.cn/api/api.php</a> <img src="/" alt="" class="lazyload" data-src="https://acg.xydwz.cn/api/api.php"></li>
-<li>5<img src="/" alt="https://api.yimian.xyz/img?type=head 随机头像" class="lazyload" data-src="https://api.yimian.xyz/img?type=head"></li>
+<li>1<img src="http://www.dmoe.cc/random.php" alt="www.dmoe.cc/random.php" loading="lazy"></li>
+<li>2<img src="https://api.yimian.xyz/img" alt="https://api.yimian.xyz/img" loading="lazy"></li>
+<li>3<img src="https://api.yimian.xyz/img?type=moe&size=1920x1080" alt="https://api.yimian.xyz/img?type=moe&amp;size=1920x1080" loading="lazy"></li>
+<li>4 <a href="https://acg.xydwz.cn/api/api.php" target="_blank" rel="noopener">https://acg.xydwz.cn/api/api.php</a> <img src="https://acg.xydwz.cn/api/api.php" alt="" loading="lazy"></li>
+<li>5<img src="https://api.yimian.xyz/img?type=head" alt="https://api.yimian.xyz/img?type=head 随机头像" loading="lazy"></li>
 <li>6 <a href="https://api.lolicon.app/setu/" target="_blank" rel="noopener">setu</a></li>
 <li>7<a href="https://api.paugram.com/wallpaper" target="_blank" rel="noopener">https://api.paugram.com/wallpaper</a></li>
 <li></li>
 </ul>
 <h5 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h5><ul>
-<li><p>1<img src="/" alt="聚合图床" class="lazyload" data-src="https://pic.downk.cc/item/5e66e44e98271cb2b870fc77.png"></p>
+<li><p>1<img src="https://pic.downk.cc/item/5e66e44e98271cb2b870fc77.png" alt="聚合图床" loading="lazy"></p>
 </li>
-<li><p>2<img src="/" alt="路过图床" class="lazyload" data-src="https://s2.ax1x.com/2020/03/10/8Cr4Fe.jpg"></p>
+<li><p>2<img src="https://s2.ax1x.com/2020/03/10/8Cr4Fe.jpg" alt="路过图床" loading="lazy"></p>
 </li>
-<li><p>3<img src="/" alt="ASNETIMG" class="lazyload" data-src="https://img.asnet.top/i/2020/03/10/ew0eun.png"></p>
+<li><p>3<img src="https://img.asnet.top/i/2020/03/10/ew0eun.png" alt="ASNETIMG" loading="lazy"></p>
 </li>
 </ul>
 <h5 id="markdown语法"><a href="#markdown语法" class="headerlink" title="markdown语法"></a>markdown语法</h5><blockquote>
 <p><em>从来没有真正的绝境</em>，<strong>只有心灵的迷途</strong></p>
 </blockquote>
 <p><code>hi = &quot;hello world&quot;</code><br><code>print(hi)</code></p>
-<pre class="line-numbers language-python"><code class="language-python">h1 <span class="token operator">=</span> <span class="token string">"hi world"</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>hi<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class=" language-python"><code class="language-python">h1 <span class="token operator">=</span> <span class="token string">"hi world"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>hi<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <h5 id="Tag-Plugins"><a href="#Tag-Plugins" class="headerlink" title="Tag Plugins"></a>Tag Plugins</h5><p>这玩意干嘛用的 貌似能插入youtube视频</p>
 <p>插个bilibili试试</p>
 <iframe src="//player.bilibili.com/player.html?aid=90038383&cid=153865655&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width:640px; height:460px"> </iframe>
@@ -1558,7 +1530,7 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
 <iframe src="url" width="[width]" height="[height]" frameborder="0" loading="lazy" allowfullscreen></iframe>
 
 
-<img src="/" class="[class names] lazyload" title="[width] [height] " alt="title text">
+<img src="/path/to/image" class="[class names]" title="[width] [height] " alt="title text" loading="lazy">
 
 
 <a href="" title="" target="">text url [external] [title]</a>
@@ -1579,20 +1551,20 @@ z <span class="token operator">=</span> float<span class="token punctuation">(</
 <li><del>境内可以使用<a href="http://cosin0.ml" target="_blank" rel="noopener">http://cosin0.ml</a> 访问以加快访问速度</del></li>
 <li>首页图片，文章特色图等调用多个高清图片api，每次刷新都会变化</li>
 <li>本站使用了Valine评论系统，支持markdown语法</li>
-<li>本站使用hexo搭建至github，coding，gitee<br>域名：<a href="https://krau.top">https://krau.top</a><br><a href="https://cos0.gitee.io/" target="_blank" rel="noopener">https://cos0.gitee.io</a><br>原域名：<a href="https://cos0.xyz" target="_blank" rel="noopener">https://cos0.xyz</a></li>
+<li>本站使用hexo搭建至github，coding，gitee</li>
 </ul>
+<p>域名：</p>
+<p><a href="https://krau.top">https://krau.top</a></p>
+<p><a href="https://krau.gitee.io/" target="_blank" rel="noopener">https://krau.gitee.io/</a></p>
+<p>原域名：<a href="https://cos0.xyz" target="_blank" rel="noopener">https://cos0.xyz</a></p>
 <hr>
 <h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><p>TG：<a href="https://t.me/cosinzero" target="_blank" rel="noopener">@cosinzero</a></p>
 <p>bilibili：<a href="https://space.bilibili.com/296036767" target="_blank" rel="noopener">@誓约void</a></p>
-<p>QQ:1636648138</p>
 <hr>
 <h2 id="小广告"><a href="#小广告" class="headerlink" title="小广告"></a>小广告</h2><ul>
 <li>欢迎来Q群里交流（玩耍），什么都可以的哦<br>1075445745</li>
 </ul>
-<p><img src="/" alt="有趣的灵魂" class="lazyload" data-src="https://img.asnet.top/i/2020/03/09/ssa26x.png"></p>
+<p><img src="https://img.asnet.top/i/2020/03/09/ssa26x.png" alt="有趣的灵魂" loading="lazy"></p>
 ]]></content>
-      <categories>
-        <category>告示牌</category>
-      </categories>
   </entry>
 </search>
