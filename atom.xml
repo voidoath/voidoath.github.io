@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://krau.top/"/>
-  <updated>2020-07-15T03:09:06.426Z</updated>
+  <updated>2020-07-16T00:32:11.134Z</updated>
   <id>http://krau.top/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://krau.top/hexoqianyi.html"/>
     <id>http://krau.top/hexoqianyi.html</id>
     <published>2020-07-15T03:06:26.000Z</published>
-    <updated>2020-07-15T03:09:06.426Z</updated>
+    <updated>2020-07-16T00:32:11.134Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><a id="more"></a><p>test</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><a id="more"></a><h2 id="网上方法参差不一，我直接简单粗暴法"><a href="#网上方法参差不一，我直接简单粗暴法" class="headerlink" title="网上方法参差不一，我直接简单粗暴法"></a>网上方法参差不一，我直接简单粗暴法</h2><ol><li><p>备份整个blog文件夹（可以事先清理一下垃圾文件以减小体积）</p></li><li><p>在新设备上安装 node.js 、npm、git</p></li><li><p>使用npm安装hexo</p></li><li><p>配置ssh密钥</p><p><code>ssh-keygen -t rsa -C &quot;example@email.com&quot;</code><br> 生成密钥后复制内容粘贴到代码托管网站的个人密钥设置中（github&gt;settings&gt;SSH and GPG keys&gt;New SSH key)</p></li><li><p>设置git全局身份</p><p> <code>git config --global user.name &quot;your user name&quot;</code></p><p> <code>git config --global user.email &quot;example@email.com&quot;</code></p></li><li><p>定位到备份下来的blog文件夹，执行hexo d部署尝试，可能会遇到以下错误提示：</p><p> “Warning: Permanently added the RSA host key for IP address ‘i.p.i.p’ to the list of known hosts.”</p><p> 并会询问是否仍要建立连接（yes/no）<br> 直接yes就完事</p></li></ol>]]></content>
     
     <summary type="html">
     
