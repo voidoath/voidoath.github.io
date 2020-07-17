@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://krau.top/"/>
-  <updated>2020-07-16T00:32:11.134Z</updated>
+  <updated>2020-07-17T13:01:15.262Z</updated>
   <id>http://krau.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ray-mmd渲染基本流程</title>
+    <link href="http://krau.top/mmdray1.html"/>
+    <id>http://krau.top/mmdray1.html</id>
+    <published>2020-07-17T08:48:46.000Z</published>
+    <updated>2020-07-17T13:01:15.262Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://pic.downk.cc/item/5f119a0214195aa59417256d.png" alt="" loading="lazy"></p><a id="more"></a><h1 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h1><p>前往<a href="https://github.com/ray-cast/ray-mmd" target="_blank" rel="noopener">github</a>下载最新版ray mmd<br>注意：不仅仅是打包下载code就完事的，还需要去下载各项扩展（详见github仓库下的readme）</p><p><img src="https://pic.downk.cc/item/5f116ea214195aa5940a510c.jpg" alt="" loading="lazy"></p><p>下载完成后解压ray和各个扩展，把扩展文件分别复制到ray主目录中对应的文件夹中</p><h1 id="渲染基本流程"><a href="#渲染基本流程" class="headerlink" title="渲染基本流程"></a>渲染基本流程</h1><p>载入人物，场景等数据后，就可以开始ray渲染了<br>但在这之前，还需要在mmd显示菜单中，关闭地面阴影显示，抗锯齿和各向异性过滤<br><img src="https://pic.downk.cc/item/5f11705414195aa5940ae29c.jpg" alt="" loading="lazy"><br><em>因为ray是自带抗锯齿和阴影的，如果不关则会导致一些难以名状的画面和性能问题</em></p><p>第一步需要向mmd中丢入ray根目录下的ray.x和ray_controller.pmx，这两个分别是ray环境和ray控制器</p><p><img src="https://pic.downk.cc/item/5f1171fa14195aa5940b7b3b.jpg" alt="" loading="lazy"></p><p>然后放入ray/skybox目录下的任意一个天空盒，它应该是以.pmx为后缀的文件。<br>此处以<strong>Time of day</strong>为例。<br>丢入之后在背景&gt;模型描绘顺序中调整人物，场景，和skybox的顺序<br>这三个的正确相对顺序应为</p><p>skybox<br>stage（场景）<br>model（人物）</p><p><img src="https://pic.downk.cc/item/5f11739b14195aa5940c0ba1.jpg" alt="" loading="lazy"></p><p>然后在右上角MMEffect中添加渲染</p><p>在mian栏中，为场景和人物添加main文件夹内的main.fx（主渲染）<br><img src="https://pic.downk.cc/item/5f1174ee14195aa5940c6dbe.jpg" alt="" loading="lazy"></p><p>在Envlightmap（环境）栏中，为skybox添加渲染<br><img src="https://pic.downk.cc/item/5f11767114195aa5940d1714.jpg" alt="" loading="lazy"></p><p>在Fogmap（雾气）栏中，为skybox添加雾气效果渲染<br><img src="https://pic.downk.cc/item/5f1177b014195aa5940d801d.jpg" alt="" loading="lazy"><br><em>用方框框起来的三个均为fogmap对应的渲染，只需要选择一个添加就可以，一般选择Time of fog with godray with cloud caster（名字越长越nb）</em></p><p>在materials栏中，为skybox渲染正确的材质<br><img src="https://pic.downk.cc/item/5f119aac14195aa59417535e.jpg" alt="" loading="lazy"></p><p>至此，再稍微调整一下打光和一些参数，就算完成了ray渲染的最基本步骤，现在的画面相较于未渲染的画面已经耐看多了</p><p>before：<br><img src="https://pic.downk.cc/item/5f119e2914195aa5941855c6.jpg" alt="" loading="lazy"></p><p>now：<br><img src="https://pic.downk.cc/item/5f119d2814195aa594180924.jpg" alt="" loading="lazy"></p><p>但这只是最基本的套用渲染的流程，相较于无渲染也就是从看不了提升为了勉强能看，要想做出真正好康的mmd，仅仅这些是完全不行的</p><p>对于接触mmd时间不长的新手来说，没必要去详细了解每个概念，需要的是自己不断尝试，去感受那些渲染功能的具体作用。所以一开始更好的学mmd方法是，什么都不管，跟着做就好了。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://pic.downk.cc/item/5f119a0214195aa59417256d.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="http://krau.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="MMD" scheme="http://krau.top/tags/MMD/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo设备迁移</title>
@@ -475,29 +498,6 @@
     
     
       <category term="AE" scheme="http://krau.top/tags/AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ps学习笔记一之常用操作及快捷键</title>
-    <link href="http://krau.top/psxuexibijiyizhichangyongcaozuojikuaijiejian.html"/>
-    <id>http://krau.top/psxuexibijiyizhichangyongcaozuojikuaijiejian.html</id>
-    <published>2020-04-04T01:12:45.000Z</published>
-    <updated>2020-05-16T11:15:51.146Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h1><h2 id="工具快捷键"><a href="#工具快捷键" class="headerlink" title="工具快捷键"></a>工具快捷键</h2><table><thead><tr><th>工具</th><th>快捷键</th></tr></thead><tbody><tr><td>移动</td><td>V</td></tr><tr><td>矩形选择工具</td><td>M</td></tr><tr><td>套索工具</td><td>L</td></tr><tr><td>快速选择工具</td><td>W</td></tr><tr><td>裁剪/切片</td><td>C</td></tr><tr><td>吸管</td><td>I</td></tr><tr><td>污点修复画笔</td><td>J</td></tr><tr><td>画笔</td><td>B</td></tr><tr><td>仿制图章</td><td>S</td></tr><tr><td>橡皮擦</td><td>E</td></tr><tr><td>钢笔</td><td>P</td></tr><tr><td>文本</td><td>T</td></tr><tr><td>矩形</td><td>U</td></tr><tr><td>抓手</td><td>H</td></tr><tr><td>切换前景/背景色</td><td>X</td></tr></tbody></table><h2 id="操作快捷键"><a href="#操作快捷键" class="headerlink" title="操作快捷键"></a>操作快捷键</h2><table><thead><tr><th>操作</th><th>快捷键</th></tr></thead><tbody><tr><td>撤销</td><td>Ctrl+Z</td></tr><tr><td>重做</td><td>Ctrl+shift+Z</td></tr><tr><td>拷贝图层</td><td>Ctrl+J</td></tr><tr><td>剪切图层</td><td>Ctrl+shift+J</td></tr><tr><td>选中所有图层</td><td>Ctrl+Alt+A</td></tr><tr><td>打组选中图层</td><td>Ctrl+G</td></tr><tr><td>路径建立选区</td><td>Ctrl+回车</td></tr><tr><td>选择并遮住（调整边缘）</td><td>Ctrl+Alt+R</td></tr><tr><td>反选选区</td><td>Ctrl+shift+I</td></tr><tr><td>取消选区</td><td>Ctrl+D</td></tr><tr><td>调整选中图层色相/饱和度</td><td>Ctrl+U</td></tr><tr><td>去色选中图层（黑白）</td><td>Ctrl+shift+U</td></tr><tr><td>选区填充前景色</td><td>Alt+delete</td></tr><tr><td>选区填充背景色</td><td>Ctrl+delete</td></tr><tr><td>自由变换</td><td>Ctrl+T</td></tr><tr><td>再次变换</td><td>Ctrl+shift+T</td></tr></tbody></table><p><em>待补充</em></p><h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><table><thead><tr><th>操作</th><th>效果</th></tr></thead><tbody><tr><td>打开ps时按住Ctrl+Alt+shift</td><td>重置ps</td></tr><tr><td>按住Ctrl点击图层</td><td>调出该图层选区</td></tr><tr><td>按住H+鼠标左键</td><td>快速缩放</td></tr><tr><td>在ps内使用吸管工具点击任意位置并拉出ps窗口</td><td>全局取色</td></tr></tbody></table><p>tips：</p><ul><li>效果图层可以使用黑白两色画笔，以达到对指定区域生效（蒙版）的效果</li><li>把图层转化为智能对象会更方便调整该图层上添加的效果</li><li>ps2020中的快速选择工具中多了一项 ‘对象选择工具’，可以实现效果不错的自动抠图</li><li>扭曲&gt;滤镜&gt;置换 可以实现保留图片材质（如衣服的褶皱）</li></ul><p><em>待补充</em></p>]]></content>
-    
-    <summary type="html">
-    
-      再不记笔记就忘完了
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="http://krau.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="ps" scheme="http://krau.top/tags/ps/"/>
     
   </entry>
   
