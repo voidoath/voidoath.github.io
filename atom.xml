@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://krau.top/"/>
-  <updated>2020-07-17T13:01:15.262Z</updated>
+  <updated>2020-07-27T00:01:13.802Z</updated>
   <id>http://krau.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>异梦</title>
+    <link href="http://krau.top/jimeng.html"/>
+    <id>http://krau.top/jimeng.html</id>
+    <published>2020-07-26T23:25:59.000Z</published>
+    <updated>2020-07-27T00:01:13.802Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>昨夜的梦，甚是诡异<br>我清楚的记得我并无倦意却沉沉睡去，那时我正在和朋友聊天<br>我在梦中接受克隆技术，出现了两个“我”，而我又请求别人杀掉另一个我<br>凌晨三点没有任何缘由地忽然惊醒，随手拨亮枕边的手机，仍是睡前停留的界面</p><p>早上六点被闹钟唤醒，闭上眼睛想小憩一会，却又再次睡去<br>这次我又做了一个很长很长的梦，它衔接着昨夜梦中的剧情演绎了下去，毫无理性的扑朔迷离<br>当我再次被小睡闹钟惊醒时，时钟仅停留在六点十分<br>只有十分钟，梦中却像恍惚了几个世纪</p><p>这让我想起了几天前神似的情景，仍是小睡时的长梦，但那次不是被闹钟唤醒的，是自己惊醒的<br>在那个梦中，我来到了一个陌生而模糊的境地，眼前清晰的只有一张床，那张床和在我的床一模一样<br>当我躺在那个床上准备稍作休息时，我的身边突然出现了许多黑色的虫子，在往我身上攀行着<br>于是我惊醒了，我从心理和生理上都排斥这些虫子</p><p>如此怪异，但在梦中却觉得一切是那么的理所当然<br>醒来之后再次回想，<del>可能只是我最近瞎吉儿乱想多了</del>（</p>]]></content>
+    
+    <summary type="html">
+    
+      昨夜的梦，甚是诡异
+    
+    </summary>
+    
+    
+      <category term="日常" scheme="http://krau.top/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="日记" scheme="http://krau.top/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>ray-mmd渲染基本流程</title>
@@ -472,32 +495,6 @@
     
     
       <category term="MMD" scheme="http://krau.top/tags/MMD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ae学习笔记一之常用效果</title>
-    <link href="http://krau.top/aexuexibijiyizhichangyongxiaoguo.html"/>
-    <id>http://krau.top/aexuexibijiyizhichangyongxiaoguo.html</id>
-    <published>2020-04-04T02:37:23.000Z</published>
-    <updated>2020-05-16T11:15:14.486Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p><strong>目前这个东西超级杂，只是随便记一下以防忘记，有时间再系统地整理一下</strong></p><p>ctrl+alt+f适应合成大小<br>M调出mask选项<br>Ctrl+shift+c打组<br>hub/saturation 色相/饱和度<br>curve 曲线<br>automask自动追踪<br>color correction调色<br>Ctrl+Y固态层<br>saber渲染设置透明<br>animation&gt;mocha<br>animation&gt;text&gt;blur&gt;蒸发<br>layer style—-stroke描边</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="http://krau.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="AE" scheme="http://krau.top/tags/AE/"/>
     
   </entry>
   
