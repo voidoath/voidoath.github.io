@@ -1914,7 +1914,7 @@ body::before {
     color: var(--hty-text-color);
   }
   :root:not([data-user-color-scheme]) body::before {
-    background-image: url("https://i.loli.net/2020/07/26/b26h48WRLt3fUxB.png");
+    background-image: url("https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/b26h48WRLt3fUxB.webp");
   }
   :root:not([data-user-color-scheme]) a {
     color: #74d7d0;
@@ -1995,7 +1995,7 @@ body::before {
   color: var(--hty-text-color);
 }
 [data-user-color-scheme='dark'] body::before {
-  background-image: url("https://i.loli.net/2020/07/26/b26h48WRLt3fUxB.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/b26h48WRLt3fUxB.webp");
 }
 [data-user-color-scheme='dark'] a {
   color: #74d7d0;
