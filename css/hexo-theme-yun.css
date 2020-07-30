@@ -129,7 +129,7 @@ body::before {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url("https://i.loli.net/2020/07/26/R23U9J1ZqYp4Sma.jpg");
+  background-image: url("https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/j2374kdfvrkg301ymcfd85vws0pwgswcl122pjrtjk0s7hp7r9fz41n0tkb6jnlwk4qvswlz02b0jzncb4y3661rvbb0hk00gmp9l01wwfqszyglgvjdg52181r617lrjrp313bk2508g3fry0bpycct0bj40kgz405blxcs5mr2fmg6hb8q");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1914,7 +1914,7 @@ body::before {
     color: var(--hty-text-color);
   }
   :root:not([data-user-color-scheme]) body::before {
-    background-image: url("https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/b26h48WRLt3fUxB.webp");
+    background-image: url("https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/Snipaste_2020-07-30_10-57-14.png");
   }
   :root:not([data-user-color-scheme]) a {
     color: #74d7d0;
@@ -1995,7 +1995,7 @@ body::before {
   color: var(--hty-text-color);
 }
 [data-user-color-scheme='dark'] body::before {
-  background-image: url("https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/b26h48WRLt3fUxB.webp");
+  background-image: url("https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/Snipaste_2020-07-30_10-57-14.png");
 }
 [data-user-color-scheme='dark'] a {
   color: #74d7d0;
