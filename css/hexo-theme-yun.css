@@ -112,8 +112,8 @@ hr {
   --hty-mode: 'light';
   --hty-primary-color: #39c5bb;
   --hty-bg-color: #f5f5f5;
-  --hty-text-color: #000;
-  --hty-secondary-text-color: #303133;
+  --hty-text-color: #333;
+  --hty-secondary-text-color: #555;
   --post-block-bg-color: #fff;
 }
 html {
@@ -1261,6 +1261,7 @@ body::before {
   height: 1.5rem;
 }
 .markdown-body {
+  color: var(--hty-text-color);
   font-weight: 300;
 }
 .post-nav {
@@ -1661,7 +1662,7 @@ body::before {
   line-height: 1.5;
 }
 .site-name {
-  color: var(--hty-secondary-text-color);
+  color: var(--hty-text-color);
   font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
   font-weight: 900;
 }
@@ -1686,7 +1687,7 @@ body::before {
   display: flex;
   padding: 0 15px;
   align-items: center;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #999;
 }
 .site-state-item:first-child,
 .site-state-item:last-child {
@@ -1704,7 +1705,7 @@ body::before {
   border: none;
 }
 .site-state-item-icon {
-  color: var(--hty-secondary-text-color);
+  color: var(--hty-text-color);
   line-height: 1;
 }
 .site-state-item-icon .icon {
@@ -1712,7 +1713,7 @@ body::before {
   height: 1.5rem;
 }
 .site-state-item-count {
-  color: var(--hty-secondary-text-color);
+  color: var(--hty-text-color);
   display: block;
   text-align: center;
   font-size: 1rem;
@@ -1805,6 +1806,7 @@ body::before {
   right: 0.8rem;
 }
 .search-input {
+  background: transparent;
   color: var(--hty-text-color);
   font-size: 1.5rem;
   border-radius: 3rem;
@@ -1855,7 +1857,7 @@ body::before {
   margin: 1rem;
 }
 .v[data-class=v] p {
-  color: var(--hty-secondary-text-color) !important;
+  color: var(--hty-text-color) !important;
 }
 .v[data-class=v] p code {
   color: #000;
@@ -1916,12 +1918,6 @@ body::before {
   :root:not([data-user-color-scheme]) body::before {
     background-image: url("https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/Snipaste_2020-07-30_10-57-14.png");
   }
-  :root:not([data-user-color-scheme]) a {
-    color: #74d7d0;
-  }
-  :root:not([data-user-color-scheme]) a:hover {
-    color: #39c5bb;
-  }
   :root:not([data-user-color-scheme]) .char {
     background-color: rgba(0,0,0,0.5);
   }
@@ -1934,7 +1930,10 @@ body::before {
     background-image: url("");
   }
   :root:not([data-user-color-scheme]) .search-popup {
-    background-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain.jpg");
+    background-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain-blur-30px.jpg");
+  }
+  :root:not([data-user-color-scheme]) .post-title-link {
+    color: #74d7d0;
   }
   :root:not([data-user-color-scheme]) .post-card {
     color: #fff;
@@ -1997,12 +1996,6 @@ body::before {
 [data-user-color-scheme='dark'] body::before {
   background-image: url("https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/Snipaste_2020-07-30_10-57-14.png");
 }
-[data-user-color-scheme='dark'] a {
-  color: #74d7d0;
-}
-[data-user-color-scheme='dark'] a:hover {
-  color: #39c5bb;
-}
 [data-user-color-scheme='dark'] .char {
   background-color: rgba(0,0,0,0.5);
 }
@@ -2015,7 +2008,10 @@ body::before {
   background-image: url("");
 }
 [data-user-color-scheme='dark'] .search-popup {
-  background-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain.jpg");
+  background-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain-blur-30px.jpg");
+}
+[data-user-color-scheme='dark'] .post-title-link {
+  color: #74d7d0;
 }
 [data-user-color-scheme='dark'] .post-card {
   color: #fff;

@@ -44,7 +44,7 @@
     <link href="http://krau.top/mmdray1.html"/>
     <id>http://krau.top/mmdray1.html</id>
     <published>2020-07-17T08:48:46.000Z</published>
-    <updated>2020-07-17T13:01:15.262Z</updated>
+    <updated>2020-07-31T11:46:45.600Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://pic.downk.cc/item/5f119a0214195aa59417256d.png" alt="" loading="lazy"></p><a id="more"></a><h1 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h1><p>前往<a href="https://github.com/ray-cast/ray-mmd" target="_blank" rel="noopener">github</a>下载最新版ray mmd<br>注意：不仅仅是打包下载code就完事的，还需要去下载各项扩展（详见github仓库下的readme）</p><p><img src="https://pic.downk.cc/item/5f116ea214195aa5940a510c.jpg" alt="" loading="lazy"></p><p>下载完成后解压ray和各个扩展，把扩展文件分别复制到ray主目录中对应的文件夹中</p><h1 id="渲染基本流程"><a href="#渲染基本流程" class="headerlink" title="渲染基本流程"></a>渲染基本流程</h1><p>载入人物，场景等数据后，就可以开始ray渲染了<br>但在这之前，还需要在mmd显示菜单中，关闭地面阴影显示，抗锯齿和各向异性过滤<br><img src="https://pic.downk.cc/item/5f11705414195aa5940ae29c.jpg" alt="" loading="lazy"><br><em>因为ray是自带抗锯齿和阴影的，如果不关则会导致一些难以名状的画面和性能问题</em></p><p>第一步需要向mmd中丢入ray根目录下的ray.x和ray_controller.pmx，这两个分别是ray环境和ray控制器</p><p><img src="https://pic.downk.cc/item/5f1171fa14195aa5940b7b3b.jpg" alt="" loading="lazy"></p><p>然后放入ray/skybox目录下的任意一个天空盒，它应该是以.pmx为后缀的文件。<br>此处以<strong>Time of day</strong>为例。<br>丢入之后在背景&gt;模型描绘顺序中调整人物，场景，和skybox的顺序<br>这三个的正确相对顺序应为</p><p>skybox<br>stage（场景）<br>model（人物）</p><p><img src="https://pic.downk.cc/item/5f11739b14195aa5940c0ba1.jpg" alt="" loading="lazy"></p><p>然后在右上角MMEffect中添加渲染</p><p>在mian栏中，为场景和人物添加main文件夹内的main.fx（主渲染）<br><img src="https://pic.downk.cc/item/5f1174ee14195aa5940c6dbe.jpg" alt="" loading="lazy"></p><p>在Envlightmap（环境）栏中，为skybox添加渲染<br><img src="https://pic.downk.cc/item/5f11767114195aa5940d1714.jpg" alt="" loading="lazy"></p><p>在Fogmap（雾气）栏中，为skybox添加雾气效果渲染<br><img src="https://pic.downk.cc/item/5f1177b014195aa5940d801d.jpg" alt="" loading="lazy"><br><em>用方框框起来的三个均为fogmap对应的渲染，只需要选择一个添加就可以，一般选择Time of fog with godray with cloud caster（名字越长越nb）</em></p><p>在materials栏中，为skybox渲染正确的材质<br><img src="https://pic.downk.cc/item/5f119aac14195aa59417535e.jpg" alt="" loading="lazy"></p><p>至此，再稍微调整一下打光和一些参数，就算完成了ray渲染的最基本步骤，现在的画面相较于未渲染的画面已经耐看多了</p><p>before：<br><img src="https://pic.downk.cc/item/5f119e2914195aa5941855c6.jpg" alt="" loading="lazy"></p><p>now：<br><img src="https://pic.downk.cc/item/5f119d2814195aa594180924.jpg" alt="" loading="lazy"></p><p>但这只是最基本的套用渲染的流程，相较于无渲染也就是从看不了提升为了勉强能看，要想做出真正好康的mmd，仅仅这些是完全不行的</p><p>对于接触mmd时间不长的新手来说，没必要去详细了解每个概念，需要的是自己不断尝试，去感受那些渲染功能的具体作用。所以一开始更好的学mmd方法是，什么都不管，跟着做就好了。</p>]]></content>
     
@@ -55,7 +55,7 @@
     </summary>
     
     
-      <category term="学习" scheme="http://krau.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="小技术" scheme="http://krau.top/categories/%E5%B0%8F%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="MMD" scheme="http://krau.top/tags/MMD/"/>
