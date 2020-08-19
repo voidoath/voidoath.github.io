@@ -1916,7 +1916,7 @@ body::before {
     color: var(--hty-text-color);
   }
   :root:not([data-user-color-scheme]) body::before {
-    background-image: url("https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/Snipaste_2020-07-30_10-57-14.png");
+    background-image: url("https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200702150912.jpg");
   }
   :root:not([data-user-color-scheme]) .char {
     background-color: rgba(0,0,0,0.5);
@@ -1994,7 +1994,7 @@ body::before {
   color: var(--hty-text-color);
 }
 [data-user-color-scheme='dark'] body::before {
-  background-image: url("https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/Snipaste_2020-07-30_10-57-14.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/20200702150912.jpg");
 }
 [data-user-color-scheme='dark'] .char {
   background-color: rgba(0,0,0,0.5);
