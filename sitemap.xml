@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://krau.top/about/site.html</loc>
+    
+    <lastmod>2021-02-10T11:47:09.226Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://krau.top/link/index.html</loc>
     
     <lastmod>2021-02-10T11:31:08.544Z</lastmod>
@@ -89,13 +96,6 @@
     <loc>http://krau.top/about/index.html</loc>
     
     <lastmod>2020-07-30T13:53:26.469Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://krau.top/about/site.html</loc>
-    
-    <lastmod>2020-07-30T13:52:36.437Z</lastmod>
     
   </url>
   
