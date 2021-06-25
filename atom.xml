@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://krau.top/"/>
-  <updated>2021-06-24T22:32:18.798Z</updated>
+  <updated>2021-06-25T06:23:51.473Z</updated>
   <id>http://krau.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自用MMEffect效果整理</title>
+    <link href="http://krau.top/mmecollect.html"/>
+    <id>http://krau.top/mmecollect.html</id>
+    <published>2021-06-25T05:38:21.000Z</published>
+    <updated>2021-06-25T06:23:51.473Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="A"><a href="#A" class="headerlink" title="A"></a>A</h1><ul><li>AlternativeFull —— 可以生成一个FX，该FX可以控制模型上的光和影的明暗，并且可以添加高光、控制阴影颜色、使用法线贴图、边缘描绘等，用此可制作2d化效果 —— <a href="http://www.nicovideo.jp/watch/sm19753668" target="_blank" rel="noopener">配布视频</a>|<a href="https://goo.gl/UxFVwP" target="_blank" rel="noopener">下载地址</a>|<a href="http://ch.nicovideo.jp/LessThanEqual/blomaga/ar1023498" target="_blank" rel="noopener">官方教程</a></li><li>AutoLuminous4 —— 材质自发光，用此可制作眼睛、发带、裙摆等亮光 —— <a href="http://1drv.ms/1hAXcox" target="_blank" rel="noopener">配布</a><h1 id="D"><a href="#D" class="headerlink" title="D"></a>D</h1></li><li>Diffusion7 —— 使模组光影更柔和唯美 —— <a href="https://www.nicovideo.jp/watch/sm12182051" target="_blank" rel="noopener">配布</a><h1 id="G"><a href="#G" class="headerlink" title="G"></a>G</h1></li><li>green flare —— 绿色耀斑<h1 id="H"><a href="#H" class="headerlink" title="H"></a>H</h1></li><li>HgSSAO<h1 id="I"><a href="#I" class="headerlink" title="I"></a>I</h1></li><li>ikBokeh —— 背景虚化，加强景深效果</li><li>ikGodray —— 体积光线</li><li>ikGouache —— 模糊材质，降低质感，用于制作三渲二or油画风</li><li>ikLensGhost —— 光晕效果</li><li>ikSunshaft —— 表面阳光照射效果<h1 id="K"><a href="#K" class="headerlink" title="K"></a>K</h1></li><li>Ktoon<h1 id="L"><a href="#L" class="headerlink" title="L"></a>L</h1></li><li>likelooks —— 调色<h1 id="M"><a href="#M" class="headerlink" title="M"></a>M</h1></li><li>MLAA —— 更好的抗锯齿</li><li>MotionBlur3 —— 运动模糊效果<h1 id="P"><a href="#P" class="headerlink" title="P"></a>P</h1></li><li>PAToon —— 用于制作三渲二</li><li>pmotskin —— P渲染</li><li>PostHatchingShader —— 全局风格化：铅笔涂抹效果，用于制作三渲二or绘画风<h1 id="R"><a href="#R" class="headerlink" title="R"></a>R</h1></li><li>RewriteAlpha —— 覆盖alpha通道，可以渲染带alpha通道的视频而不受任何其他模组/mme影响</li><li>Rhinestone<h1 id="S"><a href="#S" class="headerlink" title="S"></a>S</h1></li><li>Sakura —— 樱花飘落效果</li><li>SvSSAO —— 可以加强阴影质感，以达到较强的立体效果<h1 id="T"><a href="#T" class="headerlink" title="T"></a>T</h1></li><li>T_ToonShader</li><li>tk_grid-floor<h1 id="W"><a href="#W" class="headerlink" title="W"></a>W</h1></li><li>Water —— 水</li><li>WorkingFloor —— 地面反光效果<h1 id="Z"><a href="#Z" class="headerlink" title="Z"></a>Z</h1></li><li>Z_Cloud<h1 id="other"><a href="#other" class="headerlink" title="other"></a>other</h1></li><li>発光コンタクト</li><li>空中に漂う埃エフェクト（空中漂浮的尘埃）—— 用于制作空气中少量粒子效果</li></ul><hr><p>以上为个人常用mme效果，后续会陆续补齐功能效果描述与配布地址</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="小技术" scheme="http://krau.top/categories/%E5%B0%8F%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="MMD" scheme="http://krau.top/tags/MMD/"/>
+    
+  </entry>
   
   <entry>
     <title>9-nine-系列完结感言</title>
@@ -456,34 +482,6 @@
     
       <category term="日常" scheme="http://krau.top/categories/%E6%97%A5%E5%B8%B8/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>过度信任开源的惨案？Edxposed Manager canary版本中被推送恶意代码</title>
-    <link href="http://krau.top/edxpcanan.html"/>
-    <id>http://krau.top/edxpcanan.html</id>
-    <published>2020-05-16T22:31:45.000Z</published>
-    <updated>2020-06-12T13:10:26.756Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>2020.5.16，几个github账号向xposed模块管理器<code>Edxposed Manager</code>pr了恶意代码（<code>rm -rf /data/media</code>），在合并之前的代码会自动编译以供审核，而edxp把这类自动编译的文件（尚未经审核的）作为canary版本提供给用户，导致部分edxp用户刷入最新的canary版本后，数据被清空</p><p>edxp的开发者在酷安的解释及道歉如下</p><p><img src="https://cdn.jsdelivr.net/gh/voidoath/photo/blog-img/edxp1.jpeg" alt="" loading="lazy"></p><p>关于恶意代码</p><p><img src="https://i.loli.net/2020/05/17/SjgxQ9tozwqvLnX.jpg" alt="" loading="lazy"></p><p>知乎上</p><p><img src="https://i.loli.net/2020/05/17/2kVILUhiegad8my.jpg" alt="" loading="lazy"></p><hr><p>此前，同为xposed管理器的<code>太极</code>因为不开源而从Magisk下架<br>而如今，开源的edxp又历次风波<br>没有绝对的无风险，为了自己的数据安全，行事需慎重。如果此次受害者能认真看一下更新日志（clean your data folder）就能免遭数据清除</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-    
-      <category term="日常" scheme="http://krau.top/categories/%E6%97%A5%E5%B8%B8/"/>
-    
-    
-      <category term="xposed" scheme="http://krau.top/tags/xposed/"/>
-    
-      <category term="杂谈" scheme="http://krau.top/tags/%E6%9D%82%E8%B0%88/"/>
     
   </entry>
   
